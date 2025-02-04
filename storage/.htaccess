@@ -1,0 +1,5 @@
+deny from all
+<FilesMatch "\.(pdf|xls|xlsx|ppt|pptx|txt|csv|ics|odt|ods|odp|png|jpg|gif|tiff|bmp|avi|flv|wmv|mp4|mov|mp3|wav|flac)$">
+Order allow,deny
+Allow from all
+</FilesMatch>

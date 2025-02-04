@@ -1,0 +1,26 @@
+body { 
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.modal-backdrop { 
+    opacity: 0.35;
+}
+
+.tooltip { 
+    z-index: 1055;
+}
+
+input, select, textarea { 
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+}
+
+#background-frame {
+    width: 100vw; 
+    height: 100vh;
+    border: none;
+}

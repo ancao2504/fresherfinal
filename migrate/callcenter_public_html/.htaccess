@@ -1,0 +1,6 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{THE_REQUEST} !/webhook.php* [NC]
+RewriteRule ^/?(.*) https://%{SERVER_NAME} [R,L]

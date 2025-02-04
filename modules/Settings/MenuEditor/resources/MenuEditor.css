@@ -1,0 +1,262 @@
+/* Added by Hieu Nguyen on 2023-01-18 */
+/* Modified by Vu Mai on 2023-02-02 */
+
+.iconpicker-trigger {
+	border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.iconpicker-container .iconpicker-items {
+	max-height: 145px !important;	/* Work-arround to prevent popover content overflow inside modal */
+}
+
+.iconpicker-container .iconpicker-search {
+	width: 100% !important;
+}
+
+#menu-editor {
+	width: max-content;
+	min-width: 100%;
+}
+
+#menu-editor .box-header .actions {
+	margin-right: 6px;
+}
+
+#menu-editor .box-body {
+	padding: 5px !important;
+}
+
+#menu-editor #hint-text {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#menu-editor .icon {
+	margin-left: 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#menu-editor .name {
+	width: 140px;
+	margin-left: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#menu-editor .actions {
+	margin: auto;
+	margin-right: 0px;
+	white-space: nowrap;
+}
+
+#menu-editor .box-header i {
+	font-size: 14px;
+}
+
+#menu-editor .actions span {
+	margin-right: 5px;
+}
+
+#menu-editor #menu-editor-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+#menu-editor #list-view {
+	align-self: flex-start;
+	width: 265px;
+}
+
+#menu-editor #list-view #main-menus {
+	margin-top: 45px;
+	margin-left: 15px;
+	padding-right: 5px;
+	max-height: 480px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#menu-editor #list-view #main-menus .main-menu {
+	width: 235px;
+	height: 41px;
+	background-color: rgba(240, 240, 240, 1);
+	border-left-width: 5px !important;
+	border-top-left-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+	margin-bottom: 5px;
+	padding: 5px;
+	display: flex;
+	cursor: pointer;
+}
+
+#menu-editor #list-view #main-menus .main-menu .name {
+	text-transform: uppercase;
+}
+
+#menu-editor #list-view #main-menus .main-menu:not(.selected) .btn-edit,
+#menu-editor #list-view #main-menus .main-menu:not(.selected) .btn-remove
+{
+	display: none;
+}
+
+#menu-editor #list-view #main-menus .main-menu.selected {
+	background-color: white;
+}
+
+#menu-editor #edit-view {
+	padding-left: 50px;
+	padding-right: 15px;
+	align-self: flex-start;
+	flex-grow: 1;
+}
+
+#menu-editor #edit-view #top-actions {
+	margin-bottom: 15px;
+}
+
+#menu-editor #edit-view #top-actions .btn {
+	margin-left: 5px;
+}
+
+#menu-editor #edit-view #top-actions .btn.svg-icon {
+	padding: 0px 5px;
+}
+
+#menu-editor #edit-view #top-actions .btn[name="layout"].selected {
+	background-color: #f0f0f0;
+}
+
+#menu-editor #edit-view #edit-view-content {
+	height: 550px;
+	overflow-x: auto;
+	overflow-y: auto;
+	margin-bottom: 35px;
+}
+
+#menu-editor #edit-view #edit-view-content[layout="1_column"] .menu-groups {
+	min-width: 360px !important;
+	max-width: 360px !important;
+}
+
+#menu-editor #edit-view #edit-view-content[layout="2_columns"] .menu-groups {
+	min-width: 720px !important;
+	max-width: 720px !important;
+}
+
+#menu-editor #edit-view #edit-view-content[layout="3_columns"] .menu-groups {
+	min-width: 1080px !important;
+	max-width: 1080px !important;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group {
+	width: 300px;
+	float: left;
+	margin-right: 50px;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .actions .show-on-hover {
+	display: none;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group:hover .box-header .actions .show-on-hover {
+	display: inline-block;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .box-header {
+	padding: 10px;
+	border-bottom: none;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .box-header .name {
+	width: 174px;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .box-footer {
+	padding: 0px;
+	border-top: none;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .box-header .actions {
+	margin-top: -25px;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .btn-add-menu-item {
+	font-size: 150%;
+	color: var(--primary-1);
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .menu-items {
+	height: 200px;
+	padding: 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .menu-item {
+	display: flex !important;
+	background-color: rgba(255, 255, 255, 1);
+	box-sizing: border-box;
+	border: 1px solid rgba(226, 226, 226, 1);
+	border-radius: 10px;
+	padding: 8px 5px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	cursor: default;
+}
+
+#menu-editor #edit-view #edit-view-content .menu-groups .menu-group .menu-item:hover .actions .show-on-hover {
+	display: inline-block;
+}
+
+.modal-add-menu-item .form-content button {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.modal-edit-modules-menu-item .form-content .filter-container {
+	width: 280px;
+	height: 32px;
+	background-color: rgba(255, 255, 255, 1);
+	box-sizing: border-box;
+	border: 1px solid rgba(226, 226, 226, 1);
+	border-radius: 5px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.modal-edit-modules-menu-item .form-content .filter-container input {
+	width: 90%;
+	height: 32px;
+	border: none;
+	padding-left: 10px;
+}
+
+.modal-edit-modules-menu-item .form-content .filter-container i {
+	margin: auto;
+	margin-left: 8px;
+}
+
+.modal-edit-modules-menu-item .form-content ul.module-list {
+	margin: 0px;
+	padding: 0px;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.modal-edit-modules-menu-item .form-content ul.module-list li {
+	list-style: none;
+	width: 20%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.modal-edit-report-menu-item .select2-container.report-id {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.modal-main-menu .form-content input[name="color"] {
+	margin-left: 8px !important;
+}

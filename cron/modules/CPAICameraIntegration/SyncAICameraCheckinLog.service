@@ -1,0 +1,7 @@
+<?php
+
+// Added by Hieu Nguyen on 2021-04-27
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('SyncAICameraCheckinLog', 'cron/modules/CPAICameraIntegration/SyncAICameraCheckinLog.service', 7200, NULL, NULL, 1, 'CPChatBotIntegration', 19, 'Recommended frequency for SyncAICameraCheckinLog is 2 hours');
+vimport('includes.runtime.Globals');
+require_once('modules/CPAICameraIntegration/models/Service.php');
+CPAICameraIntegration_Service_Model::syncCheckinLog();

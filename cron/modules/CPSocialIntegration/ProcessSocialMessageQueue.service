@@ -1,0 +1,7 @@
+<?php
+
+// Added by Hieu Nguyen on 2019-08-14
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('SocialMessageQueueProcessing', 'cron/modules/CPSocialIntegration/ProcessSocialMessageQueue.service', 60, NULL, NULL, 1, 'CPSocialIntegration', 10, 'Recommended frequency for SocialMessageQueueProcessing is 1 mins');
+vimport('includes.runtime.Globals');
+require_once('modules/CPSocialIntegration/models/Service.php');
+CPSocialIntegration_Service_Model::processSocialMessageQueue();

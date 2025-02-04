@@ -1,0 +1,11 @@
+.fieldLabel.accountname,
+.fieldLabel.accounts_business_type,
+.fieldLabel.phone,
+.fieldLabel.email1,
+.fieldLabel.industry {
+  color: blue !important;
+}
+.fieldLabel.employees,
+.fieldLabel.annual_revenue {
+  color: red !important;
+}

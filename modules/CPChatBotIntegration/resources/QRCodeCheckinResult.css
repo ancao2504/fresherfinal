@@ -1,0 +1,48 @@
+/* Added by Hieu Nguyen on 2020-05-25 */
+body {
+    font-family: 'Roboto';
+}
+
+#main {
+    padding: 40px
+}
+
+#main * {
+    text-align: center;
+}
+
+#header {
+    margin-top: 20px;
+}
+
+.underline {
+    width: 200px;
+    margin: auto;
+    border-bottom: 3px solid #CB2134;
+    margin-top: 20px;
+}
+
+#title {
+    font-size: 30px;
+    color: #CB2134;
+    margin-top: 60px;
+}
+
+#attendee,
+#checkin-time,
+#error-message {
+    font-weight: bold;
+    margin-top: 60px
+}
+
+#attendee span,
+#checkin-time span,
+#error-message span {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+#footer {
+    font-size: 17px;
+    margin-top: 60px;
+}

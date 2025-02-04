@@ -1,0 +1,133 @@
+/**
+    Name: ConnectHanet.css
+    Author: Phu Vo
+    Date: 2021.04.24
+**/
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logos {
+    display: flex;
+    padding: 5px;
+    background: #f2f2f2;
+}
+
+.logos > * {
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.places-container {
+    padding: 10px;
+}
+
+.places {
+    margin: -8px;
+}
+
+.place-container {
+    margin: 8px;
+}
+
+.place {
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.place:hover {
+    background-color: #f6fbff;
+}
+
+.place i {
+    color: #de425a;
+    margin-right: 0.5em;
+}
+
+.place .place-description {
+    color: #999;
+    font-size: 13px;
+}
+
+.place .place-title {
+    margin-top: 8px;;
+}
+
+.place p {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.cameras {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
+}
+
+.camera-container {
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
+.camera {
+    padding: 4px 0px;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+}
+
+.camera .camera-logo {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.camera p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.camera-description {
+    flex: 1;
+}
+
+.camera-number {
+    color: #999;
+    font-size: 13px;
+}
+
+.action-container {
+    padding: 10px;
+}
+
+.action-container button {
+    width: 100%;
+}
+
+.status .description {
+    color: #999;
+    font-size: 15px;
+}

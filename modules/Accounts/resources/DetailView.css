@@ -1,0 +1,14 @@
+/* Áp dụng màu xanh cho các nhãn cụ thể */
+.fieldLabel.accountname span,
+.fieldLabel.accounts_business_type span,
+.fieldLabel.phone span,
+.fieldLabel.email1 span,
+.fieldLabel.industry span {
+  color: blue !important;
+}
+
+/* Áp dụng màu đỏ cho các nhãn cụ thể */
+.fieldLabel.employees span,
+.fieldLabel.annual_revenue span {
+  color: red !important;
+}

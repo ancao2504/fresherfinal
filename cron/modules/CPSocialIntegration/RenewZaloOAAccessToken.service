@@ -1,0 +1,7 @@
+<?php
+
+// Added by Hieu Nguyen on 2022-08-04
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('RenewZaloOAAccessToken', 'cron/modules/CPSocialIntegration/RenewZaloOAAccessToken.service', 43200, NULL, NULL, 1, 'CPSocialIntegration', 10, 'Recommended frequency for RenewZaloOAAccessToken is 12 hours');
+vimport('includes.runtime.Globals');
+require_once('modules/CPSocialIntegration/models/Service.php');
+CPSocialIntegration_Service_Model::renewZaloOAAccessToken();

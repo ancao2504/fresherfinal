@@ -1,0 +1,14 @@
+{
+  "E-mail":"Email",
+  "Password":"Mật Khẩu",
+  "Please provide your portal credentials":"Vui lòng cung cấp chứng thực của cổng thông tin",
+  "Sign in":"Đăng nhập",
+  "Language":"Ngôn ngữ",
+  "Forgot Password?":"Quên mật khẩu?",
+  "Forgot Password":"Quên mật khẩu",
+  "Submit":"Đăng nhập",
+  "Please enter a valid email address":"Vui lòng nhập địa chỉ email hợp lệ.",
+  "Portal access has not been enabled for this account":"Truy cập cổng thông tin chưa được kích hoạt cho tài khoản này.",
+  "Enter your password.":"Nhập mật khẩu của bạn.",
+  "Enter your email address":"Nhập địa chỉ email của bạn."
+}

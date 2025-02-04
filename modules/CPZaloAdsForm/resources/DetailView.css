@@ -1,0 +1,54 @@
+/*
+    Name: DetailView.css
+    Author: Phu Vo
+    Date: 2021.11.09
+*/
+
+[data-block="LBL_MAPPING_FIELDS"] {
+    display: none;
+}
+
+[data-block="LBL_MAPPING_FIELDS"] .maxWidth50 {
+    max-width: 100%;
+}
+
+.mapping-fields-table .header-content {
+    min-height: 32px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mapping-fields-table .body-content {
+    min-height: 32px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mapping-fields-table .mapping-fields-refresh {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+}
+
+.mapping-fields-table .no-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fieldValue.mapping_fields {
+    display: block;
+    width: 100%;
+}
+
+.relatedContainer input[name="relatedModuleName"][value="CPTarget"] ~ .relatedContents .relationDelete,
+.relatedContainer input[name="relatedModuleName"][value="Leads"] ~ .relatedContents .relationDelete,
+.relatedContainer input[name="relatedModuleName"][value="Contacts"] ~ .relatedContents .relationDelete {
+    display: none;
+}

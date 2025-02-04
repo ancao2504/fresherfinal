@@ -1,0 +1,11 @@
+/*
+	Name: BusinessManagersConfig.css
+	Author: Vu Mai
+	Date: 2022-08-01
+*/
+
+#config-page .fieldValue .select2-container {
+	height: auto;
+	width: 100% !important;
+	max-width: 70% !important;
+} 

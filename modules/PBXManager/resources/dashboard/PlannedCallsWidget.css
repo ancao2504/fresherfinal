@@ -1,0 +1,7 @@
+.planned-calls-widget .widgetRow .today {
+    color: #ffc400 !important;
+}
+
+.planned-calls-widget .widgetRow .overdue {
+    color: red !important;
+}

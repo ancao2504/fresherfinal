@@ -1,0 +1,22 @@
+#PBXAudio, #PBXLink {
+    vertical-align: middle;
+}
+
+#PBXLink > i {
+    font-size: 22px;
+    color: #a9abab;
+}
+
+#PBXAudio {
+    margin-right: 8px;
+}
+
+#PBXLink {
+    display: inline-block;
+    position: relative;
+    bottom: -2px;
+}
+
+#PBXLink > i:hover {
+    color: #555;
+}

@@ -1,0 +1,78 @@
+<?php
+
+/* System auto-generated on 2019-10-03 08:47:39 am.  */
+
+$languageStrings = array(
+    'CPSocialMessageTemplate' => 'Social Message Templates',
+    'SINGLE_CPSocialMessageTemplate' => 'Social Message Templates',
+    'ModuleName ID' => 'Social Message Templates ID',
+    'LBL_ADD_RECORD' => 'Add Social Message Templates',
+    'LBL_RECORDS_LIST' => 'Social Message Templates List',
+    'LBL_TRACKING_INFOMATION' => 'Description Details',
+    'LBL_GENERAL_INFORMATION' => 'General Information',
+    'LBL_NAME' => 'Title',
+    'LBL_DESCRIPTION' => 'Description',
+    'LBL_MODIFIED_TIME' => 'Modified Time',
+    'LBL_ASSIGNED_TO' => 'Assigned To',
+    'LBL_CREATED_TIME' => 'Created Time',
+    'LBL_SOURCE_INPUT' => 'starred',
+    'LBL_STARRED' => 'starred',
+    'LBL_TAGS' => 'tags',
+    'LBL_CPSOCIALMESSAGETEMPLATE_TYPE' => 'Type',
+    'LBL_CPSOCIALMESSAGETEMPLATE_CONTENT_TYPE' => 'Content Type',
+    'LBL_CPSOCIALMESSAGETEMPLATE_STATUS' => 'Status',
+    'LBL_MESSAGE_CONTENT' => 'Message Content',
+    'LBL_COVER' => 'Cover',
+    'LBL_BUTTONS' => 'Buttons',
+    'LBL_ITEMS' => 'Items',
+    'zalo' => 'Zalo',
+    'facebook' => 'Facebook',
+    'text' => 'Text',
+    'list' => 'List',
+    'active' => 'Active',
+    'inactive' => 'Inactive',
+    'LBL_MESSAGE_CONTENTS' => 'Message Contents',
+    '' => '',
+    'LBL_MODULE' => 'Module',
+    'LBL_FIELDS' => 'Field',
+    'LBL_INSERT' => 'Insert',
+    'LBL_REMOVE' => 'Remove',
+    'LBL_EDIT' => 'Edit',
+    'LBL_ADD' => 'Add',
+    'LBL_COVER_DEFAULT_TITLE' => 'Click to change image',
+    'LBL_ADD_BUTTON' => 'Add Button',
+    'LBL_BUTTON_TITLE' => 'Button Title',
+    'LBL_TITLE' => 'Title',
+    'LBL_ACTION' => 'Action',
+    'LBL_IMAGE_URL' => 'Image URL',
+    'LBL_URL_ON_CLICK' => 'URL on Clicking',
+    'LBL_OPEN_URL' => 'Open URL',
+    'LBL_EDIT_COVER' => 'Edit Cover',
+    'LBL_ADD_ITEM' => 'Add Item',
+    'LBL_ICON_URL' => 'Icon URL',
+    'LBL_CPSOCIALMESSAGETEMPLATE_MODULE' => 'Module',
+    'CPTarget' => 'Targets',
+    'Contacts' => 'Contacts',
+    'Leads' => 'Leads',
+    'LBL_EDIT_ITEM' => 'Edit Item',
+    'LBL_EDIT_BUTTON' => 'Edit Button',
+    'LBL_OK' => 'OK',
+    'LBL_CPSOCIALMESSAGELOG_LIST' => 'Social Message Log',
+    'buttons' => 'Buttons',
+
+    // Added by Phu Vo on 2019.10.08 => label for SocialIntegration
+    'LBL_SOCIAL_MESSAGE_TEMPLATE' => 'Social Message Template',
+    // End by Phu Vo
+);
+
+$jsLanguageStrings = array(
+    'JS_COMFIRM_REMOVE_ROW' => 'Are you sure to delete this row?',
+    'JS_FIELD_EMPTY' => 'Field is empty',
+    'JS_COVER_DEFAULT_TITLE' => 'Click to change image',
+    'JS_NOT_CHOOSE_COVER' => 'Cover has not been chosen yet',
+    'JS_ADD_BUTTON' => 'Add Button',
+    'JS_EDIT_BUTTON' => 'Edit Button',
+    'JS_ADD_ITEM' => 'Add Item',
+    'JS_EDIT_ITEM' => 'Edit Item'
+);
+

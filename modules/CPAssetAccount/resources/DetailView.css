@@ -1,0 +1,76 @@
+span.spn_amount {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.spn_current_balance {
+    background: #03037a;
+    border: 1px solid #03037a;
+}
+
+.spn_receipt_amount {
+    background: #037a4f;
+    border: 1px solid #037a4f;
+}
+
+.spn_payment_amount {
+    background: #a10326;
+    border: 1px solid #a10326;
+}
+
+form.formReportDetail table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+#report_action {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-sm.btn-view {
+    width: 20%;
+}
+
+#report_detail {
+    padding-bottom: 20px;
+}
+
+form.formReportDetail table td, form.formReportDetail table th {
+    border: 1px solid #aeaeae;
+}
+
+form.formReportDetail table th {
+    text-align: center;
+}
+
+form.formReportDetail table .no-border th {
+    border: none !important;
+}
+
+
+form.formReportDetail table td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+form.formReportDetail table td.right {
+    text-align: right;
+}
+
+form.formReportDetail table td.left {
+    text-align: left;
+}
+
+.lblLabel {
+    display: inline-table;
+    padding-top: 6px;
+    padding-left: 0px;
+    font-weight: bolder;
+}

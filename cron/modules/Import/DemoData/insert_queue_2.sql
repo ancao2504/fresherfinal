@@ -1,0 +1,1 @@
+INSERT INTO vtiger_import_queue VALUES (?, ?, 2, '{\"potentialname\":\"0\",\"related_to\":\"1\",\"amount\":\"2\",\"closingdate\":\"3\",\"leadsource\":\"4\",\"sales_stage\":\"5\",\"assigned_user_id\":\"6\"}', '[]', 0, '\"\"', 1, 0, 0);

@@ -1,0 +1,29 @@
+/* Added by Hieu Nguyen on 2022-06-16 */
+
+#config-page {
+	padding-bottom: 60px;
+}
+
+#config-page .box-header .header-title {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#config-page .box-header i {
+	font-size: 14px;
+}
+
+/* Modify by Vu Mai on 2022-07-18 */
+#config-page .guide-url {
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Segoe UI', sans-serif !important;
+}
+
+#config-page .fieldLabel {
+	width: 250px;
+}
+
+#config-page .fieldValue .inputElement {
+	width: 250px;
+}

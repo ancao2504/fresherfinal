@@ -1,0 +1,7 @@
+.tab-content tr {
+    cursor: pointer;
+}
+
+.dataTables_length {
+    display: none;
+}

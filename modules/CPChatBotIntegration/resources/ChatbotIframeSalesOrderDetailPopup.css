@@ -1,0 +1,24 @@
+td.product-name {
+    width: 200px;
+}
+
+td.fieldValue .flex-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td.fieldValue.quantity .flex-wraper:after {
+    content: 'x';
+}
+
+td.fieldValue.price .flex-wraper:after {content: '=';}
+
+td.fieldValue.price,
+td.fieldValue.total {
+    text-align: right;
+}
+
+td.fieldValue.total .form-control {
+    padding-right: 0px;
+}

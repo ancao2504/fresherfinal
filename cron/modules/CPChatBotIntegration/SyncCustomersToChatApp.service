@@ -1,0 +1,7 @@
+<?php
+
+// Added by Hieu Nguyen on 2020-04-07
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('SyncCustomersToChatApp', 'cron/modules/CPChatBotIntegration/SyncCustomersToChatApp.service', 60, NULL, NULL, 1, 'CPChatBotIntegration', 15, 'Recommended frequency for SyncCustomersToChatApp is 1 mins');
+vimport('includes.runtime.Globals');
+require_once('modules/CPChatBotIntegration/models/Service.php');
+CPChatBotIntegration_Service_Model::syncCustomersToChatApp();

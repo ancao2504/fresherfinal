@@ -1,0 +1,60 @@
+/* Added by Phu Vo on 2019.04.12 */
+
+.reportContents {
+    padding: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.reportContainer audio {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.fieldLabel {
+    font-weight: bold;
+}
+
+.fieldValue:not(:last-child) {
+    padding-right: 40px;
+}
+
+form button {
+    height: 30px;
+    padding: 0px 30px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.toRight {
+    float: right;
+}
+
+form.filter {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.inputElement {
+    padding: 8px;
+}
+
+.reportTitle {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    padding: 6px;
+}
+
+.fieldLabel, .fieldValue {
+    padding-bottom: 10px;
+}
+
+.dataTables_info {
+    display: none;
+}
+
+li.paginate_button.page-item:not(#listViewTable_next):not(#listViewTable_previous) {
+    display: none;
+}

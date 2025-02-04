@@ -1,0 +1,94 @@
+/* Added by Phu Vo on 2021.08.30 to style operation not permitted */
+.app-exception-container {
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-exception {
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    box-shadow: 0px 0px 5px 0px rgba(51, 51, 51, 0.35);
+    border-radius: 5px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.app-exception .body {
+    display: flex;
+    padding: 5px;
+}
+
+.app-exception .left-side,
+.app-exception .main-side {
+    padding: 5px;
+}
+
+.app-exception .icon {
+    width: 55px;
+    height: 100%;
+    font-size: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cb2134;
+}
+
+.app-exception .title {
+    font-size: 15px;
+    font-family: 'Segoe UI Semibold', 'Segoe UI Regular', 'Segoe UI', sans-serif;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.app-exception .content {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: 'Segoe UI Regular', 'Segoe UI', sans-serif;
+}
+
+.app-exception .footer {
+    padding: 5px;
+    border-top: 1px solid #e2e2e2;
+    position: relative;
+    height: auto;
+    background: transparent;
+}
+
+.app-exception .actions {
+    padding: 5px;
+    text-align: right;
+}
+
+.app-exception .actions a {
+    margin: 5px;
+    font-family: 'Segoe UI Semibold', 'Segoe UI Regular', 'Segoe UI', sans-serif;
+    font-weight: 600;
+    color: #008ecf;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.dashBoardContainer .app-exception .footer,
+.modal.in .app-exception .footer,
+#helpPageOverlay .footer {
+    display: none;
+}
+
+.modal.in,
+.overlayPageContent.fade.in {
+    display: block !important;
+    background: transparent;
+}
+
+.modal.in .modal-dialog {
+    display: none;
+}
+
+/* End operation not permitted*/

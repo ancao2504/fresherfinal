@@ -1,0 +1,12 @@
+<?php
+/**
+ * @author Tin Bui
+ * @email tin.bui@onlinecrm.vn
+ * @create date 2022.03.29
+ * @desc Auto close ticket cronjob 
+ */
+
+vimport('includes.runtime.Globals');
+require_once('modules/HelpDesk/helpers/GeneralUtils.php');
+
+HelpDesk_GeneralUtils_Helper::autoCloseWaitCloseTicket();

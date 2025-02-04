@@ -1,0 +1,10 @@
+Options -Indexes
+
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/vtiger/$1 [R,L]
+
+# Added by Hieu Nguyen on 2020-01-08 to disable OPTIONS method to avoid vulnerability
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^OPTIONS
+RewriteRule .* - [F]

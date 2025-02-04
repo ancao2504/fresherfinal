@@ -1,0 +1,95 @@
+/* 
+	Name: Report.css
+	Author: Vu Mai
+	Date: 2022-11-28
+*/
+
+#report-page {
+	margin-left: -15px;
+}
+
+#report-page #header {
+	border-bottom: 1px solid var(--black-5);
+	padding: 0px 20px 10px;
+}
+
+#report-page #header #title {
+	font-family: 'Segoe UI Semibold', 'Segoe UI', sans-serif;
+	width: 60%;
+}
+
+#report-page #header #title .campaigns-filter {
+	min-width: 300px;
+}
+
+#report-page #header button {
+	outline: none;
+}
+
+#report-page #report-statistics #statistics-items {
+	width: 95% !important;
+}
+
+#report-page .table-statistic {
+	margin-top: 2em;;
+}
+
+#report-page .table-statistic .box-header {
+	font-size: 16px;
+}
+
+#report-page .table-statistic .box-body .table {
+	border: 1px solid var(--black-5);
+}
+
+#report-page .table-statistic .box-body .table tr:last-child {
+	font-family: 'Segoe UI Semibold', 'Segoe UI', sans-serif;
+	font-weight: 700;
+}
+
+#report-page .table-statistic .box-body .table th {
+	border: 1px solid var(--black-5);
+}
+
+#report-page .table-statistic .box-body .table td {
+	border-left: 1px solid var(--black-5) !important;
+	border-right: 1px solid var(--black-5) !important;
+}
+
+/* For prinf */
+@media print {
+	#report-page .info-tooltip {
+		display: none;
+	}
+
+	#report-page #header {
+		display: flex !important;
+		flex-direction: column;
+	}
+
+	#report-page #header #title {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	#report-page #header #print-report-btn {
+		display: none;
+	}
+
+	#report-page #statistics-items .statistics-item-wrapper .statistics-item .name {
+		font-size: 8px;
+	}
+
+	#report-page #statistics-items .statistics-item-wrapper .statistics-item.increase .current-value {
+		font-size: 12px;
+	}
+
+	#report-page #statistics-items .statistics-item-wrapper .statistics-item {
+		height: 70px;
+	}
+
+	#report-page #statistics-filter-wrapper .statistics-filter .select2-arrow {
+		display: none;
+	}
+}

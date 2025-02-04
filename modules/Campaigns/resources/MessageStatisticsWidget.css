@@ -1,0 +1,50 @@
+/*
+    Name: MessageStatisticsWidget.css
+    Author: Phu Vo
+    Date: 2020.11.17
+*/
+
+#messageStatistics .dataTables_paginate .paginate_button {
+    padding: 0px !important;
+}
+
+#messageStatistics .table > thead > tr > th.success,
+#messageStatistics .table > tbody > tr > td.success {
+    background-color: transparent;
+}
+
+#messageStatistics .message-statistics .th.total,
+#messageStatistics .message-statistics .th.queued,
+#messageStatistics .message-statistics .th.success,
+#messageStatistics .message-statistics .th.failed {
+    font-weight: normal;
+}
+
+#messageStatistics .message-statistics-container .td.total,
+#messageStatistics .message-statistics-container .td.queued,
+#messageStatistics .message-statistics-container .td.success,
+#messageStatistics .message-statistics-container .td.failed {
+    font-weight: bold;
+}
+
+#messageStatistics .th.total,
+#messageStatistics .th.queued,
+#messageStatistics .th.success,
+#messageStatistics .th.failed,
+#messageStatistics .td.total,
+#messageStatistics .td.queued,
+#messageStatistics .td.success,
+#messageStatistics .td.failed {
+    text-align: center;
+}
+
+#messageStatistics .message-statistics-detail-container div.td.message {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+}
+
+#messageStatistics .message-statistics-detail-container div.td.send_date {
+    white-space: nowrap;
+}

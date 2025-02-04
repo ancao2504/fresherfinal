@@ -1,0 +1,73 @@
+<?php
+
+/*
+	System auto-generated on 2021-11-10 09:51:33 am by admin. 
+	THIS FILE IS FOR DEVELOPER TO UPDATE FROM LAYOUT EDITOR. YOU CAN MODIFY THIS FILE FOR CUSTOMIZING BUT REMEMBER THAT ALL COMMENTS WILL BE REMOVED!!!
+*/
+
+$languageStrings = array(
+    'CPZaloAdsForm' => 'Zalo Ads Form',
+    'SINGLE_CPZaloAdsForm' => 'Zalo Ads Form',
+    'CPZaloAdsForm ID' => 'Zalo Ads Form ID',
+    'CPZaloAdsForm No' => 'Zalo Ads Form No',
+    'LBL_ADD_RECORD' => 'Add Zalo Ads Form',
+    'LBL_RECORDS_LIST' => 'Zalo Ads Form List',
+    'LBL_TRACKING_INFOMATION' => 'Description Details',
+    'LBL_GENERAL_INFORMATION' => 'General Information',
+    'LBL_NAME' => 'Form Name',
+    'LBL_DESCRIPTION' => 'Description',
+    'LBL_MODIFIED_TIME' => 'Modified Time',
+    'LBL_ASSIGNED_TO' => 'Assigned To',
+    'LBL_CREATED_TIME' => 'Created Time',
+    'LBL_SOURCE_INPUT' => 'starred',
+    'LBL_STARRED' => 'starred',
+    'LBL_TAGS' => 'tags',
+    'LBL_MAPPING_FIELDS' => 'Mapping Fields',
+    'LBL_CPZALOADSFORM_ADVERTISE_OA' => 'Advertise OA',
+    'LBL_FORM_ID' => 'Form ID',
+    'LBL_CPZALOADSFORM_PURPOSE' => 'Purpose',
+    'LBL_CLASSIFY_TAGS' => 'Classify Tags',
+    'LBL_CPTARGET_LIST' => 'Targets',
+    'LBL_LEAD_LIST' => 'Leads',
+    'LBL_CONTACT_LIST' => 'Contacts',
+    'LBL_CPEVENTREGISTRATION_LIST' => 'Event Registration',
+    'LBL_CUSTOMER_COUNT' => 'Customer count',
+    'LBL_SYSTEM_INFORMATION' => 'System Information',
+    'CPEventManagement' => 'Event',
+    'Event Registration' => 'Register Event',
+    'Get Data' => 'Get Data',
+    'LBL_MATCHING_CONFIGURATION' => 'Matching Configuration',
+    'LBL_CPZALOADSFORM_MATCHING_CRITERIA' => 'Matching Criteria',
+    'LBL_CPZALOADSFORM_DEFAULT_MODULE' => 'Default Module',
+    'Phone' => 'Phone',
+    'Email' => 'Email',
+    'Phone Or Email' => 'Phone Or Email',
+    'Phone And Email' => 'Phone And Email',
+    'CPTarget' => 'Target',
+    'Leads' => 'Lead',
+    'Contacts' => 'Contact',
+    'LBL_FORM_MAPPING_FIELDS' => 'Zalo Form Mapping Fields',
+    'LBL_FORM_CPTARGET_FIELDS_DESCRIPTION' => 'Name is required',
+    'LBL_FORM_CPTARGET_FIELDS' => 'Target Fields',
+    'LBL_FORM_LEADS_FIELDS' => 'Lead Fields',
+    'LBL_FORM_LEADS_FIELDS_DESCRIPTION' => 'Name and phone is required',
+    'LBL_FORM_CONTACTS_FIELDS' => 'Contact Fields',
+    'LBL_FORM_CONTACTS_FIELDS_DESCRIPTION' => 'Name and phone is required',
+    'LBL_FORM_NO_MAPPING_FIELDS' => 'No Mapping Data',
+    'LBL_FORM_WARNING' => 'Warning',
+    'LBL_FORM_WARNING_SYNC_EXPLAIN' => 'When form data syncronize, system will use duplicate criteria to find existed customer on CRM (priority is: Contact > Lead > Target). When no duplicate is found, system will create new customer profile due to default module. Customer info will be saved base on mapping fields. Besides that, all submited information will append to customer description.',
+    'LBL_FORM_WARNING_FROM_DROPDOWN_EXPLAIN' => 'For picklist and multipicklist fields, option on Zalo form must equivalent to CRM picklist values. Otherwise field\'s value on CRM will be empty.',
+    'LBL_MANAGEMENT_INFORMATION' => 'Management Information',
+    'LBL_ZALO_ADS_FORM_EMPTY_ERROR_MSG' => 'Zalo Ads Form empty or not existed',
+    'LBL_GET_DATA' => 'Get Data',
+    'LBL_TYPE_SEARCH_AND_CREATE_NEW' => 'Type to search, Enter to quick create',
+    'CPEventRegistration' => 'Event Registration',
+);
+
+$jsLanguageStrings = array(
+    'JS_CREATE_TAG_LIMIT_ERROR_MSG' => 'Could not create new Tag, allow maximum %limit characters',
+    'JS_GET_DATA_REQUIREMENT_ERROR_MSG' => 'Advertise OA and Form ID are required',
+    'JS_GET_DATA_SUCCESS_MSG' => 'Get customer data successfully',
+    'JS_MAPPING_FIELD_REQUIREMENT_ERROR_MSG' => 'Field %field_list is(are) required',
+);
+

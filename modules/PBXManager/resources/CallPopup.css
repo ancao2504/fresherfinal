@@ -1,0 +1,2329 @@
+
+/* Added by Hieu Nguyen on 2021-12-15 to style the hotline selector */
+.popover.click2call-hotline-selector .popover-title {
+    font-size: 15px;
+}
+
+.popover.click2call-hotline-selector .popover-content ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.popover.click2call-hotline-selector .popover-content ul li {
+    margin-top: 5px;
+}
+
+.popover.click2call-hotline-selector .popover-content ul li span.hotline {
+    font-size: 15px;
+}
+/* End Hieu Nguyen */
+
+#callCenterContainer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 0px;
+    overflow: visible;
+    z-index: 1050;
+}
+
+#callCenterContainer * {
+    transition: all .3s ease;
+}
+
+#callCenterContainer .inputElement,
+#callCenterContainer .inputElement * {
+    transition: none;
+}
+
+#callCenterContainer .call-popups {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    max-width: 100%;
+    align-items: flex-end;
+}
+
+#callCenterContainer .call-popups.fancyScrollbar {
+    overflow-x: auto;
+}
+
+#callCenterContainer .call-popups.fancyScrollbar::-webkit-scrollbar {
+    height: 10px !important;
+}
+
+#callCenterContainer .call-popups.fancyScrollbar::-webkit-scrollbar-track-piece {
+    background:rgba(214, 218, 220, 0.3) !important;
+}
+
+/* Modified by Vu mai on 2022-09-16 to restyle popup call when have tab */
+.call-popup {
+	height: 380px;
+    min-width: 240px;
+    background: #ecf5fc;
+    box-shadow: 1px 1px 8px #aaa;
+    position: relative;
+    margin: 0px 10px;
+    border: 1px solid #cacaca;
+    overflow: hidden;
+    padding: 0px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.call-popup .left-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.call-popup .right-side {
+	width: 450px;
+}
+
+.call-popup .right-side .tab-header {
+	background-color: #3598db;
+}
+
+.call-popup .right-side .tab-header .nav-tabs li {
+	margin: 0;
+}
+
+.call-popup .right-side .tab-header .nav-tabs li a {
+	color: #fff !important;
+	cursor: pointer;
+}
+
+.call-popup .right-side .tab-header .nav-tabs > li.active > a {
+	background-color: #1e72ab !important;
+}
+
+.call-popup .right-side .tab-header .nav-tabs > li > a:hover {
+	background-color: transparent !important;
+}
+
+.call-popup .right-side .tab-content {
+	height: 100%;
+}
+
+.call-popup .right-side .tab-content #call-script-info {
+	height: 100%;
+	background: #fff;
+}
+
+.call-popup .right-side .tab-content #call-script-info .container {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 0px 15px 15px;
+    height: 100%;
+}
+
+.call-popup .right-side .tab-content #call-script-info .container #call-script {
+	height: 90%;
+    max-height: 90%;
+    overflow: auto;
+    white-space: pre-line !important;
+}
+
+.call-popup .right-side .tab-content #call-script-info .container .campaign-script-not-setup-msg {
+    font-weight: 700;
+}
+
+.call-popup .right-side .tab-content .tab-pane.active {
+	animation: slide-down 1.5s ease-out;
+}
+
+@keyframes slide-down {
+	0% { opacity: 0; transform: translateY(30%); }
+	30% { opacity: 1; transform: translateY(0%); }
+}
+
+.call-popup .right-side .tab-content .modal-dialog {
+	margin: 0 !important;
+}
+
+.call-popup .right-side .tab-content .modal-content {
+	width: 450px !important;
+}
+
+.call-popup .right-side .tab-content .modal-body {
+	padding: 0px 15px 0px 15px;
+	overflow-x: hidden;
+}
+
+.call-popup[data-size="MEDIUM"] .right-side .tab-content .modal-body {
+	max-height: 358px !important;
+	min-height: 358px !important;
+}
+
+.call-popup[data-size="LARGE"] .right-side .tab-content .modal-body {
+	max-height: 410px !important;
+	min-height: 410px !important;
+}
+
+.call-popup .right-side .tab-content .modal-body .quick-edit-content .col-md-6 {
+	width: 100%;
+	padding: 0px;
+	padding-right: 5px;
+}
+
+.call-popup .right-side .tab-content #quick-edit .modal-body .quick-edit-content .fieldLabel {
+    min-height: auto !important;
+	background: #fff !important;
+	background-color: #fff !important;
+	padding-top: 12px !important;
+	text-align: left;
+	padding-left: 0px;
+    margin-bottom: 1em;
+}
+
+.call-popup .right-side .tab-content .modal-body .quick-edit-content .input-group {
+	width: 100% !important;
+} 
+
+.call-popup .right-side .tab-content .modal-body .quick-edit-content .fieldValue {
+    margin-bottom: 1em;
+	padding-left: 0px;
+}
+
+.call-popup .right-side .tab-content .modal-body .quick-edit-content .fieldValue textarea {
+	margin-bottom: 16px;
+}
+
+.call-popup .right-side .tab-content .modal-body .quick-edit-content .last-field .fieldValue textarea {
+    margin-bottom: 0px !important;
+}
+
+.call-popup .right-side .tab-content .modal-body .quick-edit-content .select2-choices .select2-search-choice span {
+	font-size: 10px;
+}
+
+.call-popup .right-side .tab-content .modal-footer {
+	height: 49px !important;
+}
+
+.call-popup .right-side .tab-content .modal-footer button {
+	margin-top: 2px;
+}
+
+.call-popup .right-side .tab-content #inventory {
+	height: 100%;
+}
+
+.call-popup .right-side .tab-content .inventory-form .fancyScrollbar {
+	overflow-y: auto;
+    padding: 0px 15px;
+    margin-bottom: 0;
+}
+
+.call-popup .right-side .tab-content .inventory-form .modal-body .quick-edit-content td.product-name {
+	width: 22% !important;
+	max-width: 22% !important;
+	font-size: 14px;
+}
+
+.call-popup .right-side .tab-content .inventory-form .modal-body .quick-edit-content td.quantity {
+	width: 12% !important;
+}
+
+.call-popup .right-side .tab-content .inventory-form .modal-body .quick-edit-content td.price {
+	width: 35% !important;
+	font-size: 13px !important;
+}
+
+.call-popup .right-side .tab-content .inventory-form .modal-body .quick-edit-content td.total {
+	width: 31% !important;
+	font-size: 13px !important;
+}
+
+.call-popup .right-side .tab-content .inventory-form #genneral-info,
+.call-popup .right-side .tab-content .inventory-form #shipment-details
+{
+	border-top: 1px solid #eee;
+}
+
+.call-popup .right-side .tab-content .inventory-form .last-field {
+    margin-bottom: 0em !important;
+}
+
+.call-popup .right-side .tab-content .inventory-form .footer {
+	width: 450px;
+	height: 49px;
+	background-color: var(--white-2);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	border-top: 1px solid #eee;
+}
+
+.call-popup .right-side .tab-content .inventory-form .footer button {
+	height: 36px !important;
+}
+/* End Vu Mai */
+
+.call-popup[data-stage="CLOSED"] {
+    background: white;
+}
+
+.call-popup[data-direction="INBOUND"][data-handled-by-webphone="true"][data-stage="CLOSED"] {
+    height: 380px;
+}
+
+.call-popup[data-stage="CLOSED"]:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    position: absolute;
+    content: '\f0ac';
+    z-index: 0;
+    opacity: .07;
+    font-size: 400px;
+    left: 20px;
+    top: 30px;
+    color: #2a7fb8;
+}
+
+.call-popup label {
+    cursor: pointer;
+}
+
+.call-popup .disabled {
+    cursor: not-allowed;
+}
+
+.call-popup:not(.active) {
+    height: 0px !important;
+    width: 0px !important;
+    min-width: 0px !important;
+    max-width: 0px !important;
+    overflow: hidden !important;
+}
+
+.call-popup > * {
+    flex: 1;
+}
+
+.call-popup .timepicker-default[disabled]:hover {
+    border: none !important;
+}
+
+/* DISABLE TOOLTIP TRANSITION */
+.call-popup .tooltip,
+.call-popup .tooltip * {
+    transition: none;
+}
+/* END DISABLE TOOLTIP TRANSITION */
+
+/* START SHOW HIDE FEATURE ONLY FOR CONTACT */
+.call-popup:not([data-customer-type="Contacts"]) .contactsOnly{
+    display: none !important;
+}
+
+.call-popup:not([data-customer-type="Leads"]) .leadsOnly{
+    display: none !important;
+}
+
+.call-popup:not([data-customer-type="Accounts"]) .accountsOnly{
+    display: none !important;
+}
+/* END SHOW HIDE FEATURE ONLY FOR CONTACT */
+
+/* Added by Vu Mai on 2022-10-05 to show/hide button quick edit follow module */
+.call-popup:not([data-target-module="HelpDesk"]) .helpdesk-only {
+    display: none !important;
+}
+
+.call-popup:not([data-target-module="SalesOrder"]) .salesorder-only {
+    display: none !important;
+}
+
+.call-popup:not([data-target-module="Potentials"]) .potentials-only {
+    display: none !important;
+}
+
+.call-popup[data-target-module="SalesOrder"] .salesorder-hide-option {
+    display: none !important;
+}
+
+.call-popup[data-target-module="CPTelesales"] .telesales-hide-option {
+    display: none !important;
+}
+/* End Vu Mai */
+
+/* CUSTOM STYLE FOR POPUP ACTION BUTTONS */
+
+.call-popup .popup-actions {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #1e72ab;
+}
+
+.call-popup .popup-actions button {
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    margin: 0px;
+    padding: 3px 11px;
+}
+
+.call-popup .popup-actions button[name="close"] {
+    background: #c13e2c;
+}
+
+.call-popup .popup-actions button:not(:last-child) {
+    border-right: 1px solid #3285bf;
+}
+
+.call-popup .quickcreate-customer {
+    display: inline-block;
+}
+
+.call-popup .quickcreate-btns button {
+    margin-left: 0px;
+}
+
+.call-popup .action-btns button,
+.call-popup .handle-btns button {
+    /* margin-right: 0px; */
+    margin: 2px;
+}
+
+.call-popup .extra-btns button {
+    margin: 2px;
+}
+
+.call-popup .handle-btns button + .btn-label {
+    visibility: hidden;
+    transition: none !important;
+}
+
+.call-popup .handle-btns button:hover + .btn-label {
+    visibility: visible;
+}
+
+/* END CUSTOM STYLE FOR POPUP ACTION BUTTONS*/
+
+/* Modified by Vu Mai on 2022-09-06 to change size of popup call */
+.call-popup[data-size="SMALL"] {
+    min-width: 350px;
+    height: 30px;
+}
+
+.call-popup[data-size="MEDIUM"] {
+    min-width: 502px;
+    height: 450px;
+}
+
+.call-popup[data-size="LARGE"] {
+    min-width: 682px;
+    height: 500px;
+
+}
+
+.call-popup[data-size="SMALL"] .left-side {
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.call-popup[data-size="MEDIUM"] .left-side {
+    min-width: 500px;
+    max-width: 500px;
+}
+/* End Vu Mai */
+
+.call-popup[data-size="LARGE"] .left-side {
+    min-width: 680px;
+    max-width: 680px;
+    height: 500px;
+}
+
+.call-popup .call-header .cir-ava {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for Call Center Header Block Behavior */
+
+.call-popup .call-header {
+    display: grid;
+    grid-template-areas:
+        'customer-avatar'
+        'customer-summary'
+        'call-status';
+    z-index: 1;
+}
+
+.call-popup .call-header .customer-avatar {
+    grid-area: customer-avatar;
+}
+
+.call-popup .call-header .customer-summary {
+    grid-area: customer-summary;
+    width: 100%;
+}
+
+.call-popup .call-header .call-status {
+    grid-area: call-status;
+    padding-top: 12px;
+}
+
+.call-popup .call-header .extra-info {
+    grid-area: extra-info;
+}
+
+/* Added By Vu Mai on 2022-09-07 */
+.call-popup .call-header .custom-tag {
+    grid-area: custom-tag;
+}
+
+.call-popup .call-header .edit-customer-info {
+    background: transparent !important;
+    border: none !important;
+}
+/* End Vu Mai */
+
+.call-popup .call-header .customer-avatar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.call-popup .call-header .cir-ava {
+    border-color: #5f5f62;
+}
+
+.call-popup .call-footer {
+    flex: unset;
+    padding: 16px 6px;
+}
+
+.call-popup button {
+    margin: 0px 5px;
+}
+
+/* Handle template for ringing status */
+
+.call-popup[data-stage="CLOSED"] .call-header .customer-summary .info-company:not(.close-stage) {
+    display: none;
+}
+
+.call-popup[data-stage="CLOSED"] .call-header .call-status {
+    display: none;
+}
+
+.call-popup[data-stage="CLOSED"] .call-header .extra-info {
+    display: none;
+}
+
+.call-popup[data-stage="CLOSED"] .call-header .assign {
+    display: none;
+}
+
+.call-popup[data-stage="CLOSED"] .call-header {
+    grid-template-areas: 'customer-summary' 'customer-avatar';
+}
+
+/* Ringing header style */
+.call-popup[data-stage="CLOSED"] .customer-summary {
+    text-align: center;
+}
+
+.call-popup[data-stage="CLOSED"] .call-body {
+    display: none;
+}
+
+.call-popup[data-stage="CLOSED"] .call-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    flex-direction: column;
+}
+
+.call-popup[data-stage="CLOSED"] .call-footer button[name="save_call_log_with_ticket"],
+.call-popup[data-stage="CLOSED"] .call-footer button[name="save_call_log"] {
+    display: none;
+}
+
+.call-popup .info-name {
+    font-size: 16px;
+    color: #297fb8;
+    margin-top: 32px;
+    line-height: 1.3em;
+    max-height: 2.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.call-popup .call-header .info-company {
+    line-height: 1.3em;
+    max-height: 2.6em;
+}
+
+.call-popup .info-title {
+    display: none;
+}
+
+.call-popup .info-number {
+    font-size: 14px;
+}
+
+.call-popup .info-call-status {
+    font-size: 12px;
+}
+
+.call-popup .info-call-direction {
+    font-size: 14px;
+}
+
+.call-popup .hotline-container {
+    /* width: 130px; */
+    text-align: center;
+    color: white;
+    margin-top: 6px;
+}
+
+.call-popup .hotline-container i {
+    margin-right: 4px;
+}
+
+.call-popup .hotline-container-ringing {
+    font-size: 16px;
+    margin-top: 12px;
+    color: #333;
+}
+
+/* Custom Style for button */
+
+.call-popup .btn {
+    font-size: 13px;
+    padding: 3px 9px;
+}
+
+/* STYLE FOR ANSWERED AND NORMAL SIZE*/
+.call-popup[data-stage="OPEN"] .abs-animate {
+    display: none;
+}
+
+.call-popup[data-stage="OPEN"] .cc-animate {
+    animation: none;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .cir-ava {
+    border-color: white;
+}
+
+/* Modified by Vu Mai on 2022-09-08 to update style call-header this have custom tag */
+.call-popup[data-stage="OPEN"] .call-header {
+    grid-template-areas:
+        'customer-avatar customer-summary call-status'
+        'extra-info extra-info call-status'
+		'custom-tag custom-tag custom-tag';
+    grid-template-columns: 74px auto 140px;
+    background-color: #3598db;
+    padding: 10px;
+    flex: unset;
+    justify-content: stretch;
+    grid-gap: 0px 10px;
+    z-index: 9;
+}
+/* End Vu Mai */
+
+.call-popup[data-stage="OPEN"] .call-header * {
+    color: white;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .customer-avatar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .info-name {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .info-number {
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .info-call-direction {
+    display: none;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .info-company {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .assign {
+    margin-top: 4px;
+    margin-bottom: 3px;
+    font-size: 12px;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .assign * {
+    font-size: 14px;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .assign i {
+    font-size: 13px;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .assign .ext-num {
+    font-style: italic;
+}
+
+.call-popup[data-stage="OPEN"] .call-header .assign .ext-num:not(:empty):before {
+    content: '(';
+}
+
+.call-popup[data-stage="OPEN"] .call-header .assign .ext-num:not(:empty):after {
+    content: ')';
+}
+
+.call-popup[data-stage="OPEN"] .call-footer button[name="close"] {
+    display: none;
+}
+
+.call-popup[data-stage="OPEN"] .call-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 5px;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+
+.call-popup[data-stage="OPEN"] .hotline-container-ringing {
+    display: none !important;
+}
+
+.call-popup .quickcreate-btns {
+    display: none;
+}
+
+.call-popup[data-stage="OPEN"] .quickcreate-btns {
+    display: block;
+    flex: 1;
+    padding-left: 5px;
+}
+
+.call-popup:not([data-stage="CLOSED"]) .handle-btns {
+    display: none;
+}
+
+.call-popup[data-stage="CLOSED"] .action-btns .btn {
+    display: none;
+}
+
+.call-popup .endCallBtn,
+.call-popup .endCallBtn-wrapper {
+    display: none;
+}
+
+.call-popup:not([data-handled-by-webphone="true"]) .answerBtn,
+.call-popup:not([data-handled-by-webphone="true"]) .answerBtn-wrapper,
+.call-popup:not([data-handled-by-webphone="true"]) .endCallBtn,
+.call-popup:not([data-handled-by-webphone="true"]) .endCallBtn-wrapper {
+    display: none !important;
+}
+
+/* Added By Vu Mai on 2022-09-07 to hide element when call popup is ringing */
+.call-popup[data-state="RINGING"] .left-side {
+	width: 240px;
+}
+
+.call-popup[data-state="RINGING"] .right-side {
+	display: none;
+}
+
+.call-popup[data-state="RINGING"] .call-header .custom-tag {
+	display: none;
+}
+
+.call-popup[data-state="RINGING"][data-stage="CLOSED"] .info-name {
+	width: 100%;
+}
+
+.call-popup[data-state="RINGING"] .call-header .edit-customer-info {
+	display: none;
+}
+/* End Vu Mai */
+
+.call-popup[data-state="ANSWERED"] .endCallBtn {
+    display: block;
+}
+
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"] .handle-btns .endCallBtn.hangup {
+    display: block;
+}
+
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"] .endCallBtn.decline,
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"] .endCallBtn-wrapper.decline {
+    display: none;
+}
+
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"][data-transferred="true"] .endCallBtn.hangup,
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"][data-transferred="true"] .endCallBtn-wrapper.hangup {
+    display: none;
+}
+
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"][data-transferred="true"] .endCallBtn.decline,
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"][data-transferred="true"] .endCallBtn-wrapper.decline {
+    display: block;
+}
+
+.call-popup[data-direction="INBOUND"][data-state="RINGING"] .endCallBtn.hangup,
+.call-popup[data-direction="INBOUND"][data-state="RINGING"] .endCallBtn-wrapper.hangup {
+    display: none !important;
+}
+
+.call-popup[data-handled-by-webphone="true"][data-state="RINGING"] .saveLogBtn {
+    display: none;
+}
+
+.call-popup[data-direction="OUTBOUND"] .answerBtn,
+.call-popup[data-direction="OUTBOUND"] .answerBtn-wrapper {
+    display: none;
+}
+
+.call-popup:not([data-from-free-call-btn="true"]) .warning-free-call {
+    display: none !important;
+}
+
+.call-popup:not([data-transfer-call="true"]) .showTransferCallModal {
+    display: none !important;
+}
+
+.call-popup[data-state="HANGUP"] .showTransferCallModal,
+.call-popup[data-state="TRANSFERRED"] .showTransferCallModal,
+.call-popup[data-state="REJECTED"] .showTransferCallModal {
+    display: none !important;
+}
+
+.transfer-call-container .dataTables_paginate .paginate_button {
+    padding: 0px !important;
+}
+
+.modal-content.transferCall .transferCallBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.modal-content.transferCall .clearFilters {
+    margin: auto;
+    height: 28px;
+}
+
+.call-popup[data-stage="CLOSED"] .handle-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.call-popup .handle-btns .btn-wrapper {
+    display: none !important;
+}
+
+.call-popup[data-webphone-answer-supported="true"] .handle-btns .answerBtn-wrapper {
+    display: inline-flex !important;
+}
+
+.call-popup[data-direction="OUTBOUND"] .handle-btns .answerBtn-wrapper {
+    display: none !important;
+}
+
+.call-popup[data-webphone-reject-supported="true"] .handle-btns .endCallBtn-wrapper.decline {
+    display: inline-flex !important;
+}
+
+.call-popup[data-webphone-hangup-supported="true"] .handle-btns .endCallBtn-wrapper.hangup {
+    display: inline-flex !important;
+}
+
+.call-popup[data-direction="INBOUND"][data-webphone-hangup-supported="true"] .handle-btns .endCallBtn-wrapper.hangup {
+    display: none !important;
+}
+
+.call-popup .action-btns .endCallBtn {
+    display: none !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-popup .action-btns .endCallBtn > span {
+    height: 14px;
+    margin-right: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.call-popup[data-webphone-hangup-supported="true"] .action-btns .endCallBtn {
+    display: inline-flex !important;
+}
+
+.call-popup[data-state="REJECTED"][data-webphone-hangup-supported="true"] .action-btns .endCallBtn {
+    display: none !important;
+}
+
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"][data-webphone-hangup-supported="true"] .action-btns .endCallBtn {
+    display: none !important;
+}
+
+.call-popup[data-state="HANGUP"][data-webphone-hangup-supported="true"] .action-btns .endCallBtn {
+    display: none !important;
+}
+
+.call-popup:not([data-webphone-mute-supported="true"]) .muteIncommingCall {
+    display: none !important;
+}
+
+.call-popup:not([data-stage="CLOSED"]) .muteIncommingCall {
+    display: none !important;
+}
+
+.call-popup[data-transferred="true"] .showTransferCallModal {
+    display: none !important;
+}
+
+.call-popup[data-direction="OUTBOUND"][data-state="RINGING"] .showTransferCallModal {
+    display: none !important;
+}
+
+.call-popup[data-direction="OUTBOUND"] .muteIncommingCall {
+    display: none !important;
+}
+
+.call-popup[data-direction="OUTBOUND"][data-transferred="true"] .answerBtn,
+.call-popup[data-direction="OUTBOUND"][data-transferred="true"] .answerBtn-wrapper {
+    display: inline-flex;
+}
+
+/* Animation */
+
+.abs-animate {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.animate-cir {
+    border: 2px solid #aeaeb0;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.cc-animate {
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+
+.color-bound {
+    animation-name: colorBound;
+}
+
+.border-bound {
+    animation-name: borderBound;
+}
+
+.callCenter.popup-animate {
+    animation-duration: 0.5s;
+    animation-name: popUp;
+    animation-timing-function: ease-out;
+}
+
+@keyframes borderBound {
+    from {
+        width: 90px;
+        height: 90px;
+        border-color: #aeaeb0;
+    }
+    to {
+        width: 180px;
+        height: 180px;
+        border-color: transparent;
+    }
+}
+
+@keyframes colorBound {
+    0% {
+        border-color: #5f5f62;
+    }
+    25% {
+        border-color: #aeaeb0;
+    }
+    75% {
+        border-color: #5f5f62;
+    }
+}
+
+@keyframes popUp {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 280px;
+    }
+}
+
+/* Handle phone animate*/
+
+.fa-ava.shake-animate::before {
+    animation-name: shake;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    /*     animation-direction: alternate-reverse; */
+    animation-timing-function: ease-in-out;
+    /*     transform: rotate(135deg); */
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(17deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.call-popup .timer .time, .call-popup .timer .time-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.call-popup .timer .time > *, .call-popup .timer .time-description > * {
+    text-align: center;
+    line-height: 1em;
+}
+
+.call-popup .timer .time > div {
+    color: #feff7c;
+}
+
+.call-popup[data-stage="OPEN"] .call-direction-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-popup[data-stage="OPEN"] .call-direction-wraper .hotline-container {
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 18px;
+}
+
+.call-popup[data-stage="OPEN"] .call-direction {
+    text-align: center;
+    margin: 4px 0px;
+    margin-top: 8px;
+}
+
+.call-popup[data-stage="OPEN"] .connection-status {
+    text-align: center;
+    font-size: 13px;
+    margin: 12px 0px;
+    margin-bottom: 1px;
+}
+
+.call-popup .timer .time-description > * {
+    font-size: 10px;
+    opacity: .8;
+}
+
+.call-popup[data-stage="OPEN"] .timer {
+    padding: 0px 14px;
+}
+
+.call-popup .timer .time > * {
+    font-size: 20px;
+    position: relative;
+}
+
+.call-popup .timer .time > *:not(:last-child):after {
+    content: ':';
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    margin-top: -.5em;
+}
+
+.call-popup[data-stage="OPEN"] .connection-status > i {
+    /* font-size: 10px; */
+    color: #ccc;
+}
+
+.call-popup[data-stage="OPEN"] .connection-status > i.active {
+    color: #33b733;
+}
+
+.call-popup[data-size="MEDIUM"] .popup-actions button[name="normalmize"],
+.call-popup[data-size="MEDIUM"] .popup-actions button[name="restore"] {
+    display: none;
+}
+
+.call-popup[data-size="LARGE"] .popup-actions button[name="maximize"],
+.call-popup[data-size="LARGE"] .popup-actions button[name="restore"] {
+    display: none;
+}
+
+/* [START] HANDLE CALL TABS BASE BEHAVIOR */
+.call-tabs {
+    margin: 0px;
+    padding: 0px;
+}
+
+.call-tabs > * {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.call-tab-pane:not(.active) {
+    display: none !important;
+}
+/* [END] HANDLE CALL TABS BASE BEHAVIOR */
+
+/* [START] HANDLE CALL TABS BEHAVIOR */
+.call-popup .call-tabs {
+    background: #3598db;
+    color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-height: 27px;
+}
+
+.call-popup .call-tabs.fancyScrollbar::-webkit-scrollbar {
+    height: 4px !important;
+}
+
+.call-popup .call-tabs > * {
+    padding: 4px 12px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    /* border-right: 1px solid #ecf5fc; */
+}
+
+.call-popup .call-tabs > *.active {
+    /* border-bottom: 2px solid #ffffff; */
+    background: #1e72ab;
+}
+/* [END] HANDLE CALL TABS BEHAVIOR */
+
+/* [START] HANDLE CALL MAIN CONTENT SCROLL */
+.call-popup .main-form {
+    flex: 1;
+    max-height: 100%;
+    overflow-y: auto;
+    /* padding: 10px; */
+    background: white;
+}
+
+.call-popup .call-body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 70%;    /* Added by Vu Mai on 2022-10-05 to set height for call body */
+}
+
+.call-popup .main-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    max-height: calc(100% - 27px);
+}
+/* [END] HANDLE CALL MAIN CONTENT SCROLL */
+
+/* [START] STYLE FOR CALL BACK LATER ELEMENTS */
+.call-popup .call-back-time .time {
+    width: 96px;
+    min-width: 96px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+}
+
+.call-popup .call-back-time .time input {
+    height: 100%;
+    width: 100%;
+}
+
+.call-popup .call-back-time {
+    margin-bottom: 8px;
+}
+
+.call-popup .call-back-time-other-toggle {
+    display: inline-block;
+    height: 30px;
+    width: 96px;
+    margin-right: 6px;
+    vertical-align: top;
+}
+
+.call-popup .call-back-time-other-content {
+    display: inline-block;
+}
+/* [END] STYLE FOR CALL BACK LATER ELEMENTS */
+
+.call-popup .wraper.note {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* box-shadow: 1px 1px 2px #bfbfbf; */
+    position: relative;
+    background: white;
+    z-index: 2;
+}
+
+.call-popup .wraper.note .call-center-note {
+    border: none;
+    border-radius: 1px;
+    resize: none;
+    flex: 1;
+    width: 100% !important;
+    padding: 8px;
+    color: #777;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.call-popup .wraper.note .call-center-note::-webkit-scrollbar {
+    width: 5px;
+}
+
+.call-popup .wraper.note .call-center-note::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 2px;
+}
+
+.call-popup .wraper.note .call-center-title {
+    border: none;
+    border-radius: 1px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 6px 8px;
+    font-size: 15px !important;
+    color: #666;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.call-popup .wraper.note .call-center-title::-webkit-input-placeholder,
+.call-popup .wraper.note .call-center-note::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #aaa;
+}
+
+.call-popup .wraper.note .call-center-title::-moz-placeholder,
+.call-popup .wraper.note .call-center-note::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #aaa;
+}
+.call-popup .wraper.note .call-center-title:-ms-input-placeholder,
+.call-popup .wraper.note .call-center-note:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #aaa;
+}
+.call-popup .wraper.note .call-center-title:-moz-placeholder,
+.call-popup .wraper.note .call-center-note:-moz-placeholder {
+    /* Firefox 18- */
+    color: #aaa;
+}
+
+/* [START] HANDLE HOW SMALL SIZE LOOK */
+.call-popup[data-size="SMALL"] [name="minimize"],
+.call-popup[data-size="SMALL"] [name="maximize"],
+.call-popup[data-size="SMALL"] [name="normalmize"] {
+    display: none;
+}
+
+/* Added By Vu Mai on 2022-09-16 to hide popup tabs */
+.call-popup[data-size="SMALL"] .right-side {
+    display: none !important;
+}
+/* End Vu Mai */
+
+.call-popup[data-size="SMALL"] .call-header {
+    padding: 0px 8px;
+    display: flex;
+    /* height: 100%; */
+}
+
+.call-popup[data-size="SMALL"] .call-header .customer-avatar,
+.call-popup[data-size="SMALL"] .call-header .call-status > *:not(.popup-actions),
+.call-popup[data-size="SMALL"] .call-header .customer-summary > *:not(.info-title) {
+    display: none;
+}
+
+.call-popup[data-stage="OPEN"][data-size="SMALL"] .call-header .info-title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin: 0px;
+    padding: 8px 0px;
+    max-width: 80%;
+}
+
+.call-popup[data-size="SMALL"] .popup-actions button {
+    padding: 6px 13px;
+}
+
+.call-popup[data-size="SMALL"] .call-header .extra-info {
+    display: none;
+}
+
+/* Added By Vu Mai on 2022-09-08 to hide custom tag when call popup is ringing */
+.call-popup[data-size="SMALL"] .call-header .custom-tag {
+	display: none;
+}
+/* End Vu Mai */
+/* [END] HANDLE HOW SMALL SIZE LOOK */
+
+/* [START] HANDLE CREATE CUSTOMER AND QUICK CREATE BEHAVIOR */
+.call-popup[data-identified="false"] .quickcreate-btns .quickcreate-related{
+    display: none;
+}
+
+.call-popup[data-identified="true"] .quickcreate-btns .quickcreate-customer{
+    display: none;
+}
+
+/* Added by Vu Mai on 2022-09-06 to restyle button more in popup call */
+.call-popup .quickcreate-btns .quickcreate-related button {
+    width: 34px;
+}
+/* End Vu Mai */
+
+.call-popup[data-identified="undefined"] [data-tab="call-list"],
+.call-popup[data-identified="undefined"] .quickcreate-btns > * {
+    display: none;
+}
+/* [END] HANDLE CREATE CUSTOMER AND QUICK CREATE BEHAVIOR */
+
+/* [START] HANDLE SYNC CUSTOMER INFO POUP STYLE HAND BEHAVIOR */
+.syncCustomerPopup .modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.syncCustomerPopup .call-tabs {
+    background: white;
+    border-bottom: 1px solid #999;
+}
+
+.syncCustomerPopup .call-tabs .call-tab {
+    color: black;
+    padding: 6px 10px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.syncCustomerPopup .call-tabs .call-tab.active {
+    border-bottom: 3px solid #555;
+}
+
+.syncCustomerPopup .create-customer-container {
+    height: 400px;
+}
+
+.syncCustomerPopup .new-customer {
+    height: 100%;
+}
+
+.syncCustomerPopup .new-customer form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.syncCustomerPopup form .form-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.syncCustomerPopup .call-tab-pane,
+.syncCustomerPopup form[name="search_customer"] {
+    height: 100%;
+}
+
+.syncCustomerPopup form .fieldValue label {
+    cursor: pointer;
+}
+
+.syncCustomerPopup .toggleBaseOnContact:not(.active) {
+    display: none;
+}
+
+.syncCustomerPopup .fieldLabel.salutationtype .select2-container {
+    width: 90px !important;
+    margin-left: 6px;
+}
+
+.syncCustomerPopup .fieldBlockContainer .fieldLabel {
+    text-align: right;
+    width: 150px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.syncCustomerPopup .fieldBlockContainer .fieldValue {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.syncCustomerPopup .fieldValue.name > input {
+    display: inline-block;
+}
+
+.syncCustomerPopup .fieldValue.name > input:first-child {
+    margin-right: 6px;
+}
+
+.syncCustomerPopup .fieldValue.name > input[name="firstname"] {
+    width: 100px;
+}
+
+.syncCustomerPopup .fieldValue.name {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.syncCustomerPopup .toggleBaseOnContact > td {
+    background: unset !important;
+}
+
+.syncCustomerPopup .new-customer form .form-content {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.syncCustomerPopup .new-customer .fieldBlockContainer .inputElement {
+    width: 180px;
+}
+/* [END] HANDLE SYNC CUSTOMER INFO POUP STYLE HAND BEHAVIOR */
+
+.call-popup .urgent-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: #f19191;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin: 0px;
+}
+
+.call-popup .urgent-close:not(.active) {
+    display: none !important;
+}
+
+/* [START] HANDLE SAVE CALL LOG BUTTONS SHOW HIDE DUE TO CURRENT ACTIVE TAB */
+.call-popup:not([data-call-tab-active="call-log"]) .saveLogBtn {
+    display: none !important;
+}
+/* [END] HANDLE SAVE CALL LOG BUTTONS SHOW HIDE DUE TO CURRENT ACTIVE TAB */
+
+/* [START] HANDLE SHOW HIDE LOGIC WITH CALL RESULT */
+.call-popup:not([data-call-result="call_result_call_back_later"]) .toggleCallResultCallBack {
+    display: none !important;
+}
+
+
+.call-popup:not([data-call-result="call_result_customer_interested"]) .toggleCallResultCustomerInterested {
+    display: none !important;
+}
+/* [START] HANDLE SHOW HIDE LOGIC WITH CALL RESULT */
+
+/* [START] HANDLE CALL TAB CONTENT DISPLAY */
+.call-popup .related-tab,
+.call-popup .faq-tab {
+    display: flex;
+    max-height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.call-popup .call-tab-empty .content,
+.call-popup .related-list-no-data,
+.call-popup .faq-tab-empty .content,
+.call-popup .faq-list-no-data {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+    border: 1px dashed #333;
+}
+
+.call-popup .call-tab-pane .call-tab-loading {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #999;
+}
+
+.call-popup .call-tab-pane:not([data-status="SUCCESS"]) .call-tab-content {
+    display: none !important;
+}
+
+.call-popup .call-tab-pane:not([data-status="ERROR"]) .call-tab-empty {
+    display: none !important;
+}
+
+.call-popup .call-tab-pane:not([data-status="LOADING"]) .call-tab-loading {
+    display: none !important;
+}
+
+.call-popup .call-tab-pane .call-tab-content,
+.call-popup .call-tab-empty,
+.call-popup .faq-tab-content {
+    overflow: auto;
+    padding: 8px;
+    width: 100%;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list {
+    width: 100%;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list a {
+    /* text-decoration: underline !important; */
+    color: #2a6496;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list a:hover {
+    text-decoration: underline !important;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list th,
+.call-popup .call-tab-pane .call-tab-content table.related-list td {
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list th {
+    white-space: nowrap;
+    background: #ecf5fc;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list td {
+    /* white-space: nowrap; */
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list th.subject,
+.call-popup .call-tab-pane .call-tab-content table.related-list td.subject {
+    min-width: 200px;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list td.date_start {min-width: 150px;}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list td.description {
+    min-width: 200px;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list th.eventstatus,
+.call-popup .call-tab-pane .call-tab-content table.related-list td.eventstatus {
+    min-width: 100px;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list td.assigned_user_id {
+    min-width: 150px;
+}
+
+.call-popup .call-tab-pane .call-tab-content table.related-list td.createdtime {
+    min-width: 150px;
+}
+/* [END] HANDLE CALL TAB CONTENT DISPLAY */
+
+/* [START] HANDLE FAQ TAB DISPLAY */
+
+.call-popup .faq-tab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-popup .faq-tab .filter-form {
+    margin-bottom: 8px;
+}
+
+.call-popup .faq-tab .filter-form .table {
+    margin: 0px;
+}
+
+.call-popup .faq-tab .filter-form .fieldValue {
+    padding: 0px;
+}
+
+.call-popup .faq-tab .faq-result-display {
+    height: 100%;
+}
+
+.call-popup .faq-result-display:not([data-status="SUCCESS"]) .faq-tab-result-content {
+    display: none !important;
+}
+
+.call-popup .faq-result-display:not([data-status="ERROR"]) .faq-tab-empty {
+    display: none !important;
+}
+
+.call-popup .faq-result-display:not([data-status="LOADING"]) .faq-tab-loading {
+    display: none !important;
+}
+
+.call-popup .faq-result-display .faq-tab-loading {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+    color: #999;
+}
+
+.call-popup .faq-result-title {
+    font-size: 14px;
+    margin: 4px 0px;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.call-popup .faq-tab-result-content .faq-list > ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.call-popup .faq-tab-result-content .faq-list > ul li a {
+    color: #1f71ab;
+    font-size: 16px;
+    line-height: 1.3em;
+    display: inline-block;
+    /* margin-bottom: 6px; */
+    max-height: 3.9em;
+    overflow: hidden;
+}
+
+/* [END] HANDLE FAQ TAB DISPLAY */
+
+/* [START] HANDLE FAQ SEARCH FULL POPUP STYLE */
+#faqListViewTable .fieldLabel.number {
+    width: 10px !important;
+}
+
+#faqListViewTable .fieldValue.question {
+    width: auto !important;
+}
+/* [END] HANDLE FAQ SEARCH FULL POPUP STYLE */
+
+/* [START] HANDLE FAQ SERCH FULL POPUP BEHAVIOR */
+.call-popup:not([data-call-tab-active="faq-list"]) .openFaqFullSearchPopup {
+    display: none !important;
+}
+
+.call-popup-search-faq-full:not([data-mode="SEARCH"]) .modal-content.faq-search {
+    display: none !important;
+}
+
+.call-popup-search-faq-full:not([data-mode="DETAIL"]) .modal-content.faq-detail {
+    display: none !important;
+}
+
+/* .modal-content.faq-search .modal-body {
+    height: 460px;
+    max-height: 460px;
+    overflow: auto;
+} */
+/* [END] HANDLE FAQ SERCH FULL POPUP BEHAVIOR */
+
+/* [START] HANDLE HOW CALL TAB COUNTER ACT */
+.call-popup .call-body .call-tab {
+    position: relative;
+}
+
+.call-popup .call-body .call-tab .counter {
+    position: relative;
+    top: -6px;
+    right: -2px;
+    display: inline-block;
+    background: #c13e2c;
+    padding: 0px 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.call-popup .call-body .call-tab .counter:empty {
+    display: none;
+}
+/* [END] HANDLE HOW CALL TAB COUNTER ACT */
+
+/* [START] SUPPORT HANDLE HOW MAIN FORM LOOK LIKE WITH SIZE LARGE */
+.call-popup .inlineOnLarge.active {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+}
+
+.call-popup .toggleCallResultCustomerInterested .fieldValue.name > *:not(:last-child) {
+    margin-right: 6px;
+    margin-bottom: 6px;
+    vertical-align: top;
+}
+
+.call-popup .inputGroup .inputElement:not(:last-child) {
+    margin-right: 6px;
+    margin-bottom: 6px;
+    vertical-align: top;
+}
+
+.call-popup[data-size="LARGE"] .toggleCallResultCustomerInterested .fieldValue.name .inputElement.select2 {
+    width: 96px !important;
+}
+
+.call-popup form[name="call_log"] .fieldLabel {
+    min-width: 105px;
+}
+
+.call-popup:not([data-customer-type="Contacts"]) .saveLogBtn[name="save_call_log_with_ticket"]{
+    display: none !important;
+}
+/* [END] SUPPORT HANDLE HOW MAIN FORM LOOK LIKE WITH SIZE LARGE */
+
+/* [START] HANDLE FAQ SEARCH DATA TABLE */
+.call-popup-search-faq-full .dataTables_scrollHeadInner {
+    width: 100% !important;
+}
+
+.call-popup-search-faq-full table.table.table-striped.table-bordered.dataTable.no-footer {
+    width: 100% !important;
+}
+/* [END] HANDLE FAQ SEARCH DATA TABLE */
+
+/* [START] HANDLE HOW ACCOUNT NAME DISPLAY */
+.call-popup:not([data-stage="CLOSED"]) .call-header .customer-summary .info-company.close-stage {
+    display: none;
+}
+
+.call-popup .call-header .customer-summary .info-company.close-stage {
+    font-size: 16px;
+    padding: 0px 4px;
+    max-height: 3.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* font-size: 12px; */
+}
+/* [START] HANDLE HOW ACCOUNT NAME DISPLAY */
+
+/* [START] COMMON CONTACT LEAD VISUAL BEHAVIOR HANDLE */
+.call-popup:not([data-customer-type="Contacts"]) .forContacts {
+    display: none !important;
+}
+
+.call-popup:not([data-customer-type="Leads"]) .forLeads {
+    display: none !important;
+}
+
+.call-popup:not([data-customer-type="Accounts"]) .forAccounts {
+    display: none !important;
+}
+
+.call-popup:not([data-customer-type]) .forContacts.forDefault,
+.call-popup:not([data-customer-type]) .forLeads.forDefault,
+.call-popup:not([data-customer-type]) .forAccounts.forDefault {
+    display: block !important;
+}
+/* [END] COMMON CONTACT LEAD VISUAL BEHAVIOR HANDLE */
+
+.call-popup[data-size="LARGE"] form.callLog [name="firstname"] {
+    width: 120px;
+}
+
+.call-popup[data-size="LARGE"] form.callLog [name="lastname"] {
+    width: 220px;
+}
+
+.call-popup[data-size="LARGE"] form.callLog .product_ids .select2-container,
+.call-popup[data-size="LARGE"] form.callLog .service_ids .select2-container {
+    display: inline-block;
+    width: 514px;
+    margin: 0px;
+}
+
+.call-popup[data-size="LARGE"] form.callLog [name="account_id_display"],
+.call-popup[data-size="LARGE"] form.callLog [name="company"] {
+    width: 100%;
+}
+
+.call-popup .input-group.account_id {
+    width: 230px;
+}
+
+.call-popup[data-size="LARGE"] .input-group.account_id {
+    width: 481px;
+}
+
+.call-popup .forLeads {
+    display: inline-block;
+}
+
+/* [START] STYLE SELECT TIME FIELD */
+.call-popup .main-form .input-group.select-time [role="presentation"] {
+    display: none;
+}
+
+.call-popup .main-form .call-back-time .input-group {
+    height: 30px;
+    margin: 0px;
+    margin-right: 6px;
+    box-sizing: border-box;
+    min-width: auto;
+    width: 80px;
+    margin-bottom: 6px;
+}
+
+.call-popup .main-form .call-back-time .input-group .select2-container {
+    width: 80px;
+}
+
+.call-popup .main-form .call-back-time .input-group .select2-choice {
+    border: none;
+    height: 100%;
+}
+
+.call-popup .main-form .call-back-time .input-group .select2-chosen {
+    margin: 0px;
+}
+
+.call-popup .main-form .call-back-time .input-group .input-group-addon {
+    border-left: 1px solid #ccc;
+}
+
+.call-popup .main-form .input-wraper.select-moment .select2-choice {
+    height: 30px;
+}
+
+.call-popup .main-form .input-wraper.select-moment .select2-container {
+    width: 140px;
+}
+
+.call-popup .main-form .input-wraper.select-moment .select2-chosen {
+    margin: 0px;
+}
+
+.call-popup .main-form .input-wraper.time-start,
+.call-popup .main-form .input-wraper.date-start {
+    width: 155px;
+    min-width: unset;
+}
+
+.call-popup[data-size="LARGE"] .main-form .input-wraper.time-start {
+    width: 110px;
+    min-width: 110px;
+}
+
+.call-popup[data-size="LARGE"] .main-form .input-wraper.date-start {
+    width: 120px;
+    min-width: 120px;
+}
+/* [END] STYLE SELECT TIME FIELD */
+
+/* [START] HANDLE MAIN FORM STYLE */
+
+.call-popup .main-form .fieldLabel {
+    width: 130px !important;
+}
+
+/* [END] HANDLE MAIN FORM STYLE */
+
+/* HANDLE SHOW HIDE FOR INBOUND/OUTBOUND ELEMENT */
+.call-popup:not([data-direction="INBOUND"]) .forInbound {
+    display: none !important;
+}
+
+.call-popup:not([data-direction="OUTBOUND"]) .forOutbound {
+    display: none !important;
+}
+/* [END] HANDLE SHOW HIDE FOR INBOUND/OUTBOUND ELEMENT */
+
+.call-popup .field-value-wraper.events_call_direction {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0px;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+.call-popup .field-value-wraper.events_call_direction i {
+    transform: rotate(45deg);
+    font-size: 15px;
+}
+
+.call-popup td.related-item.events_call_direction {
+    text-align: center;
+}
+
+.call-popup .field-value-wraper.events_call_direction {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 2px;
+    border-bottom: 2px solid;
+    margin: auto;
+}
+
+.call-popup .field-value-wraper.events_call_direction i {
+    transform: rotate(45deg);
+    font-size: 14px;
+}
+
+.call-popup td.related-item.events_call_direction {
+    text-align: center;
+}
+
+.call-popup .field-value-wraper.events_call_direction.Outbound {
+    color: #007bff;
+}
+
+.call-popup .field-value-wraper.events_call_direction.Inbound {
+    color: #28a745;
+}
+
+.call-popup .faq-tab-result-content .faq-list li {
+    margin-bottom: 6px;
+}
+
+.call-popup .faq-tab-result-content .faq-list li .short-answer {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#faqListViewTable .faq-link { 
+    color: #2a6496;
+}
+
+#faqListViewTable .short-answer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 820px;
+    margin: 0px;
+}
+.call-popup .faq-tab-result-content .faq-list li {
+    margin-bottom: 6px;
+}
+
+.call-popup .faq-tab-result-content .faq-list li .short-answer {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#faqListViewTable .faq-link { 
+    color: #2a6496;
+}
+
+#faqListViewTable .short-answer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 820px;
+    margin: 0px;
+}
+
+.displayOnEmail .email-tip {
+    color: #007bff;
+}
+
+.warning-free-call {
+    padding: 0px 8px;
+    color: #e44554 !important;
+    animation-name: blink-fast;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.warning-free-call::after {
+    content: '';
+    display: block;
+    border: 1px solid #e44554 !important;
+    border-radius: 50%;
+    padding: 0px;
+    position: absolute;
+    animation-name: blink-item;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+@keyframes blink-fast {
+    0% {
+        opacity : .7;
+    }
+    70% {
+        opacity : 1;
+    }
+    100% {
+        opacity : 1;
+    }
+}
+
+@keyframes blink-item {
+    0% {
+        opacity : 1;
+        width: 14px;
+        height: 14px;
+    }
+    80% {
+        width: 25px;
+        height: 25px;
+    }
+    100% {
+        opacity : 0;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+#callCenterContainer .call-popup .tooltip {
+    transition: unset;
+}
+
+#callCenterContainer .warning-free-call + .tooltip .tooltip-inner {
+    color: #e44554;
+    background: white;
+    border: 1px solid #e44554;
+}
+
+#callCenterContainer .warning-free-call + .tooltip.top .tooltip-arrow {
+    border-top-color: #e44554;
+}
+
+#callCenterContainer .warning-free-call + .tooltip.right .tooltip-arrow {
+    border-right-color: #e44554;
+}
+
+#callCenterContainer .call-popup[data-stage="CLOSED"] .warning-free-call + .tooltip {
+    width: 156px;
+    left: unset !important;
+    right: 0px !important;
+}
+
+#callCenterContainer .call-popup[data-stage="CLOSED"] .warning-free-call + .tooltip .tooltip-arrow {
+    left: unset !important;
+    right: 67px;
+}
+
+#callCenterContainer .call-popup[data-stage="OPEN"] .warning-free-call + .tooltip .tooltip-inner {
+    width: 160px;
+}
+
+.call-popup td.fieldValue.subject input,
+.call-popup td.fieldValue.description textarea {
+    width: 100%;
+}
+
+.call-popup[data-stage="CLOSED"] .extra-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-popup[data-stage="CLOSED"] .extra-btns button {
+    border: none;
+    background: transparent;
+    margin-top: 4px;
+}
+
+.call-popup[data-stage="CLOSED"] .extra-btns button.showTransferCallModal {
+    color: #1a4d81;
+}
+
+.call-popup[data-stage="CLOSED"] .extra-btns button.muteIncommingCall {
+    color: #d24836;
+}
+
+.call-popup .btn-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 6px;
+}
+
+.call-popup .round-btn {
+    height: 2em;
+    width: 2em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.call-popup .btn-wrapper .btn-label {
+    font-size: .8em;
+}
+
+.call-popup[data-stage="OPEN"] .action-btns {
+    display: flex;
+}
+
+.call-popup .quickcreate-related button {
+    margin: 2px;
+}
+
+.call-popup[data-stage="CLOSED"] .customer-number {
+    font-weight: bold;
+}
+
+.call-popup .round-btn > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-popup .round-btn > i {
+    margin-top: 1px;
+}
+
+.call-popup[id="call-PROCESSING"][data-stage="CLOSED"] .action-btns {
+    display: flex;
+}
+
+.call-popup[id="call-PROCESSING"][data-stage="CLOSED"] .extra-btns {
+    display: none;
+}
+
+/* Added By Vu Mai on 2022-09-07 to hide element when call popup is processing */
+.call-popup[id="call-PROCESSING"] .left-side {
+	width: 240px;
+}
+
+.call-popup[id="call-PROCESSING"][data-stage="CLOSED"] .right-side {
+	display: none;
+}
+
+.call-popup[id="call-PROCESSING"][data-stage="CLOSED"] .custom-tag {
+	display: none;
+}
+
+.call-popup[id="call-PROCESSING"][data-stage="CLOSED"] .info-name {
+	width: 100%;
+}
+
+.call-popup[id="call-PROCESSING"][data-stage="CLOSED"] .edit-customer-info {
+	display: none;
+}
+/* End Vu Mai */
+
+/* STYLE FOR CALL STATE */
+.call-popup .call-state.tooltip-active {
+    cursor: help;
+}
+/* END STYLE FOR CALL STATE */
+
+.dataTables_wrapper .column-search-wrapper {
+    padding: 2px;
+}
+
+.dataTables_wrapper .column-search {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    padding: 4px;
+    font-weight: normal;
+}
+
+.transfer-call-container {
+    margin-top: 10px;
+}
+
+.transfer-call-container .dataTables_wrapper > .row:first-child > div {
+    width: 100%;
+    text-align: center;
+}
+
+.call-popup .customer-avatar .account-ava i {
+    font-size: 34px;
+}
+
+.call-popup .call-tabs-container {
+    display: flex;
+    justify-content: space-between;
+    background: #3598db;
+}
+
+.call-popup .call-tabs-container .extra-info-container {
+    border-left: 1px solid rgb(250 250 250 / 10%);
+}
+
+.call-popup .call-tabs {
+    flex: 1;
+}
+
+.call-popup .relatedContactId .referencefield-wrapper  {
+    width: 100%;
+    max-width: 300px;
+    display: inline-flex;
+}
+
+.call-popup .relatedContactId .input-group {
+    float: none;
+    flex: 1;
+    display: flex;
+}
+
+.call-popup .relatedContactId .inputElement {
+    z-index: 0;
+    margin: 0px;
+    flex: 1;
+    height: 32px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.call-popup .relatedContactId .quickCreateBtn {
+    width: 32px;
+    height: 32px;
+    margin-top: 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-left: 5px;
+    padding: 3px 7px;
+    text-align: center;
+    color: #666;
+    background: #F3F3F3;
+}
+
+.call-popup .relatedContactId .input-group.inputElement .input-group-addon,
+.call-popup .relatedContactId .input-group-addon,
+.call-popup .relatedContactId .clearReferenceSelection {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    line-height: 1em;
+    width: 32px !important;
+    height: 32px !important;
+    z-index: 1;
+    border-left: none;
+}
+
+.call-popup[data-customer-type="Accounts"] .toggleCallResultCustomerInterested.account_id {
+    display: none !important;
+}
+
+.call-popup[data-customer-type="CPTarget"] .dropdown-item.createPotential {
+    display: none !important;
+}
+
+/* Added bu Vu Mai on 2022-10-07*/
+.call-popup .footer {
+	position: unset !important;
+	height: 49px !important;
+	padding: 6px 5px !important;
+	border-right: none !important;
+	border-top: 1px solid #e5e5e5 !important;
+	background: #ecf5fc !important;
+}
+
+.call-popup[data-state="PROCESSING"] .footer {
+	border-top: none !important;
+	background: transparent !important;
+}
+
+.call-popup[data-state="RINGING"] .footer {
+	border-top: none !important;
+	background: transparent !important;
+}
+
+.call-popup .footer button {
+	height: 34px;
+}
+/* End Vu Mai */

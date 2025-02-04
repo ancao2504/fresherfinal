@@ -1,0 +1,37 @@
+{
+    "cdr_root": [
+        {
+            "uniqueid": "0002154870987.321",
+            "src": "201",
+            "dst": "09887542316",
+            "start": "2019-05-12",
+            "end": "2019-05-12",
+            "duration": "16",
+            "billsec": "16",
+            "disposition": "Success",
+            "recordfiles": ""
+        },
+        {
+            "uniqueid": "0002154870987.322",
+            "src": "202",
+            "dst": "09887542316",
+            "start": "2019-05-12",
+            "end": "2019-05-12",
+            "duration": "52",
+            "billsec": "52",
+            "disposition": "Success",
+            "recordfiles": ""
+        },
+        {
+            "uniqueid": "0002154870987.323",
+            "src": "0956452154",
+            "dst": "201",
+            "start": "2019-05-12",
+            "end": "2019-05-12",
+            "duration": "95",
+            "billsec": "95",
+            "disposition": "Success",
+            "recordfiles": ""
+        }
+    ]
+}

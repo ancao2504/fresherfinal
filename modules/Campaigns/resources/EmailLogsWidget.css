@@ -1,0 +1,23 @@
+/*
+    Name: EmailLogsWidget.css
+    Author: Phu Vo
+    Date: 2020.11.17
+*/
+
+#emailLogs .dataTables_paginate .paginate_button {
+    padding: 0px !important;
+}
+
+#emailLogs .email-logs-detail-container div.td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#emailLogs .email-logs-detail-container div.td.record_name {
+    width: 240px;
+}
+
+#emailLogs .email-logs-detail-container div.td.send_date {
+    white-space: nowrap;
+}

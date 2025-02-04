@@ -1,0 +1,18 @@
+/*
+	VTUnlinkCustomerTagsTask.css
+	Author: Hieu Nguyen
+	Date: 2021-12-07
+	Purpose: display layout for VTUnlinkCustomerTagsTask workflow task settings
+*/
+
+.editTaskBody .form-group:first-child .col-sm-6 {
+	width: 75%;
+}
+
+.editTaskBody .redColor {
+	margin-left: 5px;
+}
+
+#editTagContainer .editTagContents {
+	margin-bottom: 10px;
+}

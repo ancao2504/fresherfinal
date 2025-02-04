@@ -1,0 +1,47 @@
+/* 
+	Author: Phu Vo
+	Modified by Vu Mai on 2022-07-15
+*/
+
+#config-page #vendor-detail #config-fields {
+	width: 100% !important;
+	padding: 0 !important;
+}
+
+#config-page #vendor-detail #config-fields .fields-container {
+	width: 50%;
+}
+
+#config-page #vendor-detail #tbl-chatbots {
+	margin-bottom: 0px !important;
+}
+
+#config-page #vendor-detail #tbl-chatbots .btn-edit-chatbot {
+	border: 1px solid white !important;
+	color: unset !important;
+	padding: 5px !important;
+}
+
+#config-page #vendor-detail #tbl-chatbots .btn-remove-chatbot {
+	border: 1px solid white !important;
+	padding: 5px !important;
+}
+
+#config-page #vendor-detail #tbl-chatbots #btn-add-chatbot {
+	padding: 0 !important;
+	border: 1px solid #fff !important;
+}
+
+#config-page #vendor-detail #tbl-chatbots #btn-add-chatbot i {
+	margin-right: 5px;
+}
+
+#config-page #chatbot-list .box-body {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+
+.modal-edit-chatbot .fieldBlockContainer .fieldLabel {
+	background: none !important;
+	background-color: none !important;
+}

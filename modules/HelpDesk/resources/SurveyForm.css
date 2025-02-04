@@ -1,0 +1,146 @@
+/**
+ * @author Tin Bui
+ * @email tin.bui@onlinecrm.vn
+ * @create date 2022.03.16
+ * @desc Survey form stylesheet
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 0 0 0 var(--transparent-grey);
+}
+
+body {
+    background: #F3F6F8;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.surveyFormWrapper {
+    margin: 40px auto;
+    width: 70%;
+    max-width: 800px;
+    min-width: 600px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px rgb(51 51 51 / 12%);
+}
+
+.formTitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.formDescription {
+    margin-bottom: 20px;
+    color: rgb(87, 87, 87);
+}
+
+.infoBlock:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.infoTitle {
+    padding: 12px 0px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.ticketInfoTable {
+    width: 100%;
+    border-spacing: 0;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    border-collapse: collapse;
+    border: 0px;
+}
+
+.ticketInfoTable td {
+    padding: 12px 8px;
+}
+
+.ticketInfoTable td.fieldLabel {
+    background: #F7F9FB;
+    width: 30%;
+    min-width: 200px;
+}
+
+.ratingBody {
+    background: #F7F9FB;
+    padding: 20px 10px;
+}
+
+.ratingWrapper {
+    text-align: center;
+}
+
+.ratingWrapper .rating-input{
+    font-size: 25px;
+    margin: 10px 0 12px 0;
+    color: #F39E26;
+}
+
+.rating-star.checked {
+    color: #F39E26;
+}
+
+.ratingWrapper .rating-input i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ratingWrapper .rating-input i:not(:last-child) {
+    margin-right: 20px;
+}
+
+.scoreDescription {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ratingDescription {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    color: #333;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: none;
+}
+
+.submitButton {
+    background: #008ecf;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 0;
+    border-radius: 2px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80px;
+}
+
+.surveyFormHeader {
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+img.logo {
+    width: 200px;
+    height: auto;
+    max-height: 100px;
+    margin: auto;
+}
+
+.surveyFormBody {
+    padding: 20px;
+}

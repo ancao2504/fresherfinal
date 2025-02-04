@@ -1,0 +1,135 @@
+/* 
+	File CustomTag.css
+	Date: 2022-09-09
+	Author: Vu Mai
+*/
+
+.custom-tag {
+	display: flex;
+}
+
+.custom-tag .tag-list-container .tag-list {
+	display: flex;
+	border-right: 2px solid #fff;
+	padding-right: 5px;
+}
+
+.custom-tag .tag-list-container .tag {
+	border-radius: 4px;
+	padding: 2px 6px;
+	font-size: 12px;
+	cursor: default;
+}
+
+.custom-tag .tag-list-container .tag[data-type="public"]:hover {
+	border: 1px solid #08b8b4;
+    background-color: #08b8b4;
+}
+
+.custom-tag .tag-list-container .dropdown {
+	padding: 0 !important;
+}
+
+.custom-tag .tag-list-container .dropdown .tag-count {
+	background-color: #fff;
+	color: #858585;
+	height: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+.custom-tag .tag-list-container .dropdown .dropdown-menu {
+	padding: 4px;
+	margin-left: -4px;
+	margin-right: -4px;
+	margin-top: 8px;
+	width: 220px;
+	cursor: default;
+}
+
+.custom-tag .tag-list-container .dropdown .dropdown-menu >* {
+	margin: 4px;
+}
+
+.custom-tag .btn-add-tags {
+	cursor: pointer;
+	background-color: transparent;
+    border: none;
+}
+
+#tagging-modal .tagging-input-container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: -4px;
+	margin-right: -4px;
+}
+
+#tagging-modal .tagging-input-container>* {
+	margin: 0px 4px;
+}
+
+#tagging-modal .select2-container {
+	max-width: 100% !important;
+	height: auto;
+}
+
+#tagging-modal .select2-search-choice.tag .select2-search-choice-close {
+	background: none;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	color: white;
+}
+
+#tagging-modal .select2-search-choice.tag {
+	display: inline-block;
+	border: 1px solid #ffa600;
+	background-color: #ffa600;
+	width: auto;
+	color: #FFFFFF;
+	padding-left: 1.5em;
+	vertical-align: middle;
+	padding: 4px 5px 3px 18px !important;
+	font-size: 14px !important;
+}
+
+#tagging-modal .select2-search-choice.tag[data-type="public"] {
+	border: 1px solid #08b8b4;
+	background-color: #08b8b4;
+}
+
+.select2-results .select2-result-label.tag-option span {
+	background-color: #f6a200;
+	border: 1px solid #f6a200;
+	color: white;
+	padding: 2px 4px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 400;
+	display: inline-block;
+}
+
+.select2-results .select2-result-label.tag-option[data-type="public"] span {
+	border: 1px solid #08b8b4;
+	background-color: #08b8b4;
+}
+
+#tagging-modal .tagging-input-container .select-tag-wrapper {
+	flex: 1;
+}
+
+#tagging-modal .tagging-input-container .add-tag-btn {
+	height: 32px;
+	width: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+}
+
+.create-tag-modal input[type="text"] {
+	margin-bottom: 0.5em;
+}

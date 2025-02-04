@@ -1,0 +1,6 @@
+/* Added by Hieu Nguyen on 2022-11-17 */
+
+#system-log [name="log_content"] {
+	width: 100%;
+	height: 500px;
+}

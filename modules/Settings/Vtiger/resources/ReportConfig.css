@@ -1,0 +1,41 @@
+.tab-pane {
+    padding-top: 15px;
+}
+
+.editViewContents .fieldValue.sales-forecase-example{
+    width: 50% !important;
+}
+
+.editViewContents .fieldValue.sales-forecase-example .input-group{
+    width: 100% !important;
+}
+
+.editViewContents .fieldValue.sales-forecase-example .input-group li:last-child{
+    list-style: none;
+    margin-left: -13px;
+}
+
+.control-action {
+    float: left;
+    width: 10px;
+}
+
+.customer-group .delete-session{
+   text-align: right;
+}
+
+.customer-group .delete-button{
+    cursor: pointer;
+}
+
+.customer-group .input-group-addon{
+    width: auto !important;
+}
+
+.currencry-container {
+    display: inline-flex;
+}
+
+#customerGroup label {
+    font-weight: normal !important;
+}

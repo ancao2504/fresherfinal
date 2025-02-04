@@ -1,0 +1,14 @@
+/* Added by Hieu Nguyen on 2020-11-16 */
+
+.select2-result.select2-result-unselectable.select2-disabled {
+	display: none;
+}
+
+/* Added by Phu Vo on 2020.01.28 to hide roi fields */
+.fieldLabel.expectedroi,
+.fieldValue.expectedroi, 
+.fieldLabel.actualroi,
+.fieldValue.actualroi {
+	display: none;
+} 
+/* End Phu Vo */

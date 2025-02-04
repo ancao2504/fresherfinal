@@ -1,0 +1,187 @@
+/*
+	Name: CallCenterUserConfig.css
+	Author: Phu Vo
+	Date: 2021.07.21
+*/
+
+.editViewContents td {
+	padding: 8px !important;
+}
+
+.editViewContents .fieldLabel {
+	word-break: unset;
+	width: 15%;
+	max-width: 200px !important;
+}
+
+.editViewContents .fieldValue {
+	width: 50%;
+}
+
+.editViewContents .fieldLabel > span {
+	margin-top: 6px;
+	display: inline-block;
+}
+
+details summary {
+	font-size: 24px;
+}
+
+table.configDetails {
+	font-size: 14px;
+}
+
+.fieldBlockContainer .inputElement[type="number"] {
+	text-align: right;
+}
+
+.listViewEntries {
+	cursor: pointer;
+}
+
+input.inputElement {
+	padding: 6px 8px;
+}
+
+input.entity-selector-display {
+	background-color: white;
+	cursor: not-allowed !important;
+	flex: 1;
+}
+
+.entitySelect,
+.entityDeselect,
+.entityReview {
+	display: inline-flex;
+	width: 30px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	cursor: pointer !important;
+	color: #555;
+	background: #eee;
+	border-left: 0px;
+}
+
+.entityReview:not(.active) {
+	display: none;
+}
+
+.entity-selector-wrapper {
+	display: flex;
+}
+
+.entity-selector-content.email-template {
+	padding: 20px;
+	border: 1px solid #888;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.entity-selector-content:empty::before {
+	color: #999;
+	display: block;
+	text-align: center;
+}
+
+.fieldValue.noMainOwnerSpecificOwner {
+	width: 100%;
+}
+
+.fieldBlockContainer .inputElement {
+	width: 100%;
+}
+
+.fieldBlockContainer .inputElement[type="text"],
+.fieldBlockContainer .inputElement[type="password"] {
+	width: 100% !important;
+	max-width: 300px;
+}
+
+.editViewContents input[type="checkbox"], .editViewContents input[type="radio"] {
+	padding: 0px;
+	margin-top: 0px !important;
+	top: -2px;
+}
+
+.mr-1 {
+	margin-right: .25em;
+}
+
+.mr-2 {
+	margin-right: .5em;
+}
+
+.mr-3 {
+	margin-right: 1em;
+}
+
+.mt-1 {
+	margin-top: .25em;
+}
+
+.mt-2 {
+	margin-top: .5em;
+}
+
+.mt-3 {
+	margin-top: 1em;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.tooltip-helper {
+	font-size: 1.6rem;
+	color: #4395bd;
+}
+
+.tooltip-helper + .tooltip {
+	max-width: 320px !important;
+}
+
+.editViewContents label {
+	font-weight: normal;
+}
+
+td.fieldValue.outbound_prefix input {
+	width: 50px;
+}
+
+.no-configurations {
+	text-align: center;
+}
+
+.upload-btn input[type="file"] {
+	position: absolute;
+	z-index: -1;
+	visibility: hidden;
+}
+
+p.uploaded-file-name {
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.audio-upload-input .btn {
+	margin-right: 4px;
+	display: inline-block;
+}
+
+.audio-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.audio-container .audio-upload-player {
+	margin-left: 50px;
+}
+
+.audio-container .audio-upload-player audio {
+	height: 36px;
+}

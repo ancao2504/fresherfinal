@@ -1,0 +1,100 @@
+.summary-widget-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-evenly;
+}
+
+.summary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.summary-container .summary-item {
+    width: 220px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 0;
+}
+
+.summary-container .summary-item-title {
+    line-height: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-container .summary-item-title > label {
+    margin: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.summary-container .summary-item-value {
+    font-size: 2.0rem;
+    text-align: center;
+    color: rgb(46, 159, 191);
+    line-height: 1em;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    padding: 0px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.summary-container .summary-item-value > * {
+    line-height: 1.4em;
+}
+
+.summary-container .summary-item-last-period {
+    /* display: flex; */
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.summary-container .summary-item-last-period > * {
+    margin: 0px 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.summary-container .summary-item-last-period .summary-item-last-period-label {
+    padding-left: 5px;
+}
+
+.summary-container .summary-item-last-period .summary-item-last-period-change {
+    padding-right: 5px;
+}
+
+.summary-container .summary-item-last-period-value {
+    font-weight: bold;
+}
+
+.summary-item-last-period-change.positive {
+    color: #359947;
+}
+
+.summary-item-last-period-change.nagative {
+    color: #b12d26;
+}
+
+.summary-container i.fa.fa-info-circle.widget-tooltip {
+    margin-left: 4px;
+}

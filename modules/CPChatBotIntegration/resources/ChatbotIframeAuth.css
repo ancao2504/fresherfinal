@@ -1,0 +1,89 @@
+html {
+    font-family: arial;
+    font-size: 90%;
+}
+
+#auth-form-wrapper {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+form#auth-form span {
+    display: block;
+    padding: 0px 20px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form#auth-form {
+    border: 1px solid #888;
+    border-radius: 4px;
+    box-shadow: 2px 3px 5px #aaa;
+}
+
+form#auth-form:after {
+    clear: both;
+}
+
+form#auth-form input,
+form#auth-form button {
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+form#auth-form input {
+    width: 100%;
+}
+
+form#auth-form button[name="submit"] {
+    margin: 0px;
+    background: #2f973f;
+    color: white;
+    border: 1px solid #2e863e;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+form#auth-form br {
+    display: none;
+}
+
+.header {
+    padding: 0px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+form#auth-form .header .logo-wrapper img {
+    width: 250px !important;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.body {
+    padding: 0px 20px;
+}
+
+.footer {
+    padding: 7px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 0px 0px 4px 4px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    padding: 0px 20px;
+    margin-top: 20px;
+    text-align: center;
+}

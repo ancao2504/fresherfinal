@@ -1,0 +1,214 @@
+.editViewContents td,
+.editViewContents .formCell {
+    padding: 10px;
+}
+
+.editViewContents .formValue {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.form-list {
+    padding-left: 20px;
+}
+
+.form-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-list .label {
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.form-list .btn {
+    font-size: 12px;
+    padding: 2px 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.formValue .select2.inputElement {
+    max-width: 200px;
+}
+
+.editViewContents .fieldLabel {
+    word-break: unset;
+    width: 30%;
+}
+
+details summary {
+    font-size: 24px;
+}
+
+table.configDetails {
+    font-size: 14px;
+}
+
+.fieldBlockContainer .inputElement[type="number"] {
+    text-align: right;
+}
+
+.listViewEntries {
+    cursor: pointer;
+}
+
+input.inputElement {
+    padding: 6px 8px;
+}
+
+input.entity-selector-display {
+    background-color: white;
+    cursor: not-allowed !important;
+    flex: 1;
+}
+
+.entitySelect,
+.entityDeselect,
+.entityReview {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    cursor: pointer !important;
+    color: #555;
+    background: #eee;
+    border-left: 0px;
+}
+
+.entityReview:not(.active) {
+    display: none;
+}
+
+.entity-selector-wrapper {
+    display: flex;
+}
+
+.entity-selector-content.email-template {
+    padding: 20px;
+    border: 1px solid #888;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.entity-selector-content:empty::before {
+    color: #999;
+    display: block;
+    text-align: center;
+}
+
+.fieldValue.noMainOwnerSpecificOwner {
+    width: 100%;
+}
+
+.fieldBlockContainer .inputElement {
+    width: 100%;
+}
+
+.editViewContents input[type="checkbox"], .editViewContents input[type="radio"] {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.mr-1 {
+    margin-right: .25em;
+}
+
+.mr-2 {
+    margin-right: .5em;
+}
+
+.mr-3 {
+    margin-right: 1em;
+}
+
+.mt-1 {
+    margin-top: .25em;
+}
+
+.mt-2 {
+    margin-top: .5em;
+}
+
+.mt-3 {
+    margin-top: 1em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.tooltip-helper {
+    font-size: 1.6rem;
+    color: #4395bd;
+}
+
+.tooltip-helper + .tooltip {
+    max-width: 320px !important;
+}
+
+.editViewContents label {
+    font-weight: normal;
+}
+
+td.fieldValue.outbound_prefix input {
+    width: 50px;
+}
+
+a.btn.btn-link {
+    background: white;
+}
+
+.config-header {
+    color: #596875;
+    font-size: 17px;
+}
+
+.sync-customer-info-config-container .nav-tabs>li>a {
+	font-weight: 501;
+	margin: 0px;
+}
+
+.sync-customer-info-config-container .nav-tabs {
+	padding-left: 8px;
+}
+
+.sync-customer-info-config-container .nav-tabs>li {
+	position: relative;
+	top: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.sync-customer-info-config-container .nav-tabs>li.active,
+.sync-customer-info-config-container .nav-tabs>li.active:hover {
+	border: 1px solid var(--black-5);
+	border-bottom: 1px solid #f2f5f7;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	overflow: hidden;
+}
+
+.sync-customer-info-config-container .nav-tabs>li.active a,
+.sync-customer-info-config-container .nav-tabs>li.active:hover a {
+	background-color: #f2f5f7;
+}
+
+.sync-customer-info-config-container .distribution-assigned-users-wrapper {
+    max-width: 500px;
+}
+
+.sync-customer-info-config-container .checkbox-wraper,
+.sync-customer-info-config-container .checkbox-label {
+	display: inline-block;
+}
+
+.sync-customer-info-config-container .checkbox-wraper {
+	margin-right: 4px;
+}

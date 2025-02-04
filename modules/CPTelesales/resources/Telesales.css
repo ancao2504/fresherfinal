@@ -1,0 +1,107 @@
+#telesales-page {
+	padding-right: 10px;
+}
+
+#telesales-page #statistics-filter-wrapper .statistics-filter {
+	width: 130px !important;
+}
+
+#telesales-page #general-filter #filter-container {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	padding: 15px;
+}
+
+#telesales-page #general-filter #filter-container .modules-filter {
+	margin-top: 0px !important;
+}
+
+#telesales-page #general-filter #filter-container .select2-container {
+	width: 100%;
+	text-align: left;
+	max-width: 300px;
+}
+
+#telesales-page #general-filter #filter-container .assignedto-filter-wrapper,
+#telesales-page #general-filter #filter-container .users-filter-wrapper {
+	white-space: nowrap;
+}
+
+#telesales-page #general-filter #filter-container.other-module-filter .campaign-selector-wrapper,
+#telesales-page #general-filter #filter-container.other-module-filter .users-filter-wrapper {
+	display: none !important;
+}
+
+#telesales-page #general-filter #filter-container.campaign-module-filter .module-listview-filter {
+	display: none !important;
+}
+
+#telesales-page #general-filter #filter-container .modules-filter {
+	margin-top: 0px !important;
+}
+
+#telesales-page #customer-status-filter #customer-status-container {
+	padding: 15px;
+	max-width: 100%;
+    overflow-x: auto;
+}
+
+#telesales-page #customer-status-filter #customer-status-container .customer-status {
+	display: flex;
+	border: 1px solid var(--primary-1);
+	padding: 12px 25px;
+	border-right: none;
+	font-family: 'SegoeUI-Semilight', 'Segoe UI Semilight', 'Segoe UI', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	color: #4F4F4F;
+	cursor: pointer;
+	min-width: max-content;
+}
+
+#telesales-page #customer-status-filter #customer-status-container .customer-status:first-child {
+	margin-left: auto;
+}
+
+#telesales-page #customer-status-filter #customer-status-container .customer-status:last-child {
+	margin-right: auto;
+}
+
+#telesales-page #customer-status-filter #customer-status-container .customer-status.all {
+	width: 130px;
+    justify-content: center;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#telesales-page #customer-status-filter #customer-status-container .customer-status:last-child {
+	border-right: 1px solid var(--primary-1);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#telesales-page #customer-status-filter #customer-status-container .customer-status.active {
+	background-color: var(--primary-1) !important;
+	color: #fff !important;
+}
+
+#telesales-page #list-content {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#telesales-page #list-content .listViewActions {
+	padding: 15px;
+}
+
+#telesales-page #list-content #table-content.table-container {
+	height: 450px !important;
+	position: relative;
+}
+
+#telesales-page #list-content .listview-table .listViewContentHeader .noSorting {
+	white-space: nowrap;
+	color: #006694;
+}

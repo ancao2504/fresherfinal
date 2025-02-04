@@ -1,0 +1,188 @@
+/* .config-homepage-modal .tab-content {
+    height: 410px;
+    max-height: 410px;
+    overflow-y: auto;
+} */
+
+.config-homepage-modal .actions-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config-homepage-modal #homepage-list .actions-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.config-homepage-modal #homepage-list .data-row.roles {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 340px;
+}
+
+.config-homepage-modal .actions-wrapper>i {
+    cursor: pointer;
+    padding: 2px;
+    margin: 0px 6px;
+}
+
+.config-homepage-modal #dashlet-category-management .dashlet-filter-input-wrapper {
+    max-width: 300px;
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 0px 2px;
+    margin: 0px -2px;
+}
+
+.config-homepage-modal #dashlet-category-management .dashlet-filter-input-wrapper input[name="category"] {
+    flex: 1;
+}
+
+.config-homepage-modal #dashlet-category-management .dashlet-filter-input-wrapper button {
+    width: 30px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config-homepage-modal #dashlet-category-management .dashlet-filter-input-wrapper>* {
+    margin: 0px 2px;
+}
+
+.config-homepage-modal .form-wrapper .fieldLabel {
+    margin-top: 0.75em;
+}
+
+.config-homepage-modal .form-wrapper .fieldValue.input-wrapper {
+    margin-top: 0.25em;
+}
+
+.config-homepage-modal .form-wrapper .dashlet-filter-label {
+    width: 140px;
+}
+
+.config-homepage-modal .dashlet-filter-margin-top {
+    margin-top: 10px;
+}
+
+.config-homepage-modal table thead>tr:first-child {
+    background-color: #ddd;
+}
+
+.config-homepage-modal #dashlet-category-management th.actions {
+    width: 60px !important;
+}
+
+.config-homepage-modal #dashlet-category-management th.category {
+    width: 120px !important;
+}
+
+.homepage-config-confirmation {
+    text-align: center;
+}
+
+.homepage-config-confirmation .highlight {
+    color: rgb(46, 159, 191);
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.config-homepage-modal .form .form-row>* {
+    margin-top: 0.5em;
+}
+
+#add-widget-to-category-modal {
+    width: 733px !important;
+}
+
+#add-widget-to-category-modal table .th.actived {
+    width: 40px;
+}
+
+.btn.exitEditLayoutMode {
+    background: transparent;
+}
+
+.config-homepage-modal .th {
+    white-space: nowrap;
+}
+
+.dashboard-edit-mode-actions {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #fff2f2;
+    border: 1px solid #ef5f30;
+    border-left: none;
+    border-right: none;
+}
+.config-homepage-modal .td.active {
+    text-align: center;
+}
+
+.add-widget-modal .widget-list-wrapper {
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.add-widget-modal .widget-category-wrapper {
+    margin-bottom: 16px;
+}
+
+.add-widget-modal .category-header {
+    color: #008ECF;
+}
+
+.add-widget-modal .widgetsList {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.add-widget-modal .widgetsList li {
+    display: block;
+    padding: 4px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-widget-modal .widgetsList li a {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboardHeading .removeAllWidget {
+    margin-right: 8px;
+}
+
+.dashBoardActions li a {
+    width: 100%;
+}
+
+.config-homepage-modal table td {
+    vertical-align: middle !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.config-homepage-modal table {
+    margin-top: 10px;
+}
+
+.config-homepage-modal .payload {
+    display: none;
+}
+
+.config-homepage-modal .fa-search {
+    color: #aaa;
+}

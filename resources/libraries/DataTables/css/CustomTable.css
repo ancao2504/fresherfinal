@@ -1,0 +1,80 @@
+div#listViewTable_wrapper th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+div#listViewTable_wrapper td {
+    padding: 6px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#listViewTable_processing {
+    border-radius: 8px;
+    border: 1px solid #eee;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.dataTables_wrapper .pagination > li > a, 
+.dataTables_wrapper .pagination > li > span {
+    border-radius: 0px !important;
+    color: rgb(51, 51, 51);
+    text-shadow: 0 1px rgba(0,0,0,.1);
+    text-shadow: 0 1px 0 #fff;
+    background-color: #f3f3f3;
+    background-image: -webkit-linear-gradient(top,#f5f5f5 0,#f1f1f1 100%);
+    background-image: -o-linear-gradient(top,#f5f5f5 0,#f1f1f1 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: linear-gradient(to bottom,#f5f5f5 0,#f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border: 1px solid #dcdcdc;
+    padding: 6px 12px;
+}
+
+.dataTables_wrapper .pagination > li > a > i, 
+.dataTables_wrapper .pagination > li > span > i {
+    font-weight: bold;
+}
+
+.dataTables_wrapper .pagination > li > a:hover, 
+.dataTables_wrapper .pagination > li > span:hover {
+    text-shadow: none;
+    background-image: -webkit-linear-gradient(top,#f8f8f8 0,#f1f1f1 100%);
+    background-image: -o-linear-gradient(top,#f8f8f8 0,#f1f1f1 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+    background-image: linear-gradient(to bottom,#f8f8f8 0,#f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#fff1f1f1', GradientType=0);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    border-color: #c6c6c6;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.dataTables_wrapper .pagination > li.disabled > a, 
+.dataTables_wrapper .pagination > li.disabled > span {
+    font-weight: bold;
+    background-color: #f5f5f5;
+    background-image: -webkit-linear-gradient(top,#f5f5f5 0,#f1f1f1 100%);
+    background-image: -o-linear-gradient(top,#f5f5f5 0,#f1f1f1 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: linear-gradient(to bottom,#f5f5f5 0,#f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff1f1f1', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .6;
+}
+
+.dataTables_wrapper .pagination > li.active > a, 
+.dataTables_wrapper .pagination > li.active > span {
+    font-weight: bold;
+}

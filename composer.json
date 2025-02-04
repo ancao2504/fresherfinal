@@ -1,0 +1,13 @@
+{
+    "config": {
+        "platform-check": false
+    },
+    "require": {
+        "mautic/api-library": "^3.0",
+        "zaloplatform/zalo-php-sdk": "^2.0.3",
+        "facebook/graph-sdk": "^5.7",
+        "endroid/qr-code": "^3.8",
+        "intervention/image": "^2.7",
+        "minwork/array": "^1.13"
+    }
+}

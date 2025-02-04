@@ -1,0 +1,25 @@
+/* .fieldLabel.accountname,
+.fieldLabel.accounts_business_type,
+.fieldLabel.phone,
+.fieldLabel.email1,
+.fieldLabel.industry {
+  color: blue !important;
+}
+.fieldLabel.employess,
+.fieldLabel.annual_revenues {
+  color: red !important;
+} */
+/* Các label cần màu xanh */
+.modal-dialog.modal-lg.QuickCreate .fieldLabel.accountname label,
+.modal-dialog.modal-lg.QuickCreate .fieldLabel.accounts_business_type label,
+.modal-dialog.modal-lg.QuickCreate .fieldLabel.phone label,
+.modal-dialog.modal-lg.QuickCreate .fieldLabel.email1 label,
+.modal-dialog.modal-lg.QuickCreate .fieldLabel.industry label {
+  color: blue !important;
+}
+
+/* Các label cần màu đỏ */
+.modal-dialog.modal-lg.QuickCreate .fieldLabel.employees label,
+.modal-dialog.modal-lg.QuickCreate .fieldLabel.annual_revenue label {
+  color: red !important;
+}

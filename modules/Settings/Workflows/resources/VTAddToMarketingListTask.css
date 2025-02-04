@@ -1,0 +1,14 @@
+/*
+	VTAddToMarketingListTask.css
+	Author: Hieu Nguyen
+	Date: 2021-11-24
+	Purpose: display layout for VTAddToMarketingListTask workflow task settings
+*/
+
+.editTaskBody .form-group:first-child .col-sm-6 {
+	width: 75%;
+}
+
+.editTaskBody .redColor {
+	margin-left: 5px;
+}

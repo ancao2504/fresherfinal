@@ -1,0 +1,137 @@
+#div_contents {
+    float: left;
+    max-width: 50%;
+}
+
+#div_example {
+    float: left;
+    max-width: 50%;
+}
+
+.txt_content {
+    width: 100% !important;
+}
+
+.button.btn_insert {
+    background: #169BD5;
+    color: white;
+    border: none;
+    outline-style: hidden;
+    border-radius: 4px;
+    padding: 5px 12px;
+    margin-left: 8px;
+    top: 2px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button.btn_insert:hover {
+    background: #16a2df;
+}
+
+a.action_link {
+    color: #169BD5;
+    text-decoration: underline !important;
+}
+
+a.action_link:hover {
+    color: #16a2df;
+}
+
+.div_button_action .action_link, .div_item_action .action_link{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.div_action {
+    position: relative;
+    left: 10px;
+}
+
+.div_cover {
+    padding: 0px;
+}
+
+.div_button_action {
+    top: 6px;
+}
+
+.div_item_action {
+    top: 15px;
+}
+
+.div_cover_container {
+    float: left;
+    max-width: 100%;
+}
+
+.div_button {
+    float: left;
+    max-width: 100%;
+    border: 1px solid rgb(169, 169, 169);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.div_item {
+    float: left;
+    margin-bottom: 10px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.div_cover img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.div_cover_title {
+    color: #015478;
+    margin-top: 5px;
+    text-align: justify;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.div_cover_description {
+    color: #015478;
+    margin-top: 5px;
+    text-align: justify;
+    padding: 0px;
+}
+
+.img_cover {
+    cursor: pointer;
+    max-width: 400px;
+    max-height: 100px;
+}
+
+.div_item_icon {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div_item_content {
+    float: left;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.fieldLabel.message_content.alignMiddle {
+    display:none;
+}
+
+.select2-result[class*=face]{
+    padding: 0px !important;
+}
+
+.slc_action {
+    min-width: 100px;
+}

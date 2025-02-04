@@ -1,0 +1,360 @@
+.tab-content a {
+    text-decoration: underline !important;
+}
+
+#social-channels tbody tr:not(:last-child) {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#social-channels .add-item-placeholder {
+    float: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#social-channels .channel-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#social-channels .channel-item:hover {
+    border-color: #ccc;
+    background-color: #f6fbff;
+}
+
+#social-channels .channel-item .row.info {
+    flex: 1;
+    margin: 0px;
+    /* margin-top: 4px; */
+}
+
+#social-channels .channel-item .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#social-channels .channel-item .avatar > img {
+    width: 100%;
+}
+
+form .form-group .input-group {
+    width: 100%;
+}
+
+form #permissions .form-group .fieldLabel {
+    width: 25% !important;
+    word-break: normal;
+    padding-top: 8px;
+}
+
+form #permissions .form-group .fieldValue {
+    width: 45% !important;
+}
+
+#permissions .form-group .input-group {
+    width: calc(100% - 44px);
+}
+
+/* Added by Phu Vo on 2019.07.11*/
+.settingsPageDiv .nav-tabs > li a {
+    color: #666;
+    text-decoration: none !important;
+}
+
+.fieldBlockContainer hr {
+    margin-bottom: 0px;
+}
+
+/* .add-item-placeholder > a {
+    text-decoration: none !important;
+    padding: 4px 8px;
+    border: 1px solid #444;
+    border-radius: 10em;
+    color: #000;
+    background: #efefef;
+}
+
+.add-item-placeholder > a:hover {
+    background: rgb(46, 159, 191);
+    color: white;
+    transition: all .1s linear;
+} */
+
+#social-channels tbody tr > td:first-child > *,
+#social-channels tbody tr > td:last-child > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#social-channels thead tr {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#social-channels thead tr th {
+    font-size: 14px;
+}
+
+.zaloOAForm-content {
+    padding: 15px;
+}
+
+.lead-generation-content-table thead tr {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.lead-generation-content-table {
+    width: 100%;
+}
+
+.lead-generation-content-table tr th {
+    padding: 10px 6px;
+}
+
+.lead-generation-content-table tr td {
+    padding: 14px 6px;
+}
+
+.lead-generation-content-table .keyword,
+.lead-generation-content-table .dynamic-input-add-container {
+    display: inline-block;
+    margin: 4px 6px 4px 0px;
+    padding: 2px 6px;
+    border: 1px solid #666;
+    border-radius: 10em;
+    background-color: #f1f1f1;
+}
+
+.lead-generation-content-table .dynamic-input-add {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.lead-generation-content-table .dynamic-input-add-container {
+    background: white;
+}
+
+.lead-generation-content-table .keyword:before,
+.lead-generation-content-table .dynamic-input-add-container:before {
+    content: '\00B7';
+    font-size: 30px;
+    line-height: 1rem;
+    vertical-align: middle;
+    position: relative;
+    top: 0px;
+    margin-right: 3px;
+}
+
+.lead-generation-content-table .add-keyword {
+    display: inline-block;
+    margin: 4px 6px 4px 0px;
+    padding: 2px 0px;
+    border: 1px solid transparent;
+    border-radius: 10em;
+/*     cursor: pointer; */
+    color: inherit;
+/*     text-decoration: underline; */
+}
+
+/* .lead-generation-content-table .add-keyword:hover {
+    color: #15c;
+} */
+
+.select2-container .select2-choice {
+    text-decoration: none !important;
+}
+
+.select2-container.convert-option.select2 {
+    height: 30px !important;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice {
+    cursor: default;
+}
+
+#social-channels tbody tr > td .bootstrap-switch-wrapper {
+    margin-left: 10px;
+    margin-top: 34px;
+}
+
+#social-channels .channel-item .row span a {
+    display: inline-block;
+}
+
+.item-actions.row > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+.item-actions.row input[type="checkbox"] {
+    margin: 0px;
+    margin-right: 4px;
+    cursor: pointer;
+    margin-bottom: -3px;
+}
+
+.item-actions.row label {
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.item-actions.row label:hover {
+    color: #15c;
+}
+
+.item-actions.row {
+    margin: 0px;
+}
+
+#social-channels .channel-item .row.info > * {
+    margin-bottom: 5px;
+}
+
+#social-channels .channel-item .avatar-wraper {
+    padding-right: 14px;
+}
+
+#social-channels .channels-wraper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#social-channels .channels-wraper > img {
+    margin-right: 6px;
+}
+
+#social-channels .channel-item .oa-name {
+    font-weight: bold;
+}
+
+#social-channels .channel-item .followers-count > span {
+    font-weight: bold;
+}
+
+#social-channels .channel-item .oa-expiry-date {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 4px;
+}
+
+div.item-list {
+    margin-top: 0px !important;
+}
+
+.lead-generation-content-table .keyword .remove {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+}
+
+.lead-generation-content-table .keyword .remove:hover {
+    font-weight: bold;
+}
+/* End Added by Phu Vo*/
+
+.chat-distribution-container thead {
+    background: #F5FBFD;
+}
+
+.chat-distribution-container td {
+    padding: 6px;
+    vertical-align: top;
+}
+
+.chat-distribution-container td.fieldLabel > *:first-child {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.chat-distribution-container .chat-distribution-zalo-oa {
+    width: calc(100% * 3 / 12);
+}
+
+.chat-distribution-container .chat-distribution-assigned-users {
+    width: calc(100% * 6 / 12);
+}
+
+.chat-distribution-container .chat-distribution-distribution-type {
+    width: calc(100% * 3 / 12);
+}
+
+.chat-distribution-container .distribution-assigned-users-wrapper {
+    width: 100% !important;
+    position: relative;
+}
+
+.chat-distribution-container .distribution-assigned-users-wrapper .select2-container {
+    width: 100% !important;
+}
+
+.chat-distribution-container .distribution-type-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.4em;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.chat-distribution-container .distribution-type-item span {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.1em;
+}
+
+.chat-distribution-container .distribution-type-input {
+    margin-right: 0.5em;
+}
+
+.chat-distribution-container .distribution-type-item input[type="radio"] {
+    margin: 0px !important;
+}
+
+.chat-distribution-container .distribution-assigned-users-wrapper .inputElement {
+    height: auto;
+    min-height: 32px;
+}
+
+.chat-distribution-container .distribution-assigned-users-wrapper .select2-search-field input {
+    height: 33px;
+}
+
+.tooltip-helper {
+    font-size: 1.6rem;
+    color: #4395bd !important;
+    margin-left: 4px;
+    margin-right: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.tooltip-helper::before {
+    position: absolute;
+}
+
+#permissions .fieldValue .select2-container {
+    height: auto;
+    min-height: 32px;
+}

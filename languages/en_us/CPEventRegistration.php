@@ -1,0 +1,86 @@
+<?php
+
+/* System auto-generated on 2020-05-28 11:26:02 am.  */
+
+$languageStrings = array(
+    'CPEventRegistration' => 'Event Registration',
+    'SINGLE_CPEventRegistration' => 'Event Registration',
+    'ModuleName ID' => 'Event Registration ID',
+    'CPEventRegistration No' => 'Registration No.',
+    'LBL_ADD_RECORD' => 'Add Event Registration',
+    'LBL_RECORDS_LIST' => 'Event Registration List',
+    'LBL_TRACKING_INFOMATION' => 'Description Details',
+    'LBL_GENERAL_INFORMATION' => 'General Information',
+    'LBL_CPEVENTREGISTRATION_NO' => 'Registration No',
+    'LBL_NAME' => 'Name',
+    'LBL_DESCRIPTION' => 'Description',
+    'LBL_MODIFIED_TIME' => 'Modified Time',
+    'LBL_ASSIGNED_TO' => 'Assigned To',
+    'LBL_CREATED_TIME' => 'Created Time',
+    'LBL_SOURCE_INPUT' => 'starred',
+    'LBL_STARRED' => 'starred',
+    'LBL_TAGS' => 'tags',
+    'LBL_REGISTERED_TIME' => 'Registered Time',
+    'LBL_RELATED_CUSTOMER' => 'Customer',
+    'LBL_CUSTOMER_NAME' => 'Customer Name',
+    'LBL_CUSTOMER_EMAIL' => 'Customer Email',
+    'LBL_CUSTOMER_PHONE' => 'Customer Phone',
+    'LBL_CHECKIN_OTP' => 'Check-in OTP',
+    'LBL_CHECK_IN_TIME' => 'Check-in Time',
+    'CPEventManagement' => 'Event',
+    'CPZaloAdsForm' => 'Zalo Ads Form',
+    'LBL_QR_CHECKIN_RESULT_PAGE_TITLE' => 'Check-in Result',
+    'LBL_QR_CHECKIN_UNAUTHORIZED_ACCESS' => 'User must login to do Check-in!',
+    'LBL_QR_CHECKIN_SUCCESS_TITLE' => 'CHECKIN SUCCESS!',
+    'LBL_QR_CHECKIN_ATTENDEE_NAME' => '<span>Attendee Name:</span><br/>%name',
+    'LBL_QR_CHECKIN_TIME' => '<span>Check-in Time:</span><br/>%time',
+    'LBL_QR_CHECKIN_SUCCESS_FOOTER_TEXT' => 'We wish you a valuable and practical experience for your business!',
+    'LBL_QR_CHECKIN_ERROR_TITLE' => 'CHECKIN ERROR!',
+    'LBL_QR_CHECKIN_ERROR_RECORD_NOT_EXIST' => '%record_type not exist or has been deleted!',
+    'LBL_QR_CHECKIN_UNKNOWN_ERROR_MSG' => 'Something wrong, please check the event information!',
+    'LBL_CPEVENTREGISTRATION_STATUS' => 'Status',
+    'LBL_REGISTRATION_CONFIRM_STATUS' => 'Confirm status',
+    'registered' => 'Registered',
+    'sent_qr_code' => 'Sent QR Code',
+    'resent_qr_code' => 'Resent QR Code',
+    'not_confirmed' => 'Not confirmed',
+    'confirmed' => 'Confirmed',
+    'attended' => 'Attended',
+    'cancelled' => 'Cancelled',
+    'LBL_CUSTOMER_CONFIRMED' => 'Customer Confirmed',
+    'LBL_REGISTRERED_FOR_DOCUMENT' => 'Registered for Document',
+    'LBL_MANUAL_REGISTER' => 'Add Registration',
+    'LBL_MANUAL_REGISTER_DESCRIPTION' => 'Add registration for %customer_type <strong>%customer_name</strong>',
+    'LBL_MANUAL_REGISTER_SELECT_EVENT' => 'Select Event',
+    'LBL_MANUAL_REGISTER_SUBMIT_BTN' => 'Register',
+    'LBL_MANUAL_REGISTER_EVENT_ENDED_ERROR_MSG' => 'Event ended, please check your event information or select another one',
+    'LBL_MANUAL_REGISTER_EVENT_EXISTED' => 'Customer already register this event, please check in customer\'s registration list',
+    'LBL_MANUAL_REGISTER_EVENT_NOT_LINKED_WITH_CAMPAIGN' => 'This event did not linked with any campaign yet, please check your event information',
+    'LBL_REGISTRATION_CUSTOMER_EMAIL_AND_PHONE_REQUIRED' => 'Customer\'s email and mobile is required to register event',
+    'LBL_MANUAL_REGISTER_NO_RUNNING_EVENT' => 'There are no valid event to register for now. Please check event end date and status, or create new one!',
+);
+
+$jsLanguageStrings = array(
+    'JS_RESEND_QR_CODE' => 'Resend QR Code',
+    'JS_RESEND_QR_CODE_CONFIRM_MSG' => 'Are you sure to resend QR Code for customer %customer_name?',
+    'JS_RESEND_QR_CODE_ERROR_MSG' => 'Error while sending QR Code. Please try again!',
+    'JS_RESEND_QR_CODE_SUCCESS_MSG' => 'QR Code sent successfully!',
+    'JS_CHECK_IN_MANUAL_CONFIRM_MSG' => 'Are you sure to manual Check-in for customer %customer_name?',
+    'JS_CHECK_IN_MANUAL_ERROR_MSG' => 'Error while manual Check-in. Please try again!',
+    'JS_CHECK_IN_MANUAL_SUCCESS_MSG' => 'Manual Check-in successfully!',
+    'JS_CANCEL_REGISTRATION_CONFIRM_MSG' => 'Are you sure to cancel registration for %customer_name?',
+    'JS_CANCEL_REGISTRATION_ERROR_MSG' => 'Error while cancelling registration. Please try again!',
+    'JS_CANCEL_REGISTRATION_SUCCESS_MSG' => 'Cancel registration successfully!',
+    'JS_MARK_AS_CUSTOMER_NOT_CONFIRMED_CONFIRM_MSG' => 'Are you sure to mark as not confirmed for customer %customer_name?', // Added by Phu Vo on 2020.07.27
+    'JS_MARK_AS_CUSTOMER_NOT_CONFIRMED_ERROR_MSG' => 'Error while marking as customer not confirmed. Please try again!', // Added by Phu Vo on 2020.07.27
+    'JS_MARK_AS_CUSTOMER_NOT_CONFIRMED_SUCCESS_MSG' => 'Mark as customer not confirmed successfully!', // Added by Phu Vo on 2020.07.27
+    'JS_MARK_AS_CUSTOMER_CONFIRMED_CONFIRM_MSG' => 'Are you sure to mark as confirmed for customer %customer_name?',
+    'JS_MARK_AS_CUSTOMER_CONFIRMED_ERROR_MSG' => 'Error while marking as customer confirmed. Please try again!',
+    'JS_MARK_AS_CUSTOMER_CONFIRMED_SUCCESS_MSG' => 'Mark as customer confirmed successfully!',
+
+    // Added by Phu Vo on 2020.07.17
+    'JS_MANUAL_REGISTER_ERROR_MSG' => 'Error while register event, please try again!',
+    'JS_MANUAL_REGISTER_SUCCESS_MSG' => 'Register event successfully!',
+    // End Phu Vo
+);
+

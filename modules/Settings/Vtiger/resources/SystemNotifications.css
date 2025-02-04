@@ -1,0 +1,21 @@
+.editViewContents td {
+    padding: 15px;
+}
+
+.editViewContents .fieldLabel {
+    word-break: unset;
+    width: 30%;
+}
+
+details summary {
+    font-size: 24px;
+}
+
+table.configDetails {
+    font-size: 13px;
+}
+
+.editViewContents .fieldValue {
+    width: 20% !important;
+    min-width: 230px;
+}

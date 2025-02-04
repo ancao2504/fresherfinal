@@ -1,0 +1,279 @@
+/* Added by Hieu Nguyen on 2020-03-30 */
+
+.reportHeader #noOfRecords {
+    display: none;
+}
+
+button[name="modify_condition"] {
+    display: none;
+}
+
+#custom-report-detail {
+    min-height: 400px;
+}
+
+#chart {
+    clear: both;
+    border: 1px solid #DDDDDD;
+    width: calc(100% - 1px);
+}
+
+#filter {
+    margin-bottom: 50px;
+}
+
+.filter-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    min-width: 500px;
+    border: 1px solid rgba(215, 215, 215, 1);
+    border-radius: 5px;
+    display: grid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.filter-group {
+    padding: 5px;
+    display: table-row;
+}
+
+.filter-group .fieldLabel {
+    padding-right: 10px;
+    text-align: right;
+}
+
+.dislayed-time, .dislayed-filter {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    min-width: 100px;
+}
+
+.input-group {
+    max-width: 150px;
+    min-width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.time-group {
+    display: inline-flex;
+    width: 340px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.time-group > * {
+    margin: 0px;
+}
+
+.date-time-field {
+    float: right;
+}
+
+span.date-time-field {
+    padding-top: 0.5em;
+    margin-left: 4px
+}
+
+.control-button {
+    text-align: center;
+}
+
+#result {
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#result-content {
+    width: 100%;
+    overflow: auto;
+    max-height: 1000px;
+}
+
+#result-content table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#result-content table th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#result-content table th, #result-content table td {
+    padding: 10px 5px;
+    border: 1px solid #c9c9c9;
+}
+
+#result-content a {
+    color: #15c !important;
+}
+
+.no-data-info {
+    text-align: center;
+}
+
+#chart div.chart-area {
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+}
+
+#chart div.chart-area.no-chart{
+    height: 50px;
+}
+
+#result-actions button {
+    margin: 0px 5px 10px 5px;
+}
+
+#result-actions button div {
+    margin-right: 5px;
+}
+
+.widget-title {
+    display:none;
+}
+
+.detailViewButtoncontainer .pull-right {
+    display: none !important;
+}
+
+@media print { 
+    .app-menu, .detailViewButtoncontainer, #result-actions {
+      display: none !important;
+    }
+
+    .reportHeader .textAlignCenter.col-lg-4 {
+        width: 100% !important;
+    }
+
+    .filter-group div{
+        overflow: hidden;        
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .filter-group div.fieldLabel {
+        text-align: left !important;
+    }
+
+    #result-content {
+        max-height: 9999999px !important;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    .reportHeader .textAlignCenter.col-lg-4 {
+        width: 100% !important;
+    }
+}
+
+#result-summary {
+    margin-bottom: 26px;
+    margin-top: -25px;
+}
+
+#result-summary span {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.width-340 {
+    width: 340px !important;
+}
+
+.width-220 {
+    width: 220px !important;
+}
+
+#reportDetails .bottomscroll-div {
+    display: inherit;
+}
+
+td.total-result {
+    background: #efefef;
+}
+
+.chart-area-3{
+    float: left;
+    width: calc(33.3333% - 1px);
+    height: 100%;
+}
+
+.chart-area-2{
+    float: left;
+    width: calc(50% - 1px);
+    height: 100%;
+}
+
+.info-container {
+    padding: 0px 4px;
+    border: 1px solid black;
+    font-size: 9px;
+    margin-left: 1px;
+    border-radius: 50%;
+    color: white;
+    background: black;
+}
+
+#moreRecordsText {
+    display: none !important;
+}
+
+.spn-compare{
+    color: blue;
+    fill: blue;
+    padding: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    width:45px;
+    text-align: center;
+    display: inline-block;
+}
+
+.spn-positive {
+    color: green;
+    fill: green;
+}
+
+.spn-negative {
+    color: red;
+    fill: red;
+}
+
+.spn-title {
+    color: #02AFF4;
+    fill: #02AFF4;
+}
+
+.spn-positive:before, .spn-negative:before {
+    margin-right: 1px;
+    display: inline-block;
+}
+
+.highcharts-credits {
+    display: none !important;
+}
+
+#result-note {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: grey;
+}
+
+#result-note .required{
+    color: red;
+}
+
+.group-field-wraper.period {
+    width: 100%;
+    display: flex;
+}

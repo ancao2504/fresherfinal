@@ -1,0 +1,84 @@
+span.span-status {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.not-proposed-yet {
+    background: #03037a;
+    border: 1px solid #03037a;
+}
+
+.proposed {
+    background: #037a4f;
+    border: 1px solid #037a4f;
+}
+
+.not-approved-yet {
+    background: #03037a;
+    border: 1px solid #03037a;
+}
+
+.approved {
+    background: #037a4f;
+    border: 1px solid #037a4f;
+}
+
+.not_completed {
+    background: #03037a;
+    border: 1px solid #03037a;
+}
+
+.completed {
+    background: #037a4f;
+    border: 1px solid #037a4f;
+}
+
+.cancelled {
+    background: #a10326;
+    border: 1px solid #a10326;
+}
+
+.rejected {
+    background: #a10326;
+    border: 1px solid #a10326;
+}
+
+#tbl-invoices {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table#tbl-invoices td, table#tbl-invoices th {
+    border: 1px solid #aeaeae !important;
+    padding: 5px;
+}
+
+table#tbl-invoices th {
+    text-align: center;
+    background: whitesmoke;
+}
+
+.remove{
+    border-left: 1px silver solid !important;
+    border-right: 1px silver solid !important;
+    padding: 5px 8px;
+    font-size: 13px;
+    color: #555;
+    border: 1px solid #d9d9d9;
+    border-top-color: silver;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+table#tbl-invoices td.right {
+    text-align: right;
+}
+
+table#tbl-invoices td.center {
+    text-align: center;
+}

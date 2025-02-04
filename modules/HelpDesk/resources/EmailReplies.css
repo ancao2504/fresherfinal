@@ -1,0 +1,309 @@
+/**
+ * @author Tin Bui
+ * @email tin.bui@onlinecrm.vn
+ * @create date 2022.03.16
+ * @desc Stylesheet for email reply subpanel
+ */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+
+ @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.elementLoadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementLoading {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	border: solid 4px #008ECF;
+	border-radius: 50%;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	-webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1.0s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    transition: all 0.5s ease-in;
+    animation-name: rotate; 
+    animation-duration: 1.0s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.customBlock {
+    margin-bottom: 10px;
+    padding: 10px !important;
+    min-height: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(51 51 51 / 12%);
+}
+
+.blockEmptyData {
+    height: 80px;
+    border: 1px solid #e9e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.blockHeader {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.emailEditorBlock {
+    padding: 10px !important;
+}
+
+.emailActions {
+    width: 60%;
+    min-width: 600px;
+}
+
+.fieldWrapper {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.fieldWrapper .fieldTitle {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.fieldWrapper .fieldValueWrapper {
+    display: flex;
+}
+
+.fieldWrapper .fieldValueWrapper .fieldInput {
+    width: 300px !important;
+}
+
+.fieldWrapper .select2-container {
+    max-width: initial !important;
+}
+
+.fieldWrapper .select2-container.select2-container-multi ul.select2-choices {
+    min-height: initial !important;
+}
+
+.MultiFile-list {
+    margin-top: 10px;
+}
+
+.MultiFile-label {
+    padding: 4px;
+    background-color: #F5F5F5;
+    margin-bottom: 4px;
+}
+
+.replyContainer {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    display: flex;
+}
+
+.replyContainer:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.senderInfosWrapper {
+    width: 20%;
+    min-width: 250px;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+    border-right: 1px solid #e6e6e6;
+}
+
+.senderInfosWrapper .replyIcon {
+    position: absolute;
+    font-size: 1.5em;
+    top: 4px;
+    left: 4px;
+}
+
+.senderInfosWrapper .senderName {
+    font-weight: bold;
+}
+
+.senderInfosWrapper .senderEmail {
+    font-size: 0.9em;
+}
+
+.contentWrapper {
+    padding: 10px;
+    width: 100%;
+}
+
+.contentWrapper .contentHeader {
+    display: flex;
+    justify-content: space-between;
+    color: #008ECF;
+    font-size: 0.9em;
+}
+
+.contentWrapper .contentHeader .quoteBtn {
+    background: transparent;
+    color: #333;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: .3s;
+}
+
+.contentWrapper .contentBody {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.attachmentsWrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.attachmentsWrapper .attachment {
+    padding: 4px 8px;
+    background-color: #008ECF;
+    color: #fff;
+    font-size: 0.9em;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.contentFooter audio {
+    width: 50%;
+    height: 30px;
+}
+
+/* colors by reply type */
+.emailinbound.replyContainer {
+    background-color: #a2e1df;
+    border-color: #4ECCC9;
+}
+
+.emailinbound.replyContainer .senderInfosWrapper {
+    border-right: 1px solid #4ECCC9;
+}
+
+.emailoutbound.replyContainer {
+    background-color: #F8B695   ;
+    border-color: #F27D43;
+}
+
+.emailoutbound.replyContainer .senderInfosWrapper {
+    border-right: 1px solid #F27D43;
+}
+
+.callinbound.replyContainer {
+    background-color: #fabebe   ;
+    border-color: #f58383;
+}
+
+.callinbound.replyContainer .senderInfosWrapper {
+    border-right: 1px solid #f58383;
+}
+
+.callinbound audio::-webkit-media-controls-panel {
+    background-color: #fabebe;
+}
+
+.calloutbound.replyContainer {
+    background-color: #ffdb97;
+    border-color: #FFA600;
+}
+
+.calloutbound audio::-webkit-media-controls-panel {
+    background-color: #ffdb97;
+}
+
+.calloutbound.replyContainer .senderInfosWrapper {
+    border-right: 1px solid #FFA600;
+}
+
+.cke_button__selectemailtemplate_icon,
+.cke_button__selectfaq_icon {
+    display: none !important;
+}
+.cke_button__selectemailtemplate_label,
+.cke_button__selectfaq_label {
+    display: inline-block !important;
+}
+
+.statusLogWrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.statusLogWrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 3px;
+    background: #f2f2f2;
+    left: 19px;
+    z-index: -1;
+}
+
+.statusLog, .logWrapper  {
+    display: flex;
+    align-items: center;
+}
+
+.statusLog {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.userAvt {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.userAvt img, 
+.userAvt .avtIcon{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.avtIcon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA500;
+    color: #fff;
+}

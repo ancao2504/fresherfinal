@@ -1,0 +1,123 @@
+/*
+    Name: EditView.css
+    Author: Phu Vo
+*/
+
+[data-block="LBL_MAPPING_FIELDS"] {
+    display: none;
+}
+
+.mapping-fields-table .header-content {
+    min-height: 32px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.mapping-fields-table .body-content {
+    min-height: 32px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mapping-fields-table .mapping-fields-refresh {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+}
+
+.mapping-fields-table .no-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.classify-tags-container .tag {
+    border-radius: 5px !important;
+    border: 1px solid #ffa600 !important;
+    background-color: #ffa600 !important;
+    display: inline-flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    line-height: 1.3em !important;
+    padding: 2px 6px !important;
+    padding-bottom: 3px !important;
+    padding-left: 17px !important;
+    font-family: 'Segoe UI Semibold', 'Segoe UI', sans-serif !important;
+    font-size: 12px !important;
+    position: relative !important;
+    color: white !important;
+}
+
+.classify-tags-container .tag:hover {
+    background-color: #f6a200 !important;
+    border: 1px solid #f6a200 !important;
+}
+
+.classify-tags-container .tag[data-type="public"] {
+    border: 1px solid #08b8b4 !important;
+    background-color: #08b8b4 !important;
+}
+
+.classify-tags-container .tag[data-type="public"]:hover {
+    border: 1px solid #008b94 !important;
+    background-color: #008b94 !important;
+}
+
+.classify-tags-container .tag[data-type="public"][data-temp="true"] {
+    border: 1px solid #919191 !important;
+    background-color: #919191 !important;
+}
+
+.classify-tags-container .tag[data-type="public"][data-temp="true"]:hover {
+    border: 1px solid #757575 !important;
+    background-color: #757575 !important;
+}
+
+.classify-tags-container .tag>* {
+    vertical-align: middle !important;
+}
+
+.classify-tags-container .tag .select2-search-choice-close {
+    color: white !important;
+}
+
+.classify-tags-container {
+    display: inline-block;
+    max-width: 300px;
+    width: calc(100% - 36px);
+}
+
+.classify-tags-container .select2-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.mapping-fields-container .warnning-container {
+    font-style: italic;
+}
+
+.mapping-fields-container .warnning-container ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.mapping-fields-container .warnning-container ul li::before {
+    content: '- ';
+}
+
+.mapping-fields-container .hidden-input {
+	display: block;
+	width: 1px !important;
+	height: 1px !important;
+	border: none !important;
+	padding: 1px;
+	margin: 0px;
+    position: absolute;
+}

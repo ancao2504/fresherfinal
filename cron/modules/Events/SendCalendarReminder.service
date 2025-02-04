@@ -1,0 +1,7 @@
+<?php
+
+// Added by Hieu Nguyen on 2019-11-26
+// Run this query to register the scheduler: UPDATE vtiger_cron_task SET name = 'CalendarReminder', handler_file = 'cron/modules/Events/SendCalendarReminder.service', description = 'Recommended frequency for SendCalendarReminder is 15 mins' WHERE id = '3';
+vimport('includes.runtime.Globals');
+require_once('modules/Events/models/Service.php');
+Events_Service_Model::sendCalendarReminder();

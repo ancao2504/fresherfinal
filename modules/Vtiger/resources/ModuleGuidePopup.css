@@ -1,0 +1,16 @@
+/* Added by Hieu Nguyen on 2021-01-18 */
+
+#module-guide-popup .modal-body {
+    min-height: 300px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+#module-guide-popup .modal-footer {
+    padding: 5px !important;
+    text-align: left !important;
+}
+
+#module-guide-popup .modal-footer label {
+    cursor: pointer;
+}

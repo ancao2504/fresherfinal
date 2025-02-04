@@ -1,0 +1,30 @@
+.calls-summary-widget .item {
+    margin-left: 80px;
+    font-size: 110%;
+}
+
+.calls-summary-widget .item .main-data .value {
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+.calls-summary-widget .item .sub-data {
+    margin-top: -10px;
+    margin-left: 0px;
+}
+
+.calls-summary-widget .item .sub-data .value {
+    margin-right: 5px;
+}
+
+.calls-summary-widget .item .sub-data .value i {
+    margin-right: 5px;
+}
+
+.calls-summary-widget .item .sub-data .value.good {
+    color: green;
+}
+
+.calls-summary-widget .item .sub-data .value.bad {
+    color: red;
+}

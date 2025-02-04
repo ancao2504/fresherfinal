@@ -1,0 +1,7 @@
+<?php
+
+// Added by Tung Bui on 2020-04-05
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('SetupNewInstnace', 'cron/modules/Vtiger/SetupNewInstnace.service', 60, 0, 0, 1, 'Vtiger', 15, '');
+vimport('includes.runtime.Globals');
+require_once('modules/Vtiger/models/Service.php');
+Vtiger_SetupInstance_Model::setupNewInstance();

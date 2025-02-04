@@ -1,0 +1,27 @@
+/* CUSTOM CODE START FROM HERE */
+
+.colors {
+    display: flex;
+    padding: 0px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.colors .color {
+    flex: 1;
+    min-width: 100px;
+    height: 100px;
+    margin: 0px 5px;
+}
+
+.card .inputElement, 
+.card .inputElement[type="checkbox"],
+.card input.inputElement[type="radio"] {
+    margin-right: 0.5em;
+}
+
+.referencefield-wrapper, .editViewContents .fieldValue .referencefield-wrapper {
+    display: inline-flex !important;
+    width: 280px;
+    margin-right: 0.5em;
+}
+

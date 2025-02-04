@@ -1,0 +1,461 @@
+.editViewContents td,
+.editViewContents .formCell {
+    padding: 10px;
+}
+
+.editViewContents .formValue {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.form-list {
+    padding-left: 20px;
+}
+
+.form-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-list .label {
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.form-list .btn {
+    font-size: 12px;
+    padding: 2px 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.formValue .select2.inputElement {
+    max-width: 200px;
+}
+
+.editViewContents .fieldLabel {
+    word-break: unset;
+    width: 30%;
+}
+
+details summary {
+    font-size: 24px;
+}
+
+table.configDetails {
+    font-size: 14px;
+}
+
+.fieldBlockContainer .inputElement[type="number"] {
+    text-align: right;
+}
+
+.listViewEntries {
+    cursor: pointer;
+}
+
+input.inputElement {
+    padding: 6px 8px;
+}
+
+input.entity-selector-display {
+    background-color: white;
+    cursor: not-allowed !important;
+    flex: 1;
+}
+
+.entitySelect,
+.entityDeselect,
+.entityReview {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    cursor: pointer !important;
+    color: #555;
+    background: #eee;
+    border-left: 0px;
+}
+
+.entityReview:not(.active) {
+    display: none;
+}
+
+.entity-selector-wrapper {
+    display: flex;
+}
+
+.entity-selector-content.email-template {
+    padding: 20px;
+    border: 1px solid #888;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.entity-selector-content:empty::before {
+    color: #999;
+    display: block;
+    text-align: center;
+}
+
+.fieldValue.noMainOwnerSpecificOwner {
+    width: 100%;
+}
+
+.editAiCameraModal .fieldBlockContainer .inputElement {
+    width: 100%;
+}
+
+.editViewContents input[type="checkbox"], .editViewContents input[type="radio"] {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.mr-1 {
+    margin-right: .25em;
+}
+
+.mr-2 {
+    margin-right: .5em;
+}
+
+.mr-3 {
+    margin-right: 1em;
+}
+
+.mt-1 {
+    margin-top: .25em;
+}
+
+.mt-2 {
+    margin-top: .5em;
+}
+
+.mt-3 {
+    margin-top: 1em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.tooltip-helper {
+    font-size: 1.6rem;
+    color: #4395bd;
+}
+
+.tooltip-helper + .tooltip {
+    max-width: 320px !important;
+}
+
+.editViewContents label {
+    font-weight: normal;
+}
+
+td.fieldValue.outbound_prefix input {
+    width: 50px;
+}
+
+a.btn.btn-link {
+    background: white;
+}
+
+.config-header {
+    color: #596875;
+    font-size: 17px;
+}
+
+.current_channel .select2-container {
+    max-width: 200px;
+}
+
+.select-users-wraper .select2-container {
+    flex: 1;
+    width: calc(100% - 30px) !important;
+}
+
+.editViewContents .status-container {
+    display: flex;
+    margin: 0px -10px;
+}
+
+.editViewContents .status-container > * {
+    margin: 0px 10px;
+}
+
+.editViewContents .tag {
+    display: inline-flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 6px;
+}
+
+.editViewContents .ai-vendor .row {
+    min-height: 30px;
+    margin-top: 4px;
+}
+
+.editViewContents .ai-vendor .row label {
+    margin-top: 6px;
+}
+
+.status-disconnected {
+    color: #c6322a;
+}
+
+.status-connected {
+    color: #359947;
+}
+
+.vendor-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #d2d2d2;
+    height: 30px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.vendor-search i {
+    color: #999;
+}
+
+.vendor-search .search-input {
+    border: none;
+    flex: 1;
+}
+
+.vendors {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+    /* padding: 0px 10px; */
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.vendors .vendor {
+    max-width: 50%;
+    min-width: 45%;
+    display: inline-flex;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.vendors .vendor[data-connected="1"] {
+    cursor: pointer;
+}
+
+.vendors .vendor[data-connected="1"]:hover {
+    background-color: #f6fbff;
+}
+
+.vendors .vendor[data-connected="1"] .vendor-status {
+    color: #2F9731;
+}
+
+.vendors .vendor .vendor-logo-container {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.vendors .vendor .vendor-logo-container .vendor-logo-image {
+    width: 100px;
+}
+
+.vendors .vendor .vendor-body-container {
+    padding: 5px;
+    flex: 1;
+}
+
+.vendors .vendor .vendor-title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #888;
+}
+
+.vendors .vendor .vendor-status {
+    margin-top: 10px;
+    line-height: 1.1em;
+    margin-left: 0.5em;
+}
+
+.vendor-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.vendor-body .description-container {
+    flex: 1;
+}
+
+.vendor-body .description {
+    padding-right: 10px;
+}
+
+.vendor-body .description p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+}
+
+
+.vendor-body .instruction {
+    margin-bottom: 10px;
+}
+
+.fieldBlockContainer .block-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fieldBlockContainer .block-title-container .block-instruction {
+    margin-top: 10px;
+    line-height: 1.1em;
+}
+
+.fieldBlockContainer .block-title-container .block-title {
+    display: inline-flex;
+}
+
+.fieldBlockContainer .block-title-container .block-title button {
+    margin: 0px 0.5em;
+    background: transparent;
+    padding: 0px 0.5em;
+}
+
+.vendor-detail-container .vendor-logo-container {
+    max-height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.vendor-detail-container .vendor-logo-container img {
+    max-height: 60px;
+    margin: auto;
+}
+
+.vendor-detail-container .places {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.vendor-detail-container .place-container {
+    margin: 10px;
+}
+
+.vendor-detail-container .place {
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.vendor-detail-container .place-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vendor-detail-container .place-title-container button.delete-place {
+    padding: 0.5em;
+    background: transparent;
+    color: red;
+}
+
+.vendor-detail-container .place-description {
+    color: #999;
+}
+
+.vendor-detail-container .cameras {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.vendor-detail-container .camera-container {
+    width: 25%;
+    padding: 5px;
+}
+
+.vendor-detail-container .camera {
+    padding: 4px 0px;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+}
+
+.vendor-detail-container .camera .camera-logo {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.vendor-detail-container .camera p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.vendor-detail-container .camera-description {
+    flex: 1;
+}
+
+.vendor-detail-container .camera-number {
+    color: #999;
+}
+
+.vendor-detail-container .bottom-actions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-outline,
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline-danger,
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+    background: white !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #4d90fe;
+}
+
+.btn-outline-danger,
+.btn-outline-danger:hover {
+    color: red;
+}
+
+.modal-overlay-footer a:hover {
+    color: #4d90fe;
+}
+
+.place .place-title i {
+    color: #de425a;
+}

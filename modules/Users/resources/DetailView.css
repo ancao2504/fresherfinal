@@ -1,0 +1,9 @@
+input#access-key {
+    position: absolute;
+    left: -9999px;
+}
+
+button#copy-access-key {
+    border: none;
+    background: none;
+}

@@ -1,0 +1,62 @@
+.dashboardWidgetContent.customWidget {
+    height: calc(100% - 48px) !important;
+}
+
+.dashboardWidgetContent.customWidget .dataTables_wrapper{
+    min-height: 100%;
+}
+
+.dashboardWidgetContent.customWidget .mCSB_container {
+    height: 100%;
+}
+
+.customWidget table.dataTable thead th {
+    color: #008ECF;
+}
+
+.customWidget table.dataTable thead th,
+.customWidget table.dataTable tbody td {
+    padding: 3px 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+/* Default column size */
+.customWidget table.dataTable th.record_name {
+    width: 200px;
+}
+
+.customWidget table.dataTable th.amount {
+    width: 100px;
+}
+
+.customWidget table.dataTable th.number,
+.customWidget table.dataTable td.number {
+    text-align: right;
+}
+
+.customWidget div.dataTables_wrapper div.dataTables_info,
+.customWidget div.dataTables_wrapper div.dataTables_paginate {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 8px;
+    white-space: normal;
+}
+
+.dashboardWidget .filterContainer .inputElement-container {
+    max-width: 200px;
+}
+
+.dashboardWidget a[name="drefresh"] {
+    color: inherit;
+}
+
+.customWidget table.dataTable thead tr th.record_name,
+.customWidget table.dataTable tbody tr td.record_name {
+    max-width: 200px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

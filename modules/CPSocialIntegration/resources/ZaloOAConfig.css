@@ -1,0 +1,149 @@
+/*
+	Name: ZaloOAConfig.css
+	Author: Vu Mai
+	Date: 2022-08-02
+*/
+
+#config-page {
+	margin-left: -15px;
+}
+
+#config-page .box {
+	border: none !important;
+}
+
+#config-page #main-tabs-container {
+	padding-top: 1rem;
+}
+
+#config-page #main-tabs-container .nav-tabs {
+	padding-left: 2rem !important;
+}
+
+#config-page #main-tabs-container .nav-tabs>li {
+	position: relative;
+	top: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	cursor: pointer;
+}
+
+#config-page #main-tabs-container .nav-tabs>li>a {
+	cursor: pointer;
+}
+
+#config-page #main-tabs-container .nav-tabs>li.active, 
+#config-page #main-tabs-container .nav-tabs>li.active:hover 
+{
+	border: 1px solid var(--black-5) !important;
+	border-bottom: 1px solid #fff !important;
+	border-top-left-radius: 7px !important;
+	border-top-right-radius: 7px !important;
+	overflow: hidden;
+}
+
+/* Begin general config */
+#config-page #general-config {
+	padding-top: 20px;
+}
+
+#config-page #general-config .box-header {
+	font-size: 16px !important;
+}
+
+#config-page #general-config #privilege .select2-container {
+	max-width: 60% !important;
+}
+
+#config-page #general-config #chat-distribution .box-body {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#config-page #general-config #chat-distribution .fieldValue {
+	margin-top: 1rem;
+}
+
+#config-page #general-config #chat-distribution .fieldValue .select2-container {
+	height: auto !important;
+	max-width: 90% !important;
+}
+
+#config-page #general-config #chat-distribution .distribution-type-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 0.4em;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+#config-page #general-config #chat-distribution .distribution-type-item input {
+	margin-right: 0.5em;
+}
+/* End general config */
+
+/* Begin connection config */
+#config-page #connection .box-header {
+	border-bottom: none !important;
+	padding: 5px 0px 0px;
+}
+
+#config-page #connection .box-header .action {
+	width: 90% !important;
+}
+
+#config-page #connection .box-header button#edit-zalo-credentials {
+	font-weight: 400 !important;
+	font-family: 'Segoe UI', sans-serif !important;
+}
+
+#config-page #connection .box-header button#edit-zalo-credentials i {
+	margin-right: 5px;
+}
+
+#config-page #connection .box-body.empty-list {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+	flex-direction: column;
+}
+
+#config-page #connection .box-body.empty-list #logo {
+	max-height: 100px;
+	height: 100px;
+}
+
+#config-page #connection .box-body.empty-list #logo img {
+	height: 100%;
+	width: auto;
+}
+
+#config-page #connection .box-body.empty-list span {
+	font-size: 16px;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+}
+
+#connection #oa-list .btn-primary {
+	margin-top: 2rem;
+}
+
+#connection #oa-list .btn-primary i {
+	margin-right: 5px;
+}
+/* End connection config */
+
+/* Begin Modal */
+.modal-content .form-content  .fieldBlockContainer .fieldLabel {
+	background: none !important;
+}
+
+.modal-content .form-content  .fieldBlockContainer .fieldValue textarea {
+	min-height: 64px !important;
+	min-width: 100% !important;
+}
+
+.modal-config-request-info-message.modal-content .form-content input {
+	min-width: 100% !important;
+}
+/* End Modal */

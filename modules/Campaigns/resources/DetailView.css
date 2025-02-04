@@ -1,0 +1,104 @@
+#socialArticleBroadcastModal {
+	min-width: 700px;
+}
+
+#socialArticleBroadcastModal label {
+	display: inline;
+}
+
+#socialArticleBroadcastModal .label {
+	font-size: 100%;
+	white-space: normal;
+}
+
+#socialArticleBroadcastModal .articleName {
+	font-weight: bolder;
+}
+
+#socialArticleBroadcastModal .scheduleDate, #socialArticleBroadcastModal .scheduleTime {
+	width: 150px;
+	min-width: 150px;
+	margin-left: 15px;
+}
+
+/* [SocialIntegration] Added by Phu Vo on 2019.08.14 to hide log relation delete button */
+.relatedContainer .relatedModuleName[value="CPSocialArticleLog"] ~ .relatedContents .relationDelete,
+.relatedContainer .relatedModuleName[value="CPSocialMessageLog"] ~ .relatedContents .relationDelete,
+.relatedContainer .relatedModuleName[value="CPSocialFeedback"] ~ .relatedContents .relationDelete {
+	display: none;
+}
+/* End hide log relation delete button */
+
+/* Added by Phuc on 2019.08.29 to display css for social report */
+
+#socialReportModal {
+	width: calc(200px + 60%);
+	max-width: 90%;
+}
+
+div.session {
+	padding: 10px 15px;
+}
+
+div.session .session_title{
+	font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+}
+
+#tbl_article_list {
+	width: 100%;
+	border-collapse: collapse !important;
+}
+
+#tbl_article_list th {
+	text-align: center;
+	padding: 5px !important;
+	background: #f5f5f5;
+}
+
+#tbl_article_list tr td:last {
+	text-align: center;
+}
+
+#tbl_article_list th, #tbl_article_list td {
+	padding: 3px;
+	border: 1px solid #333333;
+	border-collapse: collapse !important;
+}
+
+#div_sent_source_chart svg ,#div_sent_source_chart [dir="ltr"] {
+	width: 100% !important;
+}
+
+.form-group .col-sm-6 label{
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+/* Ended by Phuc */
+
+/* Added By Vu Mai on 2022-11-30 for telesale campaign summary */
+#telesales-campaign-summary .customer-statistics,
+#telesales-campaign-summary .call-statistics
+{
+	padding-right: 2em;
+}
+
+#telesales-campaign-summary table {
+	border: 1px solid var(--black-5);
+	text-align: center;
+}
+
+#telesales-campaign-summary table th {
+    border: 1px solid var(--black-5);
+	text-align: center;
+	font-weight: 400 !important;
+	font-family: 'Segoe UI', sans-serif !important
+}
+
+#telesales-campaign-summary table td {
+    border-left: 1px solid var(--black-5) !important;
+    border-right: 1px solid var(--black-5) !important;
+}
+/* End Vu Mai */

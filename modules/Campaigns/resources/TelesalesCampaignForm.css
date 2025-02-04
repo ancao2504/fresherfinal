@@ -1,0 +1,52 @@
+/* Added by Hieu Nguyen on 2022-11-25 */
+/* Modified by Vu Mai on 2022-12-08 to restyle according to mockup */
+
+.main-container .content-area {
+	min-height: 100vh;
+	background-color: #f5f8fa !important;
+}
+
+#form-content {
+	width: 940px;
+	margin: auto;
+}
+
+#form-content .box-header {
+	font-size: 16px !important;
+}
+
+#form-content .step .error-msg {
+	font-size: 11px !important;
+	font-weight: normal !important;
+	color: var(--red-1);
+}
+
+#form-content .step .box-body {
+	padding-bottom: 20px;
+}
+
+#form-content .step label {
+	font-weight: normal;
+}
+
+#form-content .step .bold {
+	font-weight: 600;
+}
+
+#form-content .step .no-wrap {
+	white-space: nowrap;
+}
+
+#form-content .step .btn-inline {
+	min-height: auto !important;
+	margin: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	background: none !important;
+}
+
+#form-content .step table th {
+	font-weight: 550;
+}

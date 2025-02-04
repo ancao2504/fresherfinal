@@ -1,0 +1,41 @@
+/*
+	Name: CentralizedChatboxConfig.css
+	Author: Vu Mai
+	Date: 2021-07-29
+*/
+
+#config-page #general-config .box-body .form-group {
+	width: 95%;
+	margin: auto;
+}
+
+#config-page #general-config .box-body .fieldLabel {
+	text-align: left !important;
+}
+
+#config-page #general-config .box-body .fieldValue {
+	max-width: 100%;
+	margin-top: 1rem;
+}
+
+#config-page #general-config .box-body .fieldValue .select2-container {
+	height: auto;
+	width: 50%;
+	max-width: 50%;
+}
+
+#chat-config #chat-bridge-config .port input {
+	width: 200px !important;
+}
+
+#chat-config #chat-bridge-config .fieldLabel.ssl {
+	display: inline-block !important;
+	width: 70px !important;
+	text-align: right !important;
+}
+
+#chat-config #chat-bridge-config .checkbox.ssl {
+	width: 30px !important;
+	text-align: right !important;
+	margin: 0 !important;
+}

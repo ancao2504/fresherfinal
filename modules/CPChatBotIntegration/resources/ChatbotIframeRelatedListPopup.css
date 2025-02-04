@@ -1,0 +1,23 @@
+table .subject {
+    width: 260px;
+}
+
+table .ticket_title {
+    width: 260px;
+}
+
+table .createdby {
+    width: 120px;
+}
+
+table .assigned_user_id {
+    width: 120px;
+}
+
+table .hdnGrandTotal {
+    text-align: right;
+}
+
+.dataTables_length {
+    display: none;
+}

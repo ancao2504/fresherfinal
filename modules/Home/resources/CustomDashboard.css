@@ -1,0 +1,8 @@
+.customWidget table.dataTable thead th {
+    color: #008ECF;
+}
+
+.customWidget table.dataTable thead th,
+.customWidget table.dataTable tbody td {
+    padding: 4px 0px;
+}

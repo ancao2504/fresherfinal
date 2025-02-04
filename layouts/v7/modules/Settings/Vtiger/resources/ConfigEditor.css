@@ -1,0 +1,13 @@
+/* Added by Hieu Nguyen on 2022-06-14 */
+
+.fieldValue .input-group {
+	max-width: 300px;
+}
+
+.select2-drop-active.no-search {
+	display: none !important;
+}
+
+.custom-picklist .select2-container-multi .select2-choices .select2-search-field input.select2-active {
+	background: none !important;
+}

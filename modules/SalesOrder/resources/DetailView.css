@@ -1,0 +1,27 @@
+.fieldValue.total_received .value {
+    padding: 3px;
+    background: #03036c;
+    color: white;
+    border-radius: 2px;
+}
+
+.fieldValue.total_paid  .value {
+    padding: 3px;
+    background: #b80000;
+    color: white;
+    border-radius: 2px;
+}
+
+.fieldValue.profit .value {
+    padding: 3px;
+    background: #007200;
+    color: white;
+    border-radius: 2px;
+}
+
+.fieldValue.balance  .value {
+    padding: 3px;
+    background: #ac980d;
+    color: white;
+    border-radius: 2px;
+}

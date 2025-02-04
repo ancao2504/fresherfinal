@@ -1,0 +1,7 @@
+<?php
+
+// Added by Hieu Nguyen on 2019-10-10
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('ProcessEmailQueue', 'cron/modules/Vtiger/ProcessEmailQueue.service', 300, NULL, NULL, 1, 'Vtiger', 12, 'Recommended frequency for ProcessEmailQueue is 5 mins');
+vimport('includes.runtime.Globals');
+require_once('modules/Vtiger/models/Service.php');
+Vtiger_Service_Model::processEmailQueue();

@@ -1,0 +1,23 @@
+#license-warning {
+	width: 100%;
+	padding: 3px;
+	display: flex;
+	align-items: center;
+}
+
+#license-warning #call-to-action {
+	text-align: right;
+	color: black;
+	white-space: nowrap;
+}
+
+#license-warning #call-to-action > * {
+	margin-left: 10px;
+}
+
+#license-warning #btn-close-license-warning {
+	text-align: center;
+	padding: 5px 10px;
+	font-size: 150%;
+	color: black;
+}

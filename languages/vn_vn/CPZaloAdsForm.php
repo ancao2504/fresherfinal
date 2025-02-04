@@ -1,0 +1,73 @@
+<?php
+
+/*
+	System auto-generated on 2021-11-10 09:51:33 am by admin. 
+	THIS FILE IS FOR DEVELOPER TO UPDATE FROM LAYOUT EDITOR. YOU CAN MODIFY THIS FILE FOR CUSTOMIZING BUT REMEMBER THAT ALL COMMENTS WILL BE REMOVED!!!
+*/
+
+$languageStrings = array(
+    'CPZaloAdsForm' => 'Zalo Ads Form',
+    'SINGLE_CPZaloAdsForm' => 'Zalo Ads Form',
+    'CPZaloAdsForm ID' => 'Zalo Ads Form ID',
+    'CPZaloAdsForm No' => 'Mã Zalo Ads Form',
+    'LBL_ADD_RECORD' => 'Thêm Zalo Ads Form',
+    'LBL_RECORDS_LIST' => 'Danh sách Zalo Ads Form',
+    'LBL_GENERAL_INFORMATION' => 'Thông tin chung',
+    'LBL_TRACKING_INFOMATION' => 'Thông tin mô tả',
+    'LBL_NAME' => 'Tên Form',
+    'LBL_DESCRIPTION' => 'Mô tả',
+    'LBL_MODIFIED_TIME' => 'Ngày sửa',
+    'LBL_ASSIGNED_TO' => 'Giao cho',
+    'LBL_CREATED_TIME' => 'Ngày tạo',
+    'LBL_SOURCE_INPUT' => 'Nguồn input',
+    'LBL_STARRED' => 'Theo dõi',
+    'LBL_TAGS' => 'Tags',
+    'LBL_MAPPING_FIELDS' => 'Mapping trường dữ liệu',
+    'LBL_CPZALOADSFORM_ADVERTISE_OA' => 'Trang OA quảng cáo',
+    'LBL_FORM_ID' => 'Form ID',
+    'LBL_CPZALOADSFORM_PURPOSE' => 'Mục đích',
+    'LBL_CLASSIFY_TAGS' => 'Nhãn phân loại',
+    'LBL_CPTARGET_LIST' => 'KH Thô',
+    'LBL_LEAD_LIST' => 'Lead',
+    'LBL_CONTACT_LIST' => 'Người liên hệ',
+    'LBL_CPEVENTREGISTRATION_LIST' => 'Đăng ký sự kiện',
+    'LBL_CUSTOMER_COUNT' => 'SL KH thu về',
+    'LBL_SYSTEM_INFORMATION' => 'Thông tin hệ thống',
+    'CPEventManagement' => 'Sự kiện',
+    'Event Registration' => 'Đăng ký sự kiện',
+    'Get Data' => 'Lấy dữ liệu',
+    'LBL_MATCHING_CONFIGURATION' => 'Cấu hình matching',
+    'LBL_CPZALOADSFORM_MATCHING_CRITERIA' => 'Tiêu chí lọc trùng',
+    'LBL_CPZALOADSFORM_DEFAULT_MODULE' => 'Module mặc định',
+    'Phone' => 'Điện thoại',
+    'Email' => 'Email',
+    'Phone Or Email' => 'Điện thoại hoặc Email',
+    'Phone And Email' => 'Điện thoại và Email',
+    'CPTarget' => 'KH Thô',
+    'Leads' => 'Lead',
+    'Contacts' => 'Người liên hệ',
+    'LBL_FORM_MAPPING_FIELDS' => 'Trường dữ liệu Zalo Form',
+    'LBL_FORM_CPTARGET_FIELDS' => 'Trường dữ liệu KH thô',
+    'LBL_FORM_CPTARGET_FIELDS_DESCRIPTION' => 'Trường tên bắt buộc phải có',
+    'LBL_FORM_LEADS_FIELDS' => 'Trường dữ liệu Lead',
+    'LBL_FORM_LEADS_FIELDS_DESCRIPTION' => 'Trường tên và di động bắt buộc phải có',
+    'LBL_FORM_CONTACTS_FIELDS' => 'Trường dữ liệu Người liên hệ',
+    'LBL_FORM_CONTACTS_FIELDS_DESCRIPTION' => 'Trường tên và di động bắt buộc phải có',
+    'LBL_FORM_NO_MAPPING_FIELDS' => 'Không có dữ liệu Mapping trường dữ liệu',
+    'LBL_FORM_WARNING' => 'Lưu ý',
+    'LBL_FORM_WARNING_SYNC_EXPLAIN' => 'Khi Form data đổ về, hệ thống sử dụng tiêu chí lọc trùng để tìm khách hàng đã có trên CRM (thứ tự tìm kiếm là: Contact > Lead > Target). Nếu không tìm thấy dữ liệu trùng, hệ thống sẽ tạo mới hồ sơ khách hàng vào module được chỉ định trong trường Module mặc định. Thông tin khách hàng submit vào form sẽ được lưu về CRM theo các trường mapping tương ứng. Ngoài ra, toàn bộ thông tin trên form sẽ được nối thêm vào trường Mô tả của hồ sơ khách hàng.',
+    'LBL_FORM_WARNING_FROM_DROPDOWN_EXPLAIN' => 'Đối với các trường kiểu giá trị chọn lựa một / nhiều giá trị thì các giá trị chọn lựa trên form Zalo cần giống với các giá trị của CRM. Nếu không dữ liệu lưu về CRM sẽ có giá trị rỗng.',
+    'LBL_MANAGEMENT_INFORMATION' => 'Thông tin quản lý',
+    'LBL_ZALO_ADS_FORM_EMPTY_ERROR_MSG' => 'Zalo Ads Form rỗng hoặc không tồn tại',
+    'LBL_GET_DATA' => 'Lấy dữ liệu',
+    'LBL_TYPE_SEARCH_AND_CREATE_NEW' => 'Nhập để tìm kiếm, nhấn Enter để tạo nhanh',
+    'CPEventRegistration' => 'Đăng ký sự kiện',
+);
+
+$jsLanguageStrings = array(
+    'JS_CREATE_TAG_LIMIT_ERROR_MSG' => 'Không thể tạo nhãn mới, chỉ cho phép tối đa %limit ký tự',
+    'JS_GET_DATA_REQUIREMENT_ERROR_MSG' => 'Yêu cầu Trang OA quảng cáo và Form ID',
+    'JS_GET_DATA_SUCCESS_MSG' => 'Lấy dữ liệu khách hàng thành công',
+    'JS_MAPPING_FIELD_REQUIREMENT_ERROR_MSG' => 'Trường %field_list bắt buộc phải có',
+);
+

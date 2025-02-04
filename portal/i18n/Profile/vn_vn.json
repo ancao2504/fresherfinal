@@ -1,0 +1,15 @@
+{
+  "Name":"Tên",
+  "Primary Email":"Email chính",
+  "Secondary Email":"Email phụ",
+  "Mobile Phone":"Số di động",
+  "Office Phone":"Điện thoại văn phòng",
+  "_start for CompanyInfo":"keys",
+  "Website":"Website",
+  "Email":"Email chính",
+  "Phone":"Số điện thoại",
+  "Personal Details":"Thông tin cá nhân",
+  "Company Details":"Thông tin công ty",
+  "Primary Phone":"Số điện thoại chính",
+  "Primary Email":"Email chính"
+}

@@ -1,0 +1,7 @@
+<?php
+
+// Added by Hieu Nguyen on 2020-11-17
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('SMSAndOTTMessageQueueProcessing', 'cron/modules/SMSNotifier/ProcessMessageQueue.service', 60, NULL, NULL, 1, 'SMSNotifier', 13, 'Recommended frequency for SMSAndOTTMessageQueueProcessing is 1 mins');
+vimport('includes.runtime.Globals');
+require_once('modules/SMSNotifier/models/Service.php');
+SMSNotifier_Service_Model::processMessageQueue();

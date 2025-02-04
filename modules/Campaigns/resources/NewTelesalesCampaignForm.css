@@ -1,0 +1,40 @@
+/* Added by Hieu Nguyen on 2022-11-07 */
+/* Modified by Vu Mai on 2022-12-08 to restyle according to mockup */
+
+#form-content .step2 #tbl-mkt-lists {
+	margin-top: 20px;
+}
+
+#form-content .step2 #tbl-data-statistics {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#form-content .step2 #tbl-data-statistics tbody {
+	display: flex;
+}
+
+#form-content .step2 #tbl-data-statistics tbody tr {
+	width: 33% !important;
+}
+
+#form-content .step2 #tbl-data-statistics tr th {
+	border-bottom: none !important;
+}
+
+#form-content .step3 .users-selector {
+	max-width: 100% !important;
+}
+
+#form-content .step4 #tbl-manual-distribution {
+	margin: auto;
+}
+
+#form-content .step5 #estimation-statistics {
+	margin-top: 10px;
+	line-height: 25px;
+}
+
+#form-content .step5 #tbl-estimation-result {
+	margin-top: 20px;
+}

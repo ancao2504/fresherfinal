@@ -1,0 +1,222 @@
+.listPipeline {
+  padding: 20px;
+}
+.listViewEntries {
+  background-color: #ffffff !important;
+}
+.fieldValue {
+  max-width: 500px !important;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content {
+  padding: 15px;
+  border: 1.5px solid #e2e2e2;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 300px;
+}
+
+.pagination {
+  color: #666;
+}
+
+.pipeline-name {
+  color: #008ecf;
+  text-decoration: none;
+}
+.toggle-switch {
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch.active {
+  background: #7fc6e8;
+}
+
+.toggle-switch::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: 0.3s;
+}
+
+.toggle-switch.active::after {
+  left: 21px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+.addPipelineBtn {
+  margin-top: 15px !important;
+  padding: 10px 15px !important;
+}
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.action-buttons .icon {
+  font-size: 18px;
+  color: #5a5a5a;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* .tableListPipeline {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableListPipeline th,
+  .tableListPipeline td {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+  }
+  
+  .tableListPipeline td:not(:first-child),
+  .tableListPipeline th:not(:first-child) {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .tableListPipeline td:first-child {
+    text-align: left;
+  } */
+.searchPipeline {
+  max-width: 300px;
+  padding: 3px;
+  padding-left: 10px;
+}
+.fa-search {
+  margin-left: 60px;
+}
+.configButton {
+  color: #858585;
+}
+.configButton i {
+  color: #858585;
+}
+.configbutton:hover {
+  color: #858585;
+}
+.tableListPipeline {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Gán cứng kích thước cho từng cột */
+.tableListPipeline th:nth-child(1),
+.tableListPipeline td:nth-child(1) {
+  width: 270px !important;
+}
+
+.tableListPipeline th:nth-child(2),
+.tableListPipeline td:nth-child(2) {
+  width: 100px;
+}
+
+.tableListPipeline th:nth-child(3),
+.tableListPipeline td:nth-child(3) {
+  width: 100px;
+}
+
+.tableListPipeline th:nth-child(4),
+.tableListPipeline td:nth-child(4) {
+  width: 150px;
+}
+
+.tableListPipeline th:nth-child(5),
+.tableListPipeline td:nth-child(5) {
+  width: 250px;
+}
+
+.tableListPipeline th:nth-child(6),
+.tableListPipeline td:nth-child(6) {
+  width: 200px;
+}
+
+.tableListPipeline th:nth-child(7),
+.tableListPipeline td:nth-child(7) {
+  width: 100px;
+}
+
+/* Xử lý overflow và căn giữa cho các cột */
+.tableListPipeline td {
+  padding: 16px !important;
+  vertical-align: middle;
+}
+
+/* Giữ nguyên căn trái cho cột tên và mô tả */
+.tableListPipeline td:nth-child(1),
+.tableListPipeline td:nth-child(5) {
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Căn giữa và cho phép xuống dòng cho các cột còn lại */
+.tableListPipeline td:nth-child(2),
+.tableListPipeline td:nth-child(3),
+.tableListPipeline td:nth-child(4),
+.tableListPipeline td:nth-child(6),
+.tableListPipeline td:nth-child(7) {
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Căn giữa text trong thead */
+.tableListPipeline thead th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+}
+/* Căn trái cho thead của cột đầu tiên */
+.tableListPipeline thead th:first-child {
+  text-align: left;
+}
+/* Điều chỉnh style cho các span bên trong */
+.tableListPipeline .fieldValue,
+.tableListPipeline .value {
+  display: block;
+  width: 100%;
+}
+
+/* Style cho action buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}

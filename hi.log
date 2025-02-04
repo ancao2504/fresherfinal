@@ -1,0 +1,7 @@
+layouts/v7/modules/ModComments/ListViewContents.tpl
+layouts/v7/modules/RecycleBin/ListViewContents.tpl
+layouts/v7/modules/Reports/ListViewContents.tpl
+layouts/v7/modules/Vtiger/ListViewContents.tpl
+layouts/v7/modules/Vtiger/uitypes/PhoneDetailView.tpl
+layouts/v7/resources/custom.css
+vtigerversion.php

@@ -1,0 +1,97 @@
+/* Added by Hieu Nguyen on 2022-11-14 */
+
+.survey-popup {
+	width: 555px;
+	margin-top: 200px;
+	padding: 0px;
+	background: transparent;
+	border: none !important;
+}
+
+.survey-popup .modal-body {
+	width: 555px;
+	height: 320px;
+	padding: 0px;
+	background: white;
+	border: none;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.survey-popup .modal-body .btn-close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.survey-popup .modal-body h1 {
+	font-family: 'SegoeUI-Bold', 'Segoe UI Bold', 'Segoe UI', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 25px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.survey-popup .modal-body h2 {
+	font-family: 'SegoeUI-Semibold', 'Segoe UI Semibold', 'Segoe UI', sans-serif;
+	font-weight: 650;
+	font-style: normal;
+	font-size: 15px;
+	margin: 0px;
+	margin-bottom: 15px;
+}
+
+.survey-popup .modal-body .left-side {
+	float: left;
+	width: 275px;
+	height: 320px;
+	background-color: rgba(0, 143, 224, 1);
+	border-radius: 20px;
+	color: white;
+	padding: 35px 20px 20px 20px;
+}
+
+.survey-popup .modal-body .left-side img {
+	width: 150px;
+}
+
+.survey-popup .modal-body .right-side {
+	float: right;
+	width: 275px;
+	height: 320px;
+	padding: 35px 20px 20px 20px;
+}
+
+.survey-popup .modal-body .right-side .title {
+	font-size: 16px;
+}
+
+.survey-popup .modal-body .right-side .message {
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.survey-popup .modal-body .right-side .btn-open-form {
+	display: inline-block;
+	width: 170px;
+	height: 42px;
+	background-color: rgba(0, 143, 224, 1);
+	border: none;
+	border-radius: 20px;
+	font-family: 'SegoeUI-Semibold', 'Segoe UI Semibold', 'Segoe UI', sans-serif;
+	font-weight: 650;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 42px;
+	color: white;
+}
+
+.survey-popup .modal-body .right-side .promotion {
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 15px;
+}

@@ -1,0 +1,1243 @@
+/* Fix web layout */
+
+.main-container .content-area {
+    display: flex;
+    min-height: auto;
+    height: 100%;
+}
+
+div#page {
+    display: flex;
+    padding-top: 42px;
+    padding-top: 0px;
+}
+
+.main-container.main-container-CPKanban {
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.module-action-content.clearfix.CPKanban-module-action-content {
+    display: none;
+}
+
+.col-sm-12.col-xs-12.module-action-bar.clearfix.coloredBorderTop {
+    display: none;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.app-fixed-navbar {
+    height: 42px;
+}
+
+.container-fluid.app-nav {
+    /* display: inline-block; */
+    float: left;
+}
+
+.popupEntriesTableContainer table .searchRow,
+.popupEntriesTableContainer table tr th:first-child,
+.popupEntriesTableContainer table tr td:first-child {
+    display: none;
+}
+
+/* Kanban App Start here */
+
+.kanbanApp {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    padding-top: 46px;
+    padding-bottom: 6px !important;
+    /* min-height: calc(100vh - 28px); */
+    flex-direction: column;
+    /* z-index: 0; */
+    height: calc(100vh - 36px);
+}
+
+.kanbanApp .kanban-wraper {
+    /* height: 100%; */
+    z-index: 0;
+    height: auto;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.quick-create-panel .actions .create-btn:hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .2;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.kanbanApp .rel {
+    position: relative;
+}
+
+.kanbanApp .abs {
+    position: absolute;
+}
+
+.kanbanApp .clickable {
+    cursor: pointer !important;
+}
+
+.kanbanApp.modal-form {
+    height: auto;
+    min-height: auto;
+}
+
+.kanbanApp .kanban-config .head {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 10px;
+    margin-left: -250px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+@media (min-width: 992px) {
+    .kanbanApp {
+        padding: 10px;
+        padding-top: 18px;
+        padding-top: 46px;
+    }
+    
+    .main-container .content-area {
+        padding-left: 42px;
+        padding-top: 0px;
+    }
+}
+
+.kanbanApp .hidden {
+    display: none !important;
+}
+
+.kanbanApp .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.kanbanApp .item a.item-link:hover, 
+.kanbanApp .item a.assigned-user-link:hover {
+    text-decoration: underline !important;
+}
+
+.kanbanApp .inline {
+    display: inline-block;
+}
+
+.kanbanApp .form-row {
+    width: 100%;
+    display: flex;
+}
+
+.kanbanApp .form-col-1 {
+    width: calc(100% *1/12);
+}
+
+.kanbanApp .form-col-2 {
+    width: calc(100% *2/12);
+}
+
+.kanbanApp .form-col-3 {
+    width: calc(100% *3/12);
+}
+
+.kanbanApp .form-col-4 {
+    width: calc(100% *4/12);
+}
+
+.kanbanApp .form-col-5 {
+    width: calc(100% *5/12);
+}
+
+.kanbanApp .form-col-6 {
+    width: 50%;
+}
+
+.kanbanApp .form-col-7 {
+    width: calc(100% *7/12);
+}
+
+.kanbanApp .form-col-8 {
+    width: calc(100% *8/12);
+}
+
+.kanbanApp .form-col-9 {
+    width: calc(100% *9/12);
+}
+
+.kanbanApp .form-col-10 {
+    width: calc(100% *10/12);
+}
+
+.kanbanApp .form-col-11 {
+    width: calc(100% *11/12);
+}
+
+.kanbanApp .item-row {
+    border-bottom: 1px solid #ddd;
+}
+
+.kanbanApp .form-col-12 {
+    width: 100%;
+}
+
+.kanbanApp *:not(.fa, .far, .fab, .fad, .fal, [class*=vicon]) {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: Roboto;
+    text-overflow: ellipsis;
+}
+
+.kanbanApp .kanban-main {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 6px;
+    flex: 1;
+    z-index: 0;
+}
+
+.kanbanApp .column {
+    margin: 2px;
+    margin-bottom: 0px;
+    float: none;
+    min-width: 300px;
+    width: 300px;
+    overflow: visible;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.kanbanApp .column:first-child {
+    margin-left: 0px;
+}
+
+.kanbanApp .column:last-child {
+    margin-right: 0px;
+}
+
+.kanbanApp .items .item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 8px;
+    border: 1px solid #aaa;
+    border-radius: 0px 0px 8px 8px;
+    background-color: white;
+    font-weight: normal;
+    cursor: move;
+}
+
+.kanbanApp .items .item:last-child {
+    margin-bottom: 0px 
+}
+
+.kanbanApp .items {
+    border: none;
+    height: 100%;
+    /*max-height: 348px;
+    max-height: 420px;*/
+    overflow-y: auto;
+}
+
+.kanbanApp .col-title {
+    background-color: #ef5e29;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    vertical-align: middle;
+    padding: 12px 8px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+    height: 40px;
+}
+
+.kanbanApp .col-summary {
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+    font-size: 24px;
+    color: #666;
+    border: 1px solid #aaa;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 12px 8px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.kanbanApp .col-summary .col-summary-unit {
+    top: -6px;
+}
+
+.kanbanApp .col-header {
+    margin-bottom: 8px;
+    overflow: visible;
+}
+
+.kanbanApp .col-search {
+    margin-bottom: 8px;
+    /* padding: 8px 6px; */
+    /* border: 1px solid #aaa; */
+    display: flex;
+    /* background-color: #fbfbfb; */
+    align-items: center;
+    position: relative;
+}
+
+.kanbanApp .col-search input {
+    width: 100%;
+    font-size: 14px;
+    padding: 4px 6px;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.kanbanApp .col-search i {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+}
+
+.kanbanApp img.avatar-image {
+    width: 100%;
+    height: auto; /* Modified by Phu Vo on 2019.08.26 to fix avatar layout*/
+}
+
+.kanbanApp .assigned-user-avatar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    margin-right: 6px;
+    border-radius: 50%; /* Modified by Phu Vo on 2019.08.26 to fix avatar layout*/
+}
+
+.kanbanApp .assigned-user-name {
+    font-style: italic;
+    color: #156ac5;
+    text-align: left;
+    max-width: 136px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 2px;
+}
+
+.kanbanApp .item .title {
+    padding: 8px;
+    background-color: #ef5e29;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+    display: flex;
+    padding-right: 0px;
+}
+
+.kanbanApp .item .title .left {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    flex: 1;
+    display: inline-block;
+    line-height: 20px;
+    padding-right: 4px;
+}
+
+.kanbanApp .item .title .right {
+    /* width: 92px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.kanbanApp .item-edit-btn i {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.kanbanApp .field-label {
+    background-color: #eee;
+    padding: 4px;
+    padding-left: 8px;
+    line-height: 1.2;
+}
+
+.kanbanApp .field-value {
+    display: flex;
+    text-align: left;
+    padding: 4px;
+    padding-right: 8px;
+    line-height: 1.2;
+}
+
+.kanbanApp .item .content {
+    font-size: 13px;
+}
+
+.kanbanApp .item-created-time {
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.kanbanApp .item .meta {
+    display: flex;
+    padding: 4px 6px;
+    align-items: flex-start;
+}
+
+.kanbanApp .item .meta .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.kanbanApp .item .meta .right {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.kanbanApp .item .meta .right i {
+    font-size: 16px;
+    /* margin-left: 6px; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 20px; */
+    /* height: 20px; */
+}
+
+.kanbanApp .item .btn-phone {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 6px;
+    vertical-align: top;
+    line-height: 1;
+}
+
+.kanbanApp .item .btn-phone > i {
+    color: #639c24;
+    vertical-align: top;
+}
+
+.kanbanApp .quick-create-tooltip {
+    height: 20px;
+    width: 20px;
+    margin-left: 0px;
+    margin-right: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanbanApp .activity-counters .count {
+    position: relative;
+    top: -7px;
+    left: -2px;
+    font-size: 10px;
+    line-height: 1.1em;
+    color: white;
+    padding: 2px 4px;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    left: -8px;
+}
+
+#sidebar-essentials {
+    display: none !important;
+}
+
+.kanbanApp .item-placeholder {
+    width: 100%;
+    height: 180px;
+    border: 1px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    position: relative;
+}
+
+.kanbanApp .item-placeholder::after {
+    position: absolute;
+    content: "Item will place here";
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.fancyScrollbar::-webkit-scrollbar {
+    height:6px !important; 
+    width:6px !important;
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece{
+    background:rgba(214, 218, 220, .6) !important;
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:vertical:start {
+    border-radius:5px 5px 0 0 !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:vertical:end {
+    border-radius:0 0 5px 5px !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:horizontal:start {
+    border-radius:5px 0 0 5px !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:horizontal:end {
+    border-radius:0 5px 5px 0 !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-thumb:horizontal, 
+.fancyScrollbar::-webkit-scrollbar-thumb:vertical {
+    background:#bfbfbf !important; 
+    border-radius:5px !important; 
+    display:block; 
+    height:50px !important;
+}
+
+.fancyScrollbar::-webkit-scrollbar-button:end:increment, 
+.fancyScrollbar::-webkit-scrollbar-button:start:decrement {
+    background:0 0 !important; 
+    display:none !important;
+}
+
+.kanbanApp .activity-counters {
+    color: #a6a6a6;
+    white-space: nowrap;
+    margin-bottom: -3px;
+}
+
+.kanbanApp .items.hasScrollBar {
+    padding-right: 4px;
+}
+
+/*Config style goes here*/
+.kanbanApp .kanban-config {
+    padding: 12px 15px;
+    border: 1px solid #d4d4d4;
+    margin-bottom: 6px;
+    position: relative;
+    box-shadow: 1px 1px 3px #efefef;
+    border-radius: 5px;
+}
+
+.kanbanApp .kanban-config .col-right {
+    text-align: right;
+}
+
+.kanbanApp .kanban-config .opt-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #666;
+}
+
+.kanbanApp .kanban-config .opts > * {
+    vertical-align: top;
+}
+
+.kanbanApp .kanban-config .kb-btn {
+    font-size: 20px;
+    margin: 0px 10px;
+    margin-top: 5px;
+}
+
+/* Custom dropdown goes here*/
+.kanbanApp .select-wraper {
+    margin-right: 2px;
+    margin-top: 12px; /*remove later*/
+    vertical-align: top;
+}
+
+.kanbanApp .select-wraper:last-child {
+    margin-right: 0px;
+}
+
+.kanbanApp .select-wraper .chzn-container {
+    width: auto !important;
+    min-width: 140px;
+    height: 32px;
+    text-align: left;
+}
+
+.kanbanApp .select-wraper .chzn-single > div {
+    display: none;
+}
+
+.kanbanApp .select-wraper .chzn-single > span {
+    display: inline;
+    flex: 1;
+    padding-top: 1px;
+}
+
+.kanbanApp .select-wraper .chzn-single {
+    display: flex;
+    align-items: center;
+    background-image: none;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 100%;
+}
+
+.kanbanApp .select-wraper .chzn-single::before,
+.kanbanApp .select-wraper .chzn-single::after,
+.kanbanApp .select-wraper .chzn-drop .chzn-search::after,
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect::before,
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect::after {
+    font-family: FontAwesome;
+}
+
+.kanbanApp .select-wraper .chzn-single::before,
+.kanbanApp .select-wraper .chzn-single::after,
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect::before,
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect::after {
+    display: block;
+    padding: 6px 10px;
+    font-size: 20px;
+    color: #888;
+}
+
+.kanbanApp .select-wraper .chzn-single::after,
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect::after {
+    content: '\f107';
+}
+
+.kanbanApp .select-wraper .chzn-single-with-drop::after,
+.kanbanApp .select-wraper .multiselect-native-select .btn-group.open button.multiselect::after {
+    content: '\f106';
+}
+
+.kanbanApp .select-wraper.select-icon-filter .chzn-single::before,
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect::before {
+    content: '\f0b0';
+    font-size: 14px
+}
+
+/* Sorting field */
+.kanbanApp .select-wraper.select-icon-filter.sorting_field .chzn-single::before {
+    content: '\f15d';
+}
+/* End sorting field*/
+
+.kanbanApp .select-wraper .chzn-drop,
+.kanbanApp ul.multiselect-container {
+    width: 100% !important;
+    margin-top: 4px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    min-height: 32px;
+    padding: 0px;
+}
+
+/* .kanbanApp ul.multiselect-container {
+    max-height: 210px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 29px;
+} */
+
+.kanbanApp .select-wraper .chzn-drop .chzn-search {
+    position: relative;
+}
+
+.kanbanApp .select-wraper .chzn-drop .chzn-search::after {
+    content: '\f002';
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    color: #888;
+}
+
+.kanbanApp .select-wraper .chzn-drop .chzn-search > input {
+    font-size: 14px;
+    width: 100% !important;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 5px 7px;
+    background-image: none;
+    margin: 0px;
+}
+
+.kanbanApp .select-wraper .chzn-drop .chzn-results > li {
+    font-size: 13px;
+    padding: 7px;
+    line-height: 1;
+}
+
+.kanbanApp .select-wraper .chzn-drop .chzn-results > li:not(:last-child) {
+    border-bottom: 1px solid #cecece;
+}
+
+.kanbanApp .select-wraper .chzn-container-multi .chzn-choices {
+    min-height: 32px !important;
+    padding: 3px;
+    padding-top: 0px;
+    background-image: none;
+}
+
+.kanbanApp .select-wraper .chzn-container-multi .chzn-choices span,
+.kanbanApp .select-wraper .chzn-container-multi .chzn-choices .search-field input {
+    display: inline-block;
+    padding: 4px;
+    padding-right: 20px;
+}
+
+.kanbanApp .select-wraper .chzn-container-multi .chzn-choices span {
+    white-space: nowrap;
+}
+
+.kanbanApp .select-wraper.sortable-select .chzn-container-multi .chzn-choices span {
+    cursor: move;
+}
+
+.kanbanApp .select-wraper .chzn-container-multi .chzn-choices .search-choice {
+    margin: 3px 3px 0px 0px;
+    background-image: none;
+}
+
+.kanbanApp .select-wraper .chzn-container-multi .search-field {
+    margin-top: 3px;
+    float: none;
+}
+
+.kanbanApp .select-wraper .chzn-container-multi .search-field input.default {
+    /* width: 100% !important; */ /* [Kanban] Fix kanban columns input issue */
+    padding: 4px;
+}
+
+.kanbanApp .kanban-config .kb-btn {
+    font-size: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.kanbanApp .kanban-config .kb-btn.disabled {
+    color: #ddd;
+    cursor: not-allowed;
+}
+
+.kanbanApp .col-title .col-title-value {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.kanbanApp .column:not(:first-child) .col-title .col-before {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-left: 20px solid white;
+}
+
+.kanbanApp .column:not(:last-child) .col-title .col-after {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    border-left: 20px solid;
+    border-left-color: #ef5e29;
+}
+
+.kanbanApp .col-title .col-counter {
+    /* top: -8px; */
+    top: -1px;
+}
+
+/* Multiselect style */
+.kanbanApp .select-wraper .multiselect-native-select {
+    display: inline-block;
+    width: auto !important;
+    min-width: 140px;
+    height: 32px;
+}
+
+.kanbanApp .select-wraper .multiselect-native-select .btn-group,
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect {
+    height: 100%;
+    width: 100%;
+}
+
+.kanbanApp .select-wraper .multiselect-native-select button.multiselect {
+    display: flex;
+    align-items: center;
+    background-image: none;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 100%;
+    background-color: #fff;
+    line-height: 1;
+    font-weight: normal;
+    padding: 0px;
+}
+
+.kanbanApp .select-wraper .multiselect-native-select .btn-group.open button.multiselect {
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    border: 1px solid #5897fb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.kanbanApp .select-wraper .multiselect b.caret {
+    display: none;
+}
+
+.kanbanApp .select-wraper ul.multiselect-container label {
+    font-size: 13px;
+    padding: 7px;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+    padding: 1px;
+}
+
+.kanbanApp .select-wraper ul.multiselect-container label input {
+    margin-right: 7px;
+    margin-left: 0px;
+    min-width: 13px;
+}
+
+.kanbanApp .select-wraper ul.multiselect-container a:hover {
+    background-color: #fff;
+    background-image: none;
+}
+
+.kanbanApp .select-wraper ul.multiselect-container li:not(:last-child) {
+    border-bottom: 1px solid #cecece;
+}
+
+.kanbanApp .select-wraper ul.multiselect-container li label > * {
+    font-family: Roboto !important;
+}
+
+.kanbanApp .select-wraper .input-group-addon {
+    display: none;
+}
+
+.kanbanApp .select-wraper .input-group {min-width: unset;width: 100%;position: relative;}
+
+.kanbanApp .select-wraper .input-group input {
+    font-size: 14px;
+    height: 28px;
+    border: none;
+    padding: 7px;
+}
+
+.kanbanApp .select-wraper .input-group input:focus,
+.kanbanApp .select-wraper .input-group input:hover {
+    box-shadow: none;
+    cursor: text;
+}
+
+/*Modal style*/
+.kanbanApp[name="kanban_display_form"] { /*Quick fix style, refactor later*/
+    padding-top: 12px;
+}
+
+#KanbanDisplayFieldSelector .select-wraper .chzn-container-multi {
+    width: 100% !important;
+}
+
+.kanbanApp .select-wraper ul.multiselect-container li.multiselect-filter {
+    display: flex;
+    /* position: absolute; */
+    /* top: 0px; */
+}
+
+.kanbanApp .select-wraper .input-group-btn {
+    display: none;
+}
+
+.kanbanApp .select-wraper .input-group::after {
+    font-family: FontAwesome;
+    content: '\f002';
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    right: 5px;
+    color: #888;
+}
+
+.kanbanApp.modal-form {
+    padding: 0px !important;
+}
+
+.kanbanApp.modal-form .select-wraper {
+    margin-right: 0px;
+    padding: 12px;
+}
+
+.kanbanApp .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+    top: 6px;
+    right: 5px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    font-family: FontAwesome;
+    background-image: none;
+    font-size: 14px;
+    color: #676767;
+}
+
+.kanbanApp .chzn-container-multi .chzn-choices .search-choice .search-choice-close::after {
+    content: '\f00d';
+}
+
+.kanbanApp .select-wraper ul.multiselect-container input {
+    cursor: pointer;
+}
+
+.kanbanApp .modal-footer {
+    padding: 15px;
+}
+
+.kanbanApp .btn {
+    border-radius: 0px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.kanbanApp .btn-success {
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,.1);
+    background-image: -webkit-linear-gradient(top,#35aa47 0,#35aa47 100%);
+    background-image: -o-linear-gradient(top,#35aa47 0,#35aa47 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#35aa47),to(#35aa47));
+    background-image: linear-gradient(to bottom,#35aa47 0,#35aa47 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff35aa47', endColorstr='#ff35aa47', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border: 1px solid #359947;
+}
+.kanbanApp .btn {
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    cursor: default;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.kanbanApp .cancelLink,
+ .kanbanApp .popoverCancel {
+    font-size: 14px;
+    padding-left: 10px;
+    color: red;
+}
+
+/*Quick create popover*/
+
+.kanbanApp .popover-title {
+    padding: 6px;
+}
+
+.kanbanApp .popover-content {
+    padding: 6px;
+    padding-top: 0px;
+}
+
+.kanbanApp .popover-content > * {
+    margin-top: 6px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 6px;
+    border-radius: 2px;
+    border: 1px solid rgb(170, 170, 170);
+    background-image: none;
+    background-color: white;
+}
+
+.kanbanApp .btn-create-activity > * {
+    vertical-align: middle;
+}
+
+.kanbanApp .btn-create-activity > i {
+    margin-right: 4px;
+    color: #888;
+}
+
+.kanbanApp .popover.bottom {
+    margin-left: -10px;
+    margin-top: 11px;
+}
+
+.kanbanApp .popover.top {
+    margin-top: -10px;
+    margin-left: 0px;
+}
+
+/*kanban modal style goes here*/
+.kb-modal .modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.kb-modal .modal-dialog {
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Custom Modal for telesales*/
+
+.tele-modal .inline {
+    display: inline-block;
+}
+
+.tele-modal .clickable {
+    cursor: pointer !important;
+}
+
+.tele-modal .modal-header .pull-left {
+    margin: 4px 0px;
+    padding: 0px;
+}
+
+.tele-modal .modal-header .pull-left > * {
+    margin-bottom: 6px;
+}
+
+.tele-modal .modal-header .pull-left .title {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.tele-modal .modal-header .pull-left .company-name {
+    font-size: 14px;
+    opacity: .8;
+}
+
+.tele-modal .modal-header .pull-left .parent-name {
+    font-size: 14px;
+    opacity: .8;
+}
+
+.tele-modal .modal-content #popupPageContainer {
+    padding: 0px;
+}
+
+.tele-modal .modal-content .relatedContents .listViewEntries .listViewEntryValue {
+    cursor: text;
+}
+
+/* Create Calendar custom style*/
+
+.quick-create-panel .modal-header {
+    background-color: #3598db;
+}
+
+.quick-create-panel {
+    border: none;
+}
+
+.quick-create-panel .modal-header .pull-left > * {
+    vertical-align: middle;
+}
+
+.quick-create-panel .modal-header .pull-left i.fa-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    font-size: 17px;
+    padding-left: 1px;
+    margin-bottom: -2px;
+    margin-right: 9px;
+}
+
+.quick-create-panel .modal-header .pull-left {
+    margin-bottom: 0px;
+}
+
+.quick-create-panel .content-wraper {
+    background-color: #fafafa;
+    padding: 18px 8px;
+}
+
+.quick-create-panel .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-create-panel .actions .create-btn {
+    flex: 1;
+    margin: 0px 6px;
+    padding: 12px 6px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #666;
+    border-radius: 5px;
+    position: relative;
+}
+
+.quick-create-panel .actions .create-btn > i {
+    font-size: 30px;
+}
+
+.quick-create-panel .actions .create-btn > i.vicon {
+    font-size: 24px;
+}
+
+.quick-create-panel .actions .create-btn > * {
+    display: inline-flex;
+    align-items: center;
+}
+
+.quick-create-panel .actions .create-btn .inline {
+    text-align: center;
+    padding: 8px;
+}
+
+.quick-create-panel .actions .create-btn.task {
+    background-color: #4b3f5f;
+}
+
+.quick-create-panel .actions .create-btn.call {
+    background-color: #2d9493;
+}
+
+.quick-create-panel .actions .create-btn.mobile-call {
+    background-color: #ea8282;
+}
+
+.quick-create-panel .actions .create-btn.meeting {
+    background-color: #f3c449;
+}
+
+.kb-modal .modal-header .pull-left .title {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.kb-modal .modal-header .pull-left .parent-name {
+    font-size: 14px;
+    opacity: .8;
+}
+
+/* Config toggle style goes here */
+
+.kanbanApp .kanban-config .content i.fa {
+    position: relative;
+    top: -1px;
+}
+
+.kanbanApp .btn.kan-summary-toggle {
+    padding-left: 3px;
+}
+
+.kanbanApp #FilterContent {
+    height: auto;
+    max-height: 0px;
+    visibility: hidden;
+    transition: padding-top .2s ease, visibility .1s ease, max-height .3s ease;
+}
+
+.kanbanApp .kan-summary.active #FilterContent {
+    max-height: 200px;
+    visibility: visible;
+    transition: padding-top .2s ease, visibility .1s ease, max-height .6s ease;
+    padding-top: 6px;
+}
+
+.kanbanApp .kan-summary.active i.chevron::before {
+    content: '\f077';
+}
+
+/*EMPTY DATA*/
+
+.kanbanApp .empty-data {
+    top: 100px;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    border: 1px dashed #888;
+    color: #666;
+    text-align: center;
+}
+
+.kanbanApp .select-wraper .chzn-drop li a,
+.kanbanApp ul.multiselect-container li a {
+    padding: 7px;
+}

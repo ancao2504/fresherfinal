@@ -1,0 +1,15 @@
+/* Added by Hieu Nguyen on 2021-03-03 */
+
+.fieldBlockContainer > .row {
+	margin-left: 20px;
+}
+
+.fieldBlockContainer .fieldLabel {
+	text-align: right;
+	padding-top: 9px;
+	width: 170px;
+}
+
+.fieldBlockContainer .highlight {
+	width: 80%;
+}

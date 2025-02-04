@@ -1,0 +1,75 @@
+/* Added by Hieu Nguyen on 2022-11-25 */
+/* Modified by Vu Mai on 2022-12-08 to restyle according to mockup */
+
+#form-content {
+	width: 1000px;
+}
+
+#form-content .step1 #tbl-mkt-lists {
+	margin-top: 20px;
+}
+
+#form-content .step1 #tbl-data-statistics {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#form-content .step1 #tbl-data-statistics tbody {
+	display: flex;
+}
+
+#form-content .step1 #tbl-data-statistics tbody tr {
+	width: 33% !important;
+}
+
+#form-content .step1 #tbl-data-statistics tr th {
+	border-bottom: none !important;
+}
+
+#form-content .step2 #tbl-user-list {
+	margin: auto;
+}
+
+#form-content .step2 #tbl-user-list .error-msg {
+	display: block;
+}
+
+#form-content .step2 #tbl-user-list td.actions {
+	padding-left: 10px;
+}
+
+#form-content .step3 #tbl-manual-distribution {
+	margin: auto;
+}
+
+#form-content .step3 #tbl-manual-distribution .error-msg {
+	display: block;
+}
+
+#form-content .step4 #estimation-statistics {
+	margin-top: 10px;
+	line-height: 25px;
+}
+
+#form-content .step4 #tbl-estimation-result {
+	margin-top: 20px;
+}
+
+#modal-transfer-data .modal-body {
+	overflow-x: hidden;
+}
+
+#modal-transfer-data .row {
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+#modal-transfer-data [class^="col"] {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#modal-transfer-data .transfer-to-user {
+	width: 400px !important;
+	min-width: 400px !important;
+}

@@ -1,0 +1,139 @@
+/* 
+	Name: TelesalesConfig.css
+	Author: Vu Mai
+	Date: 2022-08-12
+*/
+
+#config-page {
+  padding-right: 10px;
+}
+
+#config-page #main-tabs-container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#config-page #main-tabs-container .nav-tabs {
+  padding-left: 2rem !important;
+}
+
+#config-page #main-tabs-container .nav-tabs > li {
+  position: relative;
+  top: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+#config-page #main-tabs-container .nav-tabs > li > a {
+  cursor: pointer;
+}
+
+#config-page #main-tabs-container .nav-tabs > li.active,
+#config-page #main-tabs-container .nav-tabs > li.active:hover {
+  border: 1px solid var(--black-5) !important;
+  border-bottom: 1px solid #fff !important;
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  overflow: hidden;
+}
+
+/* Begin general config */
+#config-page #general-config .box-body .box-header {
+  font-size: 16px !important;
+}
+
+#config-page #general-config .box-body .select2-container {
+  max-width: 70% !important;
+}
+/* End general config */
+
+/* Begin customer status config */
+#config-page #customer-status-config .breadcrumb .crumbs li {
+  margin-right: 5px;
+  cursor: unset;
+}
+
+#config-page #customer-status-config .breadcrumb .crumbs li a {
+  cursor: unset;
+}
+
+#config-page
+  #customer-status-config
+  .breadcrumb
+  .crumbs
+  li:is(:first-child):before {
+  content: "\0000a0";
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid #ecececec;
+  border-bottom: 20px solid #ecececec;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+#config-page
+  #customer-status-config
+  .breadcrumb
+  .crumbs
+  li.active:is(:first-child):before {
+  border-top: 20px solid var(--primary-1);
+  border-bottom: 20px solid var(--primary-1);
+}
+
+#config-page #customer-status-config .breadcrumb .step .stepNum {
+  color: #3399ff;
+}
+
+#config-page #customer-status-config .breadcrumb .step.active .stepNum {
+  color: #fff;
+}
+
+#config-page #customer-status-config .breadcrumb .step .stepText {
+  color: #666666;
+}
+
+#config-page #customer-status-config .breadcrumb .step.active .stepText {
+  color: #fff !important;
+}
+
+#config-page #customer-status-config .panel {
+  display: none;
+}
+
+#config-page #customer-status-config .panel.active {
+  display: block;
+}
+
+#config-page #customer-status-config #customer-status-table .cursorDrag {
+  padding: 5px;
+}
+
+#config-page #customer-status-config #customer-status-table tbody button {
+  width: 32px;
+}
+
+#config-page #customer-status-config #customer-status-table input {
+  border-color: var(--black-3) !important;
+}
+
+#config-page
+  #customer-status-config
+  #customer-status-table
+  .btn-outline-primary {
+  color: unset !important;
+}
+
+#customer-status-config .config-table-container .btn.btn-sm {
+  border: none !important;
+}
+/* End customer status config */
+
+/* Start customer status update option modal */
+#customer-status-update-option-modal .modal-header h4 {
+  font-size: 14px;
+}
+/* End customer status update option moda */

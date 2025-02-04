@@ -1,0 +1,13 @@
+/* Added by Hieu Nguyen on 2020-08-19 */
+
+#popupAndRelationListLayoutForm {
+    padding-left: 20px;
+}
+
+#popupAndRelationListLayoutForm h4 {
+    margin-bottom: 20px;
+}
+
+#popupAndRelationListLayoutForm .row {
+    margin-bottom: 10px;
+}

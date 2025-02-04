@@ -1,0 +1,69 @@
+#config-page {
+	padding: 10px 20px 60px 20px;
+}
+
+#config-page .no-wrap {
+	white-space: nowrap;
+}
+
+/* Modify by Vu Mai on 2022-07-18 */
+#config-page #guide-url {
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Segoe UI', sans-serif !important;
+}
+
+#config-page .fieldLabel {
+	word-break: unset;
+	width: 30%;
+}
+
+#config-page .fieldValue {
+	min-width: 230px;
+}
+
+#config-page #settings .tab {
+	overflow: hidden;
+	background: #FFFFFF;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+#config-page #settings .tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 8px;
+	font-size: 15px;        
+	border: none;
+	margin-right: 3px;
+}
+
+#config-page #settings .tab button:hover {
+	border-bottom: 3px solid #555;
+}
+
+#config-page #settings .tab button.active {
+	border-bottom: 3px solid #555;
+	cursor: auto;
+}
+
+#config-page #settings .box-header {
+	font-size: 15px;
+}
+
+#config-page #settings .mapping-table {
+	width: 500px;
+	margin: auto;
+}
+
+#config-page #settings .mapping-table tbody td {
+	padding: 8px;
+}
+
+#config-page #settings .mapping-table tfoot td {
+	padding: 5px;
+	border-bottom: none;
+}

@@ -1,0 +1,237 @@
+/*
+	Name: CallCenterConfig.css
+	Author: Phu Vo
+	Date: 2021.07.21
+	Refactored by Vu Mai on 2022-07-19
+*/
+
+#config-page .box-header .header-title {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#main-tabs-container {
+	padding-top: 2rem;
+}
+
+#main-tabs-container .nav-tabs {
+	padding-left: 2rem !important;
+}
+
+#main-tabs-container .nav-tabs>li {
+	position: relative;
+	top: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	cursor: pointer;
+}
+
+#main-tabs-container .nav-tabs>li>a {
+	cursor: pointer;
+}
+
+#main-tabs-container .nav-tabs>li.active, 
+#main-tabs-container .nav-tabs>li.active:hover 
+{
+	border: 1px solid var(--black-5) !important;
+	border-bottom: 1px solid #fff !important;
+	border-top-left-radius: 7px !important;
+	border-top-right-radius: 7px !important;
+	overflow: hidden;
+}
+
+#general-config,
+#connection 
+{
+	padding-top: 20px !important;
+}
+
+/* Begin tab General Config */
+#general-config #general-settings .general-settings {
+	font-size: 14px;
+	width: 90%;
+	margin-left: 5rem;
+	margin-right: auto;
+}
+
+#general-config #general-settings .general-settings .form-group {
+	margin-bottom: 10px !important;
+}
+
+#general-config #general-settings .general-settings .fieldValue {
+	padding-left: 0px !important;
+}
+
+#general-config #general-settings .general-settings .fieldValue input{
+	width: 300px !important;
+}
+
+#general-config #general-settings input.inputElement {
+	padding: 6px 8px;
+	width: 100% !important;
+}
+
+#general-config #general-settings .inputElement.select2 {
+	width: 100% !important;
+}
+
+#general-config #general-settings input.entity-selector-display {
+	background-color: white;
+	cursor: not-allowed !important;
+	flex: 1;
+}
+
+#general-config #general-settings .general-settings .inputElement {
+	width: 100%;
+}
+
+#general-config #general-settings .general-settings .entity-selector-wrapper {
+	max-width: 300px !important;
+}
+
+#general-config #callcenter-bridge .checkbox {
+	padding-left: 10px !important;
+}
+
+#general-config #callcenter-bridge .fields-container {
+	width: 90%;
+	margin: auto;
+}
+
+#general-config #callcenter-bridge .fields-container .fieldLabel {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+#general-config #callcenter-bridge .fields-container .fieldValue {
+	white-space: nowrap;
+}
+
+#general-config #callcenter-bridge .fields-container .fieldValue input {
+	width: 300px !important;
+}
+
+#general-config #callcenter-bridge .fields-container .fieldValue input[type="checkbox"] {
+	width: 16px !important;
+}
+
+#general-config #callcenter-bridge .fields-container .port input {
+    width: 200px !important;
+}
+
+#general-config #callcenter-bridge .fields-container .fieldLabel.ssl {
+	display: inline-block !important;
+    width: 70px !important;
+	text-align: right !important;
+}
+
+#general-config #callcenter-bridge .fields-container .checkbox.ssl {
+    width: 30px !important;
+	text-align: right !important;
+	margin: 0px;
+}
+
+#general-config #outbound-call #tbl-outbound-call .select2-container {
+	height: unset !important;
+}
+
+#general-config #outbound-call #users-allowed-all-hotlines .fieldValue {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+#general-config #outbound-call #users-allowed-all-hotlines .fieldValue .select2-container {
+	max-width: 500px !important;
+    height: auto !important;
+}
+/* End tab General Config */
+
+/* Begin tab Connection */
+#connection #providers-nav {
+	margin: auto;
+	width: 600px;
+}
+
+#connection #providers-nav .nav-tabs {
+	justify-content: center;
+	display: flex;
+	border-bottom: none;
+	height: 50px;
+}
+
+#connection #providers-nav .nav-tabs li {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid var(--black-5);
+	border-bottom: 1px solid var(--black-5);
+	margin: 0;
+	background-color: #fdfdfd;
+	cursor: pointer;
+}
+
+#connection #providers-nav .nav-tabs li:first-child {
+	border-left: 1px solid var(--black-5);
+	border-top-left-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+}
+
+#connection #providers-nav .nav-tabs li:last-child {
+	border-right: 1px solid var(--black-5);
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+}
+
+#connection #providers-nav .nav-tabs>li.active {
+	background-color: var(--primary-1);
+	border: 1px solid var(--primary-1);
+	border-bottom: 1px solid var(--primary-1) !important;
+}
+
+#connection #providers-nav .nav-tabs a{
+	cursor: pointer;
+	width: 100%;
+	margin: auto;
+	justify-content: center;
+	border-radius: 2rem;
+	font-size: 16px;
+}
+
+#connection #providers-nav .nav > li > a:hover {
+	background-color: #fdfdfd;
+}
+
+#connection #providers-nav .nav-tabs>li.active a {
+	background-color: var(--primary-1) !important;
+	color: white !important;
+}
+
+#connection #providers-nav .nav-tabs i {
+	color: var(--primary-1);
+	font-size: 2rem;
+}
+
+#connection #providers-nav .nav-tabs>li.active i {
+   color: #fff;
+}
+
+#connection #vendor-search {
+	margin-top: 3rem;
+}
+
+#connection #vendor-list .vendor-container {
+	display: none;
+}
+
+#connection #vendor-list.cloud .vendor-container.cloud,
+#connection #vendor-list.physical .vendor-container.physical 
+{
+	display: block;
+}
+/* End tab Connection */
+
+#config-page #vendor-detail #config-fields {
+	width: 650px !important;
+}

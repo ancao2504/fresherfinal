@@ -1,0 +1,309 @@
+/* Added by Hieu Nguyen on 2021-09-15 */
+
+html * {
+	/* margin: 0px;
+	padding: 0px; */
+	font-family: 'Segoe UI Regular', 'Segoe UI', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	text-align: left;
+}
+
+body {
+	background-color: rgba(245, 248, 250, 1);
+}
+
+h3 {
+	font-weight: 600;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 18px;
+}
+
+.box {
+	position: relative;
+	margin: 20px auto 0px auto;
+	width: 80%;
+	min-width: 1200px;
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(242, 242, 242, 1);
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.box-content {
+	width: 100%;
+	min-height: 200px;
+	padding: 20px;
+}
+
+
+.box.has-footer .box-content {
+	margin-bottom: 35px;
+}
+
+.box-footer {
+	width: 100%;
+	height: 37px;
+	position: absolute;
+	bottom: 0px;
+	border-top: 1px solid #f2f2f2;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clear-fix {
+	clear: both;
+}
+
+.icon-blue {
+	color: #008ecf;
+}
+
+.icon-red {
+	color: #de425b;
+}
+
+.text-blur {
+	font-weight: 400;
+	font-size: 14px;
+	color: #858585;
+}
+
+.text-primary {
+	color: #008ecf;
+}
+
+.highlight {
+	color: #35bf8e;
+	font-weight: bold;
+}
+
+.lifetime {
+	padding: 2px 8px;
+	font-weight: 600;
+	font-style: italic;
+	color: #f17030;
+	background-color: #fce2d6;
+	border-radius: 5px;
+}
+
+.unlimit {
+	padding: 5px 8px;
+	color: #008ecf;
+	background-color: #d6f2fe;
+	border-radius: 5px;
+}
+
+.warning {
+	color: #dd1d35;
+}
+
+.warning i {
+	color: #ffbb3c;
+}
+
+#header {
+	position: fixed;
+	z-index: 1000;
+	top: 0px;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 10px;
+}
+
+/* Modified by Vu Mai on 2023-03-15 */
+#header #left-side #logo {
+	height: 50px;
+	margin-top: -7px;
+}
+/* End Vu Mai */
+
+#header #right-side {
+	text-align: right;
+	padding-right: 35px;
+}
+
+#header #right-side * {
+	margin-right: 5px;
+}
+
+#modal-update-license .modal-header .modal-title {
+	font-size: 16px;
+}
+
+#modal-update-license .modal-header .close {
+	margin-top: -20px;
+}
+
+#modal-update-license #form-update-license {
+	margin: 30px 50px;
+}
+
+#modal-update-license #form-update-license img {
+	width: 300px;
+}
+
+#modal-update-license #form-update-license textarea {
+	font-size: 13px;
+	resize: none;
+}
+
+#modal-update-license #form-update-license #btn-submit {
+	width: 100%;
+	height: 45px;
+	font-size: 16px;
+}
+
+#content {
+	padding: 60px 5px 5px 5px;
+	width: 100%;
+	height: max-content;
+}
+
+#content #package-info #info {
+	margin-top: 20px;
+}
+
+#package-info #info #tbl-info {
+	width: 95%;
+	border: none;
+	margin: auto;
+}
+
+#package-info #info #tbl-info tr {
+	border-bottom: 1px solid #f2f2f2;
+}
+
+#package-info #info #tbl-info tr:last-child {
+	border-bottom: none;
+}
+
+#package-info #info #tbl-info td {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+#package-features {
+	margin-bottom: 15px;
+}
+
+#package-features #tab {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 1);
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgb(204 204 204);
+	-moz-box-shadow: 0px 0px 5px rgba(204, 204, 204, 1);
+	-webkit-box-shadow: 0px 0px 5px rgb(204 204 204);
+	padding: 5px 20px;
+}
+
+#package-features #tab .nav-item {
+	border: none !important;
+	border-radius: 10px;
+}
+
+#package-features #tab .nav-item.active {
+	background-color: rgba(0, 142, 207, 1);
+}
+
+#package-features #tab .nav-item a {
+	background: transparent;
+	border: none !important;
+	color: black;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 8px 20px;
+}
+
+#package-features #tab .nav-item.active a {
+	color: white;
+}
+
+#package-features #tab .nav-tabs {
+	border-bottom: none;
+}
+
+#package-features #tab #show-all-packages {
+	float: right;
+	margin-top: -25px;
+	margin-right: 20px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #F17030;
+}
+
+#package-features #tab-content {
+	margin-top: 20px;
+}
+
+#package-features #tab-content .column {
+	float: left;
+	width: 30%;
+	margin-left: 30px;
+	margin-bottom: 20px;	
+}
+
+#package-features #tab-content .item {
+	font-family: 'Segoe UI Regular', 'Segoe UI', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	padding: 10px 0px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+#package-features #tab-content .item.group {
+	font-weight: 650;
+}
+
+#package-features #tab-content .item.feature {
+	padding-left: 10px;
+}
+
+#package-features #tab-content .item i {
+	display: inline-block;
+	width: 15px;
+	margin-right: 5px;
+}
+
+#package-features #tab-content .no-data {
+	text-align: center;
+}
+
+#package-features #tab-content .no-data img {
+	width: 280px;
+}
+
+#package-features i {
+	width: 15px;
+}
+
+#package-features #tab-addition-products .tbl-addition-products {
+	width: 46%;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#package-features #tab-addition-products .tbl-addition-products thead th {
+	font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #222222;
+}
+
+#package-features #tab-addition-products .tbl-addition-products th, #package-features #tab-addition-products .tbl-addition-products td {
+	border: 1px solid #e2e2e2;
+	padding: 10px 15px;
+}
+
+#package-features #tab-addition-products .tbl-addition-products i {
+	font-weight: bold;
+	font-size: 120%;
+}

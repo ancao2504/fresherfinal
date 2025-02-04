@@ -1,0 +1,10 @@
+/*
+    Social Article List View Style
+    Author: Phu Vo
+    Date: 2019.09.11
+*/
+
+/* Hide empty record link  */
+.emptyRecordsContent {
+    display: none !important;
+}

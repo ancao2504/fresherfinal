@@ -1,0 +1,14 @@
+/*
+    VTZaloOTTMessageTask.css
+    Author: Hieu Nguyen
+    Date: 2020-11-23
+    Purpose: display layout for VTZaloOTTMessageTask workflow task settings
+*/
+
+.editTaskBody .form-group:first-child .col-sm-6 {
+    width: 75%;
+}
+
+.editTaskBody .redColor {
+    margin-left: 5px;
+}

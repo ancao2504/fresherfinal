@@ -1,0 +1,337 @@
+/* REFINE BOOTSTRAP SPACING CSS FOR HANA IFRAME*/
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#app {
+    border-top: 1px solid #eee;
+}
+
+.nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.nav-tabs {
+    background: #f3f4ff;
+}
+
+.nav-tabs .nav-item {
+    white-space: nowrap;
+}
+
+table .hdnGrandTotal {
+    text-align: right;
+}
+
+.fieldValue.total,
+.fieldValue.price,
+.fieldValue.quantity {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.fieldValue.total {
+    padding-right: 4px;
+}
+
+.fieldValue.total .flex-wraper,
+.fieldValue.price .flex-wraper {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 4px;
+}
+
+.fieldValue.total .form-control::before,
+.fieldValue.price .form-control::before {
+    display: inline-block;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.fieldValue.total .form-control::before {
+    content: '=';
+}
+
+.fieldValue.price .form-control::before {
+    content: 'x';
+    margin-bottom: 2px;
+}
+
+.fieldValue.price .form-control,
+.fieldValue.total .form-control {
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fieldValue.quantity input {
+    padding-right: 0px;
+}
+
+.fieldValue.discount_amount input,
+.fieldValue.tax_amount input {
+    text-align: right;
+}
+
+.salesorder-form td.product-name {
+    width: 80px;
+    max-width: 80px;
+    margin-right: 0px;
+}
+
+.salesorder-form td.quantity {
+    width: 15%;
+}
+
+.salesorder-form td.actions {
+    width: 5%;
+    text-align: right;
+}
+
+.salesorder-form td.fieldValue.price,
+.salesorder-form td.fieldValue.total {
+    width: 30%;
+}
+
+
+
+.salesorder-form td.product-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.salesorder-form td.product-name > * {
+    vertical-align: middle;
+}
+
+.salesorder-form td.product-name .delete-product {
+    display: none;
+}
+
+.salesorder-form td.product-name:hover .delete-product {
+    display: inline-flex;
+}
+
+.salesorder-form .inline-product-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+
+.salesorder-form td.product-name label {
+    flex: 1;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.salesorder-table tr {
+    cursor: pointer;
+}
+
+form button.delete-product {
+    border-radius: 50%;
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+    margin: 0px;
+}
+
+#app div.customer-type {
+    background: var(--cyan);
+    color: white;
+    padding: 2px 11px;
+    border-radius: 0px 0px .5em 0px;
+    /* color: #007bff; */
+    border: 1px solid var(--cyan);
+    border-top: none;
+    border-left: none;
+}
+
+.fixed-footer.footer-lg .footer-content {
+    height: 86px;
+}
+
+.fixed-footer.footer-lg:not(:empty) + .footer-padding {
+    display: block;
+    height: 97px;
+}
+
+button.btn-upload-avatar {
+    right: 0px;
+    bottom: 0px;
+}
+
+.customer-avatar-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 0px;
+    position: relative;
+}
+
+.customer-avatar-wrapper .upload-button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.customer-avatar-wrapper .upload-button > * {
+    margin: 0px;
+}
+
+.refresh-iframe {
+    right: 0px;
+    padding: 2px 11px;
+    border-radius: 0px 0px 0px .5em;
+    color: #008ecf;
+    border: 1px solid #ced2d2;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+}
+
+.refresh-iframe:hover {
+    background: #f6f6f6;
+    color: #007bff;
+}
+
+/* For Hana */
+#app.Hana .fixed-footer {
+    bottom: 6px;
+}
+
+/* For BotBanHang */
+#app.BotBanHang .fieldValue.total .form-control::before,
+#app.BotBanHang .fieldValue.price .form-control::before {
+    display: inline-block;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    margin-right: 0.1em;
+}
+
+#app.BotBanHang .fieldValue.quantity input {
+    padding-right: 0px;
+    min-width: 50px;
+}
+
+#app.BotBanHang .salesorder-form td.product-name {
+    width: 50px;
+    max-width: 80px;
+    margin-right: 0px;
+}
+
+#app.BotBanHang .footer-content button {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
